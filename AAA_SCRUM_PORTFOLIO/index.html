@@ -384,7 +384,8 @@
                         </div>
                     </div>
                     
-                    <form class="contact-form">
+                    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="a27aef06-f905-4a6d-8c29-1f1b37889961">
                         <div class="form-group">
                             <label for="name">Name *</label>
                             <input type="text" id="name" name="name" required>
@@ -393,11 +394,6 @@
                         <div class="form-group">
                             <label for="email">Email *</label>
                             <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject">
                         </div>
                         
                         <div class="form-group">

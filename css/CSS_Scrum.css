@@ -177,44 +177,26 @@ ul {
     box-shadow: var(--shadow);
     z-index: 1000;
     transition: var(--transition);
-    height: 50px;
+    padding: 1rem 20px;
 }
 
 .itch-link {
     color: #3B82F6;
 }
 
-.navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 20px;
-}
-
-.nav-brand h1 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    left: 20px;
-    bottom: 10px
-}
-
 .nav-links {
     display: flex;
     gap: 2rem;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .nav-link {
     color: var(--text-dark);
     font-weight: 500;
     position: relative;
-    top: 10px;
-    left: 20px;
-    bottom: 10px
+    padding: 0.5rem 0;
 }
 
 .nav-link::after {
@@ -231,6 +213,31 @@ ul {
 .nav-link:hover::after,
 .nav-link.active::after {
     width: 100%;
+}
+
+/* ===== LANGUAGE TOGGLE BUTTON ===== */
+.language-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.language-toggle:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.language-toggle i {
+    font-size: 1.1rem;
 }
 
 /* ===== MAIN CONTENT ===== */
@@ -902,29 +909,45 @@ ul {
         display: flex;
     }
     
-    .navbar .container {
-        flex-direction: column;
-        align-items: flex-start;
+    .navbar {
+        padding: 1rem 20px;
+        min-height: auto;
+    }
+    
+    .navbar.active {
+        padding-bottom: 2rem;
     }
     
     .nav-links {
         flex-direction: column;
         width: 100%;
-        gap: 10px;
+        gap: 0;
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s ease;
+        transition: max-height 0.4s ease-in-out;
+        align-items: flex-start;
     }
     
     .navbar.active .nav-links {
-        max-height: 400px;
-        padding: 1rem 0;
+        max-height: 500px;
+        margin-top: 1rem;
     }
     
     .nav-link {
         width: 100%;
-        padding: 0.75rem 0;
+        padding: 1rem 0;
         border-bottom: 1px solid var(--gray-200);
+    }
+    
+    .nav-links li:last-child {
+        width: 100%;
+        padding: 1rem 0 0 0;
+        border-bottom: none;
+    }
+    
+    .language-toggle {
+        width: 100%;
+        justify-content: center;
     }
     
     .hero-cta {

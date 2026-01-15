@@ -70,26 +70,6 @@ Fancybox.bind("[data-fancybox]", {
     },
 });
 
-// ===== CONTACT FORM HANDLING =====
-const contactForm = document.querySelector('.contact-form');
-
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Get form values
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
-    
-    // Here you would typically send the form data to a server
-    // For now, we'll just show an alert
-    alert(`Thank you for your message, ${name}! I'll get back to you soon.`);
-    
-    // Reset form
-    contactForm.reset();
-});
-
 // ===== SCROLL ANIMATIONS =====
 const observerOptions = {
     threshold: 0.1,
@@ -130,7 +110,6 @@ window.addEventListener('load', () => {
     window.scrollTo(0, 0);
     updateAge();
 });
-;
 
 // ===== DYNAMIC AGE CALCULATION =====
 function calculateAge() {
@@ -154,10 +133,63 @@ function updateAge() {
     const age = calculateAge();
     
     if (heroDescription) {
-        heroDescription.textContent = `${age}-year-old software development student passionate about creating innovative solutions and building engaging digital experiences.`;
+        const currentLang = document.documentElement.getAttribute('data-lang') || 'en';
+        if (currentLang === 'en') {
+            heroDescription.textContent = `${age}-year-old software development student passionate about creating innovative solutions and building engaging digital experiences.`;
+        } else {
+            heroDescription.textContent = `${age}-jarige softwareontwikkelingsstudent gepassioneerd over het creëren van innovatieve oplossingen en het bouwen van boeiende digitale ervaringen.`;
+        }
     }
 }
 
+// ===== LANGUAGE TOGGLE FUNCTIONALITY =====
+const languageToggle = document.getElementById('languageToggle');
+let currentLanguage = 'en'; // Default language
+
+languageToggle.addEventListener('click', () => {
+    // Toggle between English and Dutch
+    currentLanguage = currentLanguage === 'en' ? 'nl' : 'en';
+    
+    // Update button text
+    const langText = languageToggle.querySelector('.lang-text');
+    langText.textContent = currentLanguage === 'en' ? 'NL' : 'EN';
+    
+    // Store language preference
+    localStorage.setItem('preferredLanguage', currentLanguage);
+    document.documentElement.setAttribute('data-lang', currentLanguage);
+    
+    // Update all translatable elements
+    updateLanguage(currentLanguage);
+    
+    // Update age with correct language
+    updateAge();
+});
+
+function updateLanguage(lang) {
+    // Get all elements with data-en and data-nl attributes
+    const translatableElements = document.querySelectorAll('[data-en][data-nl]');
+    
+    translatableElements.forEach(element => {
+        const translation = element.getAttribute(`data-${lang}`);
+        if (translation) {
+            element.textContent = translation;
+        }
+    });
+}
+
+// Load saved language preference on page load
+window.addEventListener('DOMContentLoaded', () => {
+    const savedLanguage = localStorage.getItem('preferredLanguage');
+    if (savedLanguage) {
+        currentLanguage = savedLanguage;
+        const langText = languageToggle.querySelector('.lang-text');
+        langText.textContent = currentLanguage === 'en' ? 'NL' : 'EN';
+        document.documentElement.setAttribute('data-lang', currentLanguage);
+        updateLanguage(currentLanguage);
+    }
+});
+
+// ===== CONTACT FORM HANDLING =====
 const form = document.getElementById('form');
 const submitBtn = form.querySelector('button[type="submit"]');
 
@@ -165,7 +197,7 @@ form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const formData = new FormData(form);
-    formData.append("access_key", "a27aef06-f905-4a6d-8c29-1f1b37889961");
+    formData.append("access_key","a27aef06-f905-4a6d-8c29-1f1b37889961");
 
     const originalText = submitBtn.textContent;
 

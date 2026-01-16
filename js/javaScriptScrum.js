@@ -56,6 +56,22 @@ experienceCards.forEach(card => {
     });
 });
 
+// ===== INTEREST CARDS TOGGLE =====
+const interestCards = document.querySelectorAll('.interest-card');
+
+interestCards.forEach(card => {
+    card.addEventListener('click', () => {
+        interestCards.forEach(other => {
+            if (other !== card) {
+                other.classList.remove('active');
+            }
+        });
+
+        card.classList.toggle('active');
+    });
+});
+
+
 // ===== FANCYBOX INITIALIZATION =====
 Fancybox.bind("[data-fancybox]", {
     Toolbar: {

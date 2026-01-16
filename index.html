@@ -17,6 +17,7 @@
     </button>
 
 
+
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <ul class="nav-links">
@@ -34,6 +35,7 @@
             </li>
         </ul>
     </nav>
+
 
 
     <!-- Main Content -->
@@ -76,6 +78,7 @@
                 <i class="fas fa-chevron-down"></i>
             </div>
         </section>
+
 
 
         <!-- About Section -->
@@ -124,26 +127,60 @@
                             </div>
                         </div>
                     </div>
-                    <div class="about-interests">
-                        <h3 data-en="Interests & Hobbies" data-nl="Interesses & Hobbies">Interests & Hobbies</h3>
-                        <div class="interest-cards">
-                            <div class="interest-card">
-                                <i class="fas fa-gamepad"></i>
-                                <span data-en="Gaming" data-nl="Gamen">Gaming</span>
-                            </div>
-                            <div class="interest-card">
-                                <i class="fas fa-music"></i>
-                                <span data-en="Music" data-nl="Muziek">Music</span>
-                            </div>
-                            <div class="interest-card">
-                                <i class="fas fa-swimmer"></i>
-                                <span data-en="Swimming" data-nl="Zwemmen">Swimming</span>
-                            </div>
-                        </div>
-                    </div>
+<div class="about-interests">
+    <h3 data-en="Interests & Hobbies" data-nl="Interesses & Hobbies">Interests & Hobbies</h3>
+    <div class="interest-cards">
+        <!-- Interest 1 -->
+        <div class="interest-card" data-interest="gaming">
+            <div class="interest-icon">
+                <i class="fas fa-gamepad"></i>
+            </div>
+            <h3 data-en="Gaming" data-nl="Gamen">Gaming</h3>
+            <p class="interest-type" data-en="Hobby" data-nl="Hobby">Hobby</p>
+            <div class="interest-details">
+                <p data-en="I enjoy playing a variety of games, from story-driven RPGs to sandbox games. Gaming helps me relax and also inspires my interest in game development. Some of my favorite games are: Elden Ring (which I have the playstation platinum trophy for), Minecraft, and Hollow Knight." 
+                   data-nl="Ik speel graag verschillende games, van verhaal rijke RPG's tot sandbox games. Gamen helpt me ontspannen en inspireert ook mijn interesse in game-ontwikkeling. Een paar van mijn favoriete games zijn: Elden Ring (waarvoor ik de playstation platinum trophy heb), Minecraft en Hollow Knight.">
+                    I enjoy playing a variety of games, from story-driven RPGs to sandbox games. Gaming helps me relax and also inspires my interest in game development. Some of my favorite games are: Elden Ring (which I have the playstation platinum trophy for), Minecraft, and Hollow Knight.
+                </p>
+            </div>
+        </div>
+
+        <!-- Interest 2 -->
+        <div class="interest-card" data-interest="music">
+            <div class="interest-icon">
+                <i class="fas fa-music"></i>
+            </div>
+            <h3 data-en="Music" data-nl="Muziek">Music</h3>
+            <p class="interest-type" data-en="Passion" data-nl="Passie">Passion</p>
+            <div class="interest-details">
+                <p data-en="I listen to music while coding and studying. It helps me focus and get into a productive flow, especially with instrumental and electronic tracks. Some of my favorite artists are RadioHead, The Weeknd and Coldplay."
+                   data-nl="Ik luister naar muziek tijdens het coderen en studeren. Het helpt me focussen en in een productieve flow te komen, vooral met instrumentale en elektronische nummers. Een paar van mijn favoriete artiesten zijn RadioHead, The Weeknd en Coldplay.">
+                    I listen to music while coding and studying. It helps me focus and get into a productive flow, especially with instrumental and electronic tracks. Some of my favorite artists are RadioHead, The Weeknd and Coldplay.
+                </p>
+            </div>
+        </div>
+
+        <!-- Interest 3 -->
+        <div class="interest-card" data-interest="swimming">
+            <div class="interest-icon">
+                <i class="fas fa-running"></i>
+            </div>
+            <h3 data-en="Gymming" data-nl="Sporten">Gymming</h3>
+            <p class="interest-type" data-en="Sport" data-nl="Sport">Sport</p>
+            <div class="interest-details">
+                <p data-en="Gymming keeps me active and clears my mind after long days of studying or coding. It helps me maintain a healthy balance between physical and mental activity."
+                   data-nl="Sporten houdt me actief en maakt mijn hoofd leeg na lange dagen studeren of coderen. Het helpt me een gezonde balans te houden tussen fysieke en mentale activiteit.">
+                    Gymming keeps me active and clears my mind after long days of studying or coding. It helps me maintain a healthy balance between physical and mental activity.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
                 </div>
             </div>
         </section>
+
 
 
         <!-- Projects Section -->
@@ -181,6 +218,7 @@
                     </div>
 
 
+
                     <!-- Project 2: Godot Game -->
                     <div class="project-card">
                         <div class="project-image">
@@ -205,6 +243,7 @@
                             </p>
                         </div>
                     </div>
+
 
 
                     <!-- Project 3: Home page -->
@@ -237,12 +276,31 @@
         </section>
 
 
+
         <!-- Education Section -->
         <section id="education" class="education-section">
             <div class="container">
                 <h2 class="section-title" data-en="Education" data-nl="Opleiding">Education</h2>
                 
                 <div class="timeline">
+                    <!--Malaga--->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <img src="pictures/jongleren.png" alt="Jongleren Logo" class="institution-logo">
+                                <div>
+                                    <h3 data-en="Malaga Buisiness Bootcamp" data-nl="Malaga Buisiness Bootcamp">Malaga Buisiness Bootcamp</h3>
+                                    <p class="institution">Malaga, Spain</p>
+                                    <p class="period" data-en="2025 - 2025" data-nl="2025 - 2025">2025 - 2025</p>
+                                </div>
+                            </div>
+                            <p class="description" data-en="In 2025 I attended a business bootcamp in Malaga, Spain, where me and several classmates helped a local startup improve their business operations. We flew from the Netherlands to Spain for two weeks to work intensively on business strategies, marketing plans, and operational improvements." data-nl="In 2025 heb ik een business bootcamp gevolgd in Malaga, Spanje, waar ik samen met enkele klasgenoten een lokale startup heb geholpen hun bedrijfsvoering te verbeteren. We vlogen vanuit Nederland naar Spanje voor twee weken om intensief te werken aan bedrijfsstrategieën, marketingplannen en operationele verbeteringen.">
+                                In 2025 I attended a business bootcamp in Malaga, Spain, where me and several classmates helped a local startup improve their business operations. We flew from the Netherlands to Spain for two weeks to work intensively on business strategies, marketing plans, and operational improvements.
+                            </p>
+                        </div>
+                    </div>
+
                     <!-- Current Education -->
                     <div class="timeline-item">
                         <div class="timeline-marker"></div>
@@ -262,6 +320,7 @@
                             </p>
                         </div>
                     </div>
+
 
 
                     <!-- Previous Education -->
@@ -285,6 +344,7 @@
                 </div>
             </div>
         </section>
+
 
 
         <!-- Experience Section -->
@@ -312,6 +372,7 @@
                     </div>
 
 
+
                     <!-- Experience 2: Albert Heijn -->
                     <div class="experience-card" data-experience="ah">
                         <div class="experience-icon">
@@ -330,6 +391,7 @@
                     </div>
 
 
+
                     <!-- Experience 3: Jumbo -->
                     <div class="experience-card" data-experience="jumbo">
                         <div class="experience-icon">
@@ -346,6 +408,7 @@
                             </p>
                         </div>
                     </div>
+
 
 
                     <!-- Experience 4: Lifeguard Instructor -->
@@ -368,6 +431,7 @@
                 </div>
             </div>
         </section>
+
 
 
         <!-- Contact Section -->
@@ -430,6 +494,7 @@
     </main>
 
 
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -437,6 +502,7 @@
             <p data-en="Built with passion and dedication" data-nl="Gebouwd met passie en toewijding">Built with passion and dedication</p>
         </div>
     </footer>
+
 
 
     <!-- Scripts -->

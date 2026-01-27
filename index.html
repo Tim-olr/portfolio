@@ -1,512 +1,832 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tim Olree - Software Developer</title>
-    <link rel="stylesheet" href="css/CSS_Scrum.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/CSS_Scrum.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Mobile Menu Toggle -->
-    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
+    <button
+      class="mobile-menu-toggle"
+      id="mobileMenuToggle"
+      aria-label="Toggle menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
-
-
 
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
-        <ul class="nav-links">
-            <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#education" class="nav-link">Education</a></li>
-            <li><a href="#experience" class="nav-link">Experience</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-            <li>
-                <button class="language-toggle" id="languageToggle" aria-label="Toggle language">
-                    <i class="fas fa-globe"></i>
-                    <span class="lang-text">NL</span>
-                </button>
-            </li>
-        </ul>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <button
+            class="language-toggle"
+            id="languageToggle"
+            aria-label="Toggle language"
+          >
+            <i class="fas fa-globe"></i>
+            <span class="lang-text">EN</span>
+          </button>
+        </li>
+      </ul>
     </nav>
-
-
 
     <!-- Main Content -->
     <main class="main-content">
-        <!-- Hero Section -->
-        <section id="home" class="hero-section">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        <span data-en="Hi, I'm " data-nl="Hoi, ik ben ">Hi, I'm </span><span class="highlight">Tim Olree</span>
-                    </h1>
-                    <p class="hero-subtitle" data-en="Software Developer | Java Enthusiast | Problem Solver" data-nl="Software Ontwikkelaar | Java Enthousiast | Probleemoplosser">Software Developer | Java Enthusiast | Problem Solver</p>
-                    <p class="hero-description" data-en="17-year-old software development student passionate about creating innovative solutions and building engaging digital experiences." data-nl="17-jarige softwareontwikkelingsstudent gepassioneerd over het creëren van innovatieve oplossingen en het bouwen van boeiende digitale ervaringen.">
-                        17-year-old software development student passionate about creating innovative solutions 
-                        and building engaging digital experiences.
+      <!-- Hero Section -->
+      <section id="home" class="hero-section">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              <span data-en="Hi, I'm " data-nl="Hoi, ik ben ">Hi, I'm </span
+              ><span class="highlight">Tim Olree</span>
+            </h1>
+            <p
+              class="hero-subtitle"
+              data-en="Software Developer | Java Enthusiast | Problem Solver"
+              data-nl="Software Ontwikkelaar | Java Enthousiast | Probleemoplosser"
+            >
+              Software Developer | Java Enthusiast | Problem Solver
+            </p>
+            <p
+              class="hero-description"
+              data-en="17-year-old software development student passionate about creating innovative solutions and building engaging digital experiences."
+              data-nl="17-jarige softwareontwikkelingsstudent gepassioneerd over het creëren van innovatieve oplossingen en het bouwen van boeiende digitale ervaringen."
+            >
+              17-year-old software development student passionate about creating
+              innovative solutions and building engaging digital experiences.
+            </p>
+            <div class="hero-cta">
+              <a
+                href="#contact"
+                class="btn btn-primary"
+                data-en="Get In Touch"
+                data-nl="Neem Contact Op"
+                >Get In Touch</a
+              >
+              <a
+                href="pdf/Tim Olree.pdf"
+                class="btn btn-secondary"
+                target="_blank"
+              >
+                <i class="fas fa-download"></i>
+                <span data-en="Download CV" data-nl="Download CV"
+                  >Download CV</span
+                >
+              </a>
+            </div>
+            <div class="social-links">
+              <a
+                href="https://github.com/Tim-olr"
+                target="_blank"
+                aria-label="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/tim-olree-93151a352/"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="image-wrapper">
+              <img src="pictures/close.jpg" alt="Tim Olree" />
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <span data-en="Scroll Down" data-nl="Scroll Omlaag">Scroll Down</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <div class="container">
+          <h2 class="section-title" data-en="About Me" data-nl="Over Mij">
+            About Me
+          </h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p
+                data-en="I'm Tim Olree, a 17-year-old software developer from Zierikzee, Netherlands. Currently studying Software Development at Scalda Vlissingen, where I'm mastering Java, MySQL, HTML, CSS, JavaScript, and Agile methodologies."
+                data-nl="Ik ben Tim Olree, een 17-jarige softwareontwikkelaar uit Zierikzee, Nederland. Momenteel studeer ik Software Development aan Scalda Vlissingen, waar ik Java, MySQL, HTML, CSS, JavaScript en Agile methodologieën leer beheersen."
+              >
+                I'm Tim Olree, a 17-year-old software developer from Zierikzee,
+                Netherlands. Currently studying Software Development at Scalda
+                Vlissingen, where I'm mastering Java, MySQL, HTML, CSS,
+                JavaScript, and Agile methodologies.
+              </p>
+              <p
+                data-en="I'm a social person who loves making connections and solving problems collaboratively. My interests include gaming, swimming, and music - which helps me stay focused during intensive coding sessions."
+                data-nl="Ik ben een sociaal persoon die graag connecties maakt en samen problemen oplost. Mijn interesses zijn onder meer gamen, zwemmen en muziek - wat me helpt gefocust te blijven tijdens intensieve codeersessies."
+              >
+                I'm a social person who loves making connections and solving
+                problems collaboratively. My interests include gaming, swimming,
+                and music - which helps me stay focused during intensive coding
+                sessions.
+              </p>
+              <div class="skills-grid">
+                <div class="skill-category">
+                  <h3 data-en="Languages" data-nl="Talen">Languages</h3>
+                  <ul>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>HTML/CSS</li>
+                    <li>SQL</li>
+                  </ul>
+                </div>
+                <div class="skill-category">
+                  <h3 data-en="Technologies" data-nl="Technologieën">
+                    Technologies
+                  </h3>
+                  <ul>
+                    <li>Git/GitHub</li>
+                    <li>MySQL</li>
+                    <li>Godot Engine</li>
+                    <li>Gradle</li>
+                  </ul>
+                </div>
+                <div class="skill-category">
+                  <h3 data-en="Methodologies" data-nl="Methodologieën">
+                    Methodologies
+                  </h3>
+                  <ul>
+                    <li>SCRUM/Agile</li>
+                    <li data-en="Version Control" data-nl="Versiebeheer">
+                      Version Control
+                    </li>
+                    <li data-en="Problem Solving" data-nl="Probleemoplossing">
+                      Problem Solving
+                    </li>
+                    <li data-en="Team Collaboration" data-nl="Teamwerk">
+                      Team Collaboration
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="about-interests">
+              <h3 data-en="Interests & Hobbies" data-nl="Interesses & Hobbies">
+                Interests & Hobbies
+              </h3>
+              <div class="interest-cards">
+                <!-- Interest 1 -->
+                <div class="interest-card" data-interest="gaming">
+                  <div class="interest-icon">
+                    <i class="fas fa-gamepad"></i>
+                  </div>
+                  <h3 data-en="Gaming" data-nl="Gamen">Gaming</h3>
+                  <p class="interest-type" data-en="Hobby" data-nl="Hobby">
+                    Hobby
+                  </p>
+                  <div class="interest-details">
+                    <p
+                      data-en="I enjoy playing a variety of games, from story-driven RPGs to sandbox games. Gaming helps me relax and also inspires my interest in game development. Some of my favorite games are: Elden Ring (which I have the playstation platinum trophy for), Minecraft, and Hollow Knight."
+                      data-nl="Ik speel graag verschillende games, van verhaal rijke RPG's tot sandbox games. Gamen helpt me ontspannen en inspireert ook mijn interesse in game-ontwikkeling. Een paar van mijn favoriete games zijn: Elden Ring (waarvoor ik de playstation platinum trophy heb), Minecraft en Hollow Knight."
+                    >
+                      I enjoy playing a variety of games, from story-driven RPGs
+                      to sandbox games. Gaming helps me relax and also inspires
+                      my interest in game development. Some of my favorite games
+                      are: Elden Ring (which I have the playstation platinum
+                      trophy for), Minecraft, and Hollow Knight.
                     </p>
-                    <div class="hero-cta">
-                        <a href="#contact" class="btn btn-primary" data-en="Get In Touch" data-nl="Neem Contact Op">Get In Touch</a>
-                        <a href="pdf/Tim Olree.pdf" class="btn btn-secondary" target="_blank">
-                            <i class="fas fa-download"></i> <span data-en="Download CV" data-nl="Download CV">Download CV</span>
-                        </a>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/Tim-olr" target="_blank" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/tim-olree-93151a352/" target="_blank" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </div>
+                  </div>
                 </div>
-                <div class="hero-image">
-                    <div class="image-wrapper">
-                        <img src="pictures/close.jpg" alt="Tim Olree">
-                    </div>
+
+                <!-- Interest 2 -->
+                <div class="interest-card" data-interest="music">
+                  <div class="interest-icon">
+                    <i class="fas fa-music"></i>
+                  </div>
+                  <h3 data-en="Music" data-nl="Muziek">Music</h3>
+                  <p class="interest-type" data-en="Passion" data-nl="Passie">
+                    Passion
+                  </p>
+                  <div class="interest-details">
+                    <p
+                      data-en="I listen to music while coding and studying. It helps me focus and get into a productive flow, especially with instrumental and electronic tracks. Some of my favorite artists are RadioHead, The Weeknd and Coldplay."
+                      data-nl="Ik luister naar muziek tijdens het coderen en studeren. Het helpt me focussen en in een productieve flow te komen, vooral met instrumentale en elektronische nummers. Een paar van mijn favoriete artiesten zijn RadioHead, The Weeknd en Coldplay."
+                    >
+                      I listen to music while coding and studying. It helps me
+                      focus and get into a productive flow, especially with
+                      instrumental and electronic tracks. Some of my favorite
+                      artists are RadioHead, The Weeknd and Coldplay.
+                    </p>
+                  </div>
                 </div>
-            </div>
-            <div class="scroll-indicator">
-                <span data-en="Scroll Down" data-nl="Scroll Omlaag">Scroll Down</span>
-                <i class="fas fa-chevron-down"></i>
-            </div>
-        </section>
 
-
-
-        <!-- About Section -->
-        <section id="about" class="about-section">
-            <div class="container">
-                <h2 class="section-title" data-en="About Me" data-nl="Over Mij">About Me</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p data-en="I'm Tim Olree, a 17-year-old software developer from Zierikzee, Netherlands. Currently studying Software Development at Scalda Vlissingen, where I'm mastering Java, MySQL, HTML, CSS, JavaScript, and Agile methodologies." data-nl="Ik ben Tim Olree, een 17-jarige softwareontwikkelaar uit Zierikzee, Nederland. Momenteel studeer ik Software Development aan Scalda Vlissingen, waar ik Java, MySQL, HTML, CSS, JavaScript en Agile methodologieën leer beheersen.">
-                            I'm Tim Olree, a 17-year-old software developer from Zierikzee, Netherlands. 
-                            Currently studying Software Development at Scalda Vlissingen, where I'm mastering 
-                            Java, MySQL, HTML, CSS, JavaScript, and Agile methodologies.
-                        </p>
-                        <p data-en="I'm a social person who loves making connections and solving problems collaboratively. My interests include gaming, swimming, and music - which helps me stay focused during intensive coding sessions." data-nl="Ik ben een sociaal persoon die graag connecties maakt en samen problemen oplost. Mijn interesses zijn onder meer gamen, zwemmen en muziek - wat me helpt gefocust te blijven tijdens intensieve codeersessies.">
-                            I'm a social person who loves making connections and solving problems collaboratively. 
-                            My interests include gaming, swimming, and music - which helps me stay focused 
-                            during intensive coding sessions.
-                        </p>
-                        <div class="skills-grid">
-                            <div class="skill-category">
-                                <h3 data-en="Languages" data-nl="Talen">Languages</h3>
-                                <ul>
-                                    <li>Java</li>
-                                    <li>JavaScript</li>
-                                    <li>HTML/CSS</li>
-                                    <li>SQL</li>
-                                </ul>
-                            </div>
-                            <div class="skill-category">
-                                <h3 data-en="Technologies" data-nl="Technologieën">Technologies</h3>
-                                <ul>
-                                    <li>Git/GitHub</li>
-                                    <li>MySQL</li>
-                                    <li>Godot Engine</li>
-                                    <li>Gradle</li>
-                                </ul>
-                            </div>
-                            <div class="skill-category">
-                                <h3 data-en="Methodologies" data-nl="Methodologieën">Methodologies</h3>
-                                <ul>
-                                    <li>SCRUM/Agile</li>
-                                    <li data-en="Version Control" data-nl="Versiebeheer">Version Control</li>
-                                    <li data-en="Problem Solving" data-nl="Probleemoplossing">Problem Solving</li>
-                                    <li data-en="Team Collaboration" data-nl="Teamwerk">Team Collaboration</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-<div class="about-interests">
-    <h3 data-en="Interests & Hobbies" data-nl="Interesses & Hobbies">Interests & Hobbies</h3>
-    <div class="interest-cards">
-        <!-- Interest 1 -->
-        <div class="interest-card" data-interest="gaming">
-            <div class="interest-icon">
-                <i class="fas fa-gamepad"></i>
+                <!-- Interest 3 -->
+                <div class="interest-card" data-interest="swimming">
+                  <div class="interest-icon">
+                    <i class="fas fa-running"></i>
+                  </div>
+                  <h3 data-en="Gymming" data-nl="Sporten">Gymming</h3>
+                  <p class="interest-type" data-en="Sport" data-nl="Sport">
+                    Sport
+                  </p>
+                  <div class="interest-details">
+                    <p
+                      data-en="Gymming keeps me active and clears my mind after long days of studying or coding. It helps me maintain a healthy balance between physical and mental activity."
+                      data-nl="Sporten houdt me actief en maakt mijn hoofd leeg na lange dagen studeren of coderen. Het helpt me een gezonde balans te houden tussen fysieke en mentale activiteit."
+                    >
+                      Gymming keeps me active and clears my mind after long days
+                      of studying or coding. It helps me maintain a healthy
+                      balance between physical and mental activity.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <h3 data-en="Gaming" data-nl="Gamen">Gaming</h3>
-            <p class="interest-type" data-en="Hobby" data-nl="Hobby">Hobby</p>
-            <div class="interest-details">
-                <p data-en="I enjoy playing a variety of games, from story-driven RPGs to sandbox games. Gaming helps me relax and also inspires my interest in game development. Some of my favorite games are: Elden Ring (which I have the playstation platinum trophy for), Minecraft, and Hollow Knight." 
-                   data-nl="Ik speel graag verschillende games, van verhaal rijke RPG's tot sandbox games. Gamen helpt me ontspannen en inspireert ook mijn interesse in game-ontwikkeling. Een paar van mijn favoriete games zijn: Elden Ring (waarvoor ik de playstation platinum trophy heb), Minecraft en Hollow Knight.">
-                    I enjoy playing a variety of games, from story-driven RPGs to sandbox games. Gaming helps me relax and also inspires my interest in game development. Some of my favorite games are: Elden Ring (which I have the playstation platinum trophy for), Minecraft, and Hollow Knight.
-                </p>
-            </div>
+          </div>
         </div>
+      </section>
 
-        <!-- Interest 2 -->
-        <div class="interest-card" data-interest="music">
-            <div class="interest-icon">
-                <i class="fas fa-music"></i>
-            </div>
-            <h3 data-en="Music" data-nl="Muziek">Music</h3>
-            <p class="interest-type" data-en="Passion" data-nl="Passie">Passion</p>
-            <div class="interest-details">
-                <p data-en="I listen to music while coding and studying. It helps me focus and get into a productive flow, especially with instrumental and electronic tracks. Some of my favorite artists are RadioHead, The Weeknd and Coldplay."
-                   data-nl="Ik luister naar muziek tijdens het coderen en studeren. Het helpt me focussen en in een productieve flow te komen, vooral met instrumentale en elektronische nummers. Een paar van mijn favoriete artiesten zijn RadioHead, The Weeknd en Coldplay.">
-                    I listen to music while coding and studying. It helps me focus and get into a productive flow, especially with instrumental and electronic tracks. Some of my favorite artists are RadioHead, The Weeknd and Coldplay.
+      <!-- Projects Section -->
+      <section id="projects" class="projects-section">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="Featured Projects"
+            data-nl="Uitgelichte Projecten"
+          >
+            Featured Projects
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="Click on images to view larger versions"
+            data-nl="Klik op afbeeldingen voor grotere versies"
+          >
+            Click on images to view larger versions
+          </p>
+
+          <div class="projects-grid">
+            <!-- Project 1: Planfond -->
+            <div class="project-card">
+              <div class="project-image">
+                <a
+                  href="pictures/planfond/Schermafbeelding 2026-01-14 093517.png"
+                  data-fancybox="pokemon"
+                  data-caption="Planfond Map"
+                >
+                  <img
+                    src="pictures/planfond/Schermafbeelding 2026-01-14 093517.png"
+                    alt="Planfond Map"
+                  />
+                </a>
+                <a
+                  href="pictures/planfond/Schermafbeelding 2026-01-14 093840.png"
+                  data-fancybox="pokemon"
+                  data-caption="Planfond Map pop-up for creating a room on the map"
+                >
+                  <img
+                    src="pictures/planfond/Schermafbeelding 2026-01-14 093840.png"
+                    alt="Planfond Map creating figures for rooms on the map"
+                  />
+                </a>
+              </div>
+              <div class="project-content">
+                <h3>Planfond</h3>
+                <p class="project-tech">
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">Hibernate</span>
+                  <span class="tech-tag">Struts2</span>
                 </p>
-            </div>
-        </div>
-
-        <!-- Interest 3 -->
-        <div class="interest-card" data-interest="swimming">
-            <div class="interest-icon">
-                <i class="fas fa-running"></i>
-            </div>
-            <h3 data-en="Gymming" data-nl="Sporten">Gymming</h3>
-            <p class="interest-type" data-en="Sport" data-nl="Sport">Sport</p>
-            <div class="interest-details">
-                <p data-en="Gymming keeps me active and clears my mind after long days of studying or coding. It helps me maintain a healthy balance between physical and mental activity."
-                   data-nl="Sporten houdt me actief en maakt mijn hoofd leeg na lange dagen studeren of coderen. Het helpt me een gezonde balans te houden tussen fysieke en mentale activiteit.">
-                    Gymming keeps me active and clears my mind after long days of studying or coding. It helps me maintain a healthy balance between physical and mental activity.
+                <p
+                  data-en="4 classmates and I developed a comprehensive planning application for our school using Java, Hibernate, and Struts2. The app features user authentication, creating rooms which you can add to the map and create a reservation for that room, add lockers which students can reserve, an inventory system for managing school resources and an admin panel for managing users and reservations."
+                  data-nl="4 klasgenoten en ik hebben een uitgebreide planningsapplicatie voor onze school ontwikkeld met Java, Hibernate en Struts2. De app heeft gebruikersauthenticatie, het aanmaken van kamers die je aan de kaart kunt toevoegen en een reservering voor die kamer kunt maken, het toevoegen van kluisjes die studenten kunnen reserveren, een inventarissysteem voor het beheren van schoolmiddelen en een beheerpaneel voor het beheren van gebruikers en reserveringen."
+                >
+                  4 classmates and I developed a comprehensive planning
+                  application for our school using Java, Hibernate, and Struts2.
+                  The app features user authentication, creating rooms which you
+                  can add to the map and create a reservation for that room, add
+                  lockers which students can reserve, an inventory system for
+                  managing school resources and an admin panel for managing
+                  users and reservations.
                 </p>
+              </div>
             </div>
+
+            <!-- Project 2: Godot Game -->
+            <div class="project-card">
+              <div class="project-image">
+                <a
+                  href="pictures/Schermafbeelding 2026-01-14 153513.png"
+                  data-fancybox="godot"
+                  data-caption="Boss 'Claude'"
+                >
+                  <img
+                    src="pictures/Schermafbeelding 2026-01-14 153513.png"
+                    alt="Godot Game Boss"
+                  />
+                </a>
+                <a
+                  href="pictures/Schermafbeelding 2025-02-18 094453.png"
+                  data-fancybox="godot"
+                  data-caption="Structured code and player scene"
+                >
+                  <img
+                    src="pictures/Schermafbeelding 2025-02-18 094453.png"
+                    alt="Godot Game Code"
+                    style="display: none"
+                  />
+                </a>
+              </div>
+              <div class="project-content">
+                <h3>Cro</h3>
+                <p class="project-tech">
+                  <span class="tech-tag">Godot Engine</span>
+                  <span class="tech-tag">GDScript</span>
+                  <span class="tech-tag">Game Dev</span>
+                </p>
+                <p>
+                  <span
+                    data-en="Collaborative project developing a roguelike boss-rush dungeon crawler with elemental mechanics. Features dynamic stat-boost system and efficient time management practices."
+                    data-nl="Samenwerkingsproject waarbij een roguelike boss-rush dungeon crawler met elementaire mechanica wordt ontwikkeld. Bevat dynamisch stat-boost systeem en efficiënte tijdmanagementpraktijken."
+                    >Collaborative project developing a roguelike boss-rush
+                    dungeon crawler with elemental mechanics. Features dynamic
+                    stat-boost system and efficient time management
+                    practices.</span
+                  >
+                  <a
+                    href="https://cloenk.itch.io/cro-beta"
+                    target="_blank"
+                    class="itch-link"
+                    data-en="Official itch page for Cro"
+                    data-nl="Officiële itch pagina voor Cro"
+                    >Official itch page for Cro</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <!-- Project 3: Home page -->
+            <div class="project-card">
+              <div class="project-image">
+                <a
+                  href="pictures/homepage/Schermafbeelding 2026-01-14 155220.png"
+                  data-fancybox="minecraft"
+                  data-caption="Homepage for me"
+                >
+                  <img
+                    src="pictures/homepage/Schermafbeelding 2026-01-14 155220.png"
+                    alt="Homepage"
+                  />
+                </a>
+                <a
+                  href="pictures/homepage/Schermafbeelding 2026-01-14 155249.png"
+                  data-fancybox="minecraft"
+                  data-caption="QR code generation"
+                >
+                  <img
+                    src="pictures/homepage/Schermafbeelding 2026-01-14 155249.png"
+                    alt="QR Code generation"
+                    style="display: none"
+                  />
+                </a>
+              </div>
+              <div class="project-content">
+                <h3>Homepage</h3>
+                <p class="project-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                </p>
+                <p>
+                  <span
+                    data-en="Created a homepage to test my front-end skills using HTML, CSS, and JavaScript. Features include a QR code generator, interactive elements, and responsive design. I still use this homepage daily to have quick access to my most used websites."
+                    data-nl="Maakte een homepage om mijn front-end vaardigheden te testen met HTML, CSS en JavaScript. Functies omvatten een QR-codegenerator, interactieve elementen en responsive design. Ik gebruik deze homepage nog steeds dagelijks om snel toegang te hebben tot mijn meest gebruikte websites."
+                    >Created a homepage to test my front-end skills using HTML,
+                    CSS, and JavaScript. Features include a QR code generator,
+                    interactive elements, and responsive design. I still use
+                    this homepage daily to have quick access to my most used
+                    websites.</span
+                  >
+                  <a
+                    href="https://tim-olr.github.io/homepage/"
+                    target="_blank"
+                    class="itch-link"
+                    data-en="Visit my homepage"
+                    data-nl="Bezoek mijn homepage"
+                    >Visit my homepage</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
+      </section>
 
+      <!-- Education Section -->
+      <section id="education" class="education-section">
+        <div class="container">
+          <h2 class="section-title" data-en="Education" data-nl="Opleiding">
+            Education
+          </h2>
+
+          <div class="timeline">
+            <!--Malaga--->
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <img
+                    src="pictures/jongleren.png"
+                    alt="Jongleren Logo"
+                    class="institution-logo"
+                  />
+                  <div>
+                    <h3
+                      data-en="Malaga Buisiness Bootcamp"
+                      data-nl="Malaga Buisiness Bootcamp"
+                    >
+                      Malaga Buisiness Bootcamp
+                    </h3>
+                    <p class="institution">Malaga, Spain</p>
+                    <p
+                      class="period"
+                      data-en="2025 - 2025"
+                      data-nl="2025 - 2025"
+                    >
+                      2025 - 2025
+                    </p>
+                  </div>
                 </div>
+                <p
+                  class="description"
+                  data-en="In 2025 I attended a business bootcamp in Malaga, Spain, where me and several classmates helped a local startup improve their business operations. We flew from the Netherlands to Spain for two weeks to work intensively on business strategies, marketing plans, and operational improvements."
+                  data-nl="In 2025 heb ik een business bootcamp gevolgd in Malaga, Spanje, waar ik samen met enkele klasgenoten een lokale startup heb geholpen hun bedrijfsvoering te verbeteren. We vlogen vanuit Nederland naar Spanje voor twee weken om intensief te werken aan bedrijfsstrategieën, marketingplannen en operationele verbeteringen."
+                >
+                  In 2025 I attended a business bootcamp in Malaga, Spain, where
+                  me and several classmates helped a local startup improve their
+                  business operations. We flew from the Netherlands to Spain for
+                  two weeks to work intensively on business strategies,
+                  marketing plans, and operational improvements.
+                </p>
+              </div>
             </div>
-        </section>
 
-
-
-        <!-- Projects Section -->
-        <section id="projects" class="projects-section">
-            <div class="container">
-                <h2 class="section-title" data-en="Featured Projects" data-nl="Uitgelichte Projecten">Featured Projects</h2>
-                <p class="section-subtitle" data-en="Click on images to view larger versions" data-nl="Klik op afbeeldingen voor grotere versies">Click on images to view larger versions</p>
-                
-                <div class="projects-grid">
-                    <!-- Project 1: Planfond -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <a href="pictures/planfond/Schermafbeelding 2026-01-14 093517.png" data-fancybox="pokemon" data-caption="Planfond Map">
-                                <img src="pictures/planfond/Schermafbeelding 2026-01-14 093517.png" alt="Planfond Map">
-                            </a>
-                            <a href="pictures/planfond/Schermafbeelding 2026-01-14 093840.png" data-fancybox="pokemon" data-caption="Planfond Map pop-up for creating a room on the map">
-                                <img src="pictures/planfond/Schermafbeelding 2026-01-14 093840.png" alt="Planfond Map creating figures for rooms on the map">
-                            </a>
-                        </div>
-                        <div class="project-content">
-                            <h3>Planfond</h3>
-                            <p class="project-tech">
-                                <span class="tech-tag">Java</span>
-                                <span class="tech-tag">Hibernate</span>
-                                <span class="tech-tag">Struts2</span>
-                            </p>
-                            <p data-en="4 classmates and I developed a comprehensive planning application for our school using Java, Hibernate, and Struts2. The app features user authentication, creating rooms which you can add to the map and create a reservation for that room, add lockers which students can reserve, an inventory system for managing school resources and an admin panel for managing users and reservations." data-nl="4 klasgenoten en ik hebben een uitgebreide planningsapplicatie voor onze school ontwikkeld met Java, Hibernate en Struts2. De app heeft gebruikersauthenticatie, het aanmaken van kamers die je aan de kaart kunt toevoegen en een reservering voor die kamer kunt maken, het toevoegen van kluisjes die studenten kunnen reserveren, een inventarissysteem voor het beheren van schoolmiddelen en een beheerpaneel voor het beheren van gebruikers en reserveringen.">
-                                4 classmates and I developed a comprehensive planning application for our school
-                                using Java, Hibernate, and Struts2. The app features user authentication, creating rooms
-                                which you can add to the map and create a reservation for that room, add lockers which students can reserve,
-                                an inventory system for managing school resources
-                                and an admin panel for managing users and reservations.
-                            </p>
-                        </div>
-                    </div>
-
-
-
-                    <!-- Project 2: Godot Game -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <a href="pictures/Schermafbeelding 2026-01-14 153513.png" data-fancybox="godot" data-caption="Boss 'Claude'">
-                                <img src="pictures/Schermafbeelding 2026-01-14 153513.png" alt="Godot Game Boss">
-                            </a>
-                            <a href="pictures/Schermafbeelding 2025-02-18 094453.png" data-fancybox="godot" data-caption="Structured code and player scene">
-                                <img src="pictures/Schermafbeelding 2025-02-18 094453.png" alt="Godot Game Code" style="display: none;">
-                            </a>
-                        </div>
-                        <div class="project-content">
-                            <h3>Cro</h3>
-                            <p class="project-tech">
-                                <span class="tech-tag">Godot Engine</span>
-                                <span class="tech-tag">GDScript</span>
-                                <span class="tech-tag">Game Dev</span>
-                            </p>
-                            <p>
-                                <span data-en="Collaborative project developing a roguelike boss-rush dungeon crawler with elemental mechanics. Features dynamic stat-boost system and efficient time management practices." data-nl="Samenwerkingsproject waarbij een roguelike boss-rush dungeon crawler met elementaire mechanica wordt ontwikkeld. Bevat dynamisch stat-boost systeem en efficiënte tijdmanagementpraktijken.">Collaborative project developing a roguelike boss-rush dungeon crawler with elemental 
-                                mechanics. Features dynamic stat-boost system and efficient time management practices.</span>
-                                <a href="https://cloenk.itch.io/cro-beta" target="_blank" class="itch-link" data-en="Official itch page for Cro" data-nl="Officiële itch pagina voor Cro">Official itch page for Cro</a>
-                            </p>
-                        </div>
-                    </div>
-
-
-
-                    <!-- Project 3: Home page -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <a href="pictures/homepage/Schermafbeelding 2026-01-14 155220.png" data-fancybox="minecraft" data-caption="Homepage for me">
-                                <img src="pictures/homepage/Schermafbeelding 2026-01-14 155220.png" alt="Homepage">
-                            </a>
-                            <a href="pictures/homepage/Schermafbeelding 2026-01-14 155249.png" data-fancybox="minecraft" data-caption="QR code generation">
-                                <img src="pictures/homepage/Schermafbeelding 2026-01-14 155249.png" alt="QR Code generation" style="display: none;">
-                            </a>
-                        </div>
-                        <div class="project-content">
-                            <h3>Homepage</h3>
-                            <p class="project-tech">
-                                <span class="tech-tag">HTML</span>
-                                <span class="tech-tag">CSS</span>
-                                <span class="tech-tag">JavaScript</span>
-                            </p>
-                            <p>
-                                <span data-en="Created a homepage to test my front-end skills using HTML, CSS, and JavaScript. Features include a QR code generator, interactive elements, and responsive design. I still use this homepage daily to have quick access to my most used websites." data-nl="Maakte een homepage om mijn front-end vaardigheden te testen met HTML, CSS en JavaScript. Functies omvatten een QR-codegenerator, interactieve elementen en responsive design. Ik gebruik deze homepage nog steeds dagelijks om snel toegang te hebben tot mijn meest gebruikte websites.">Created a homepage to test my front-end skills using HTML, CSS, and JavaScript.
-                                Features include a QR code generator, interactive elements, and responsive design.
-                                I still use this homepage daily to have quick access to my most used websites.</span>
-                                <a href="https://tim-olr.github.io/homepage/" target="_blank" class="itch-link" data-en="Visit my homepage" data-nl="Bezoek mijn homepage">Visit my homepage</a>
-                            </p>
-                        </div>
-                    </div>
+            <!-- Current Education -->
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <img
+                    src="pictures/Scalda_Logo.png"
+                    alt="Scalda Logo"
+                    class="institution-logo"
+                  />
+                  <div>
+                    <h3
+                      data-en="Software Development"
+                      data-nl="Software Development"
+                    >
+                      Software Development
+                    </h3>
+                    <p class="institution">Scalda Vlissingen</p>
+                    <p
+                      class="period"
+                      data-en="2024 - Present"
+                      data-nl="2024 - Heden"
+                    >
+                      2024 - Present
+                    </p>
+                  </div>
                 </div>
+                <p
+                  class="description"
+                  data-en="Currently studying Software Development with focus on Java, MySQL, HTML, CSS, JavaScript, and SCRUM methodologies. Building strong foundations in both front-end and back-end development."
+                  data-nl="Momenteel studeer ik Software Development met focus op Java, MySQL, HTML, CSS, JavaScript en SCRUM-methodologieën. Het opbouwen van sterke fundamenten in zowel front-end als back-end development."
+                >
+                  Currently studying Software Development with focus on Java,
+                  MySQL, HTML, CSS, JavaScript, and SCRUM methodologies.
+                  Building strong foundations in both front-end and back-end
+                  development.
+                </p>
+              </div>
             </div>
-        </section>
 
-
-
-        <!-- Education Section -->
-        <section id="education" class="education-section">
-            <div class="container">
-                <h2 class="section-title" data-en="Education" data-nl="Opleiding">Education</h2>
-                
-                <div class="timeline">
-                    <!--Malaga--->
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <img src="pictures/jongleren.png" alt="Jongleren Logo" class="institution-logo">
-                                <div>
-                                    <h3 data-en="Malaga Buisiness Bootcamp" data-nl="Malaga Buisiness Bootcamp">Malaga Buisiness Bootcamp</h3>
-                                    <p class="institution">Malaga, Spain</p>
-                                    <p class="period" data-en="2025 - 2025" data-nl="2025 - 2025">2025 - 2025</p>
-                                </div>
-                            </div>
-                            <p class="description" data-en="In 2025 I attended a business bootcamp in Malaga, Spain, where me and several classmates helped a local startup improve their business operations. We flew from the Netherlands to Spain for two weeks to work intensively on business strategies, marketing plans, and operational improvements." data-nl="In 2025 heb ik een business bootcamp gevolgd in Malaga, Spanje, waar ik samen met enkele klasgenoten een lokale startup heb geholpen hun bedrijfsvoering te verbeteren. We vlogen vanuit Nederland naar Spanje voor twee weken om intensief te werken aan bedrijfsstrategieën, marketingplannen en operationele verbeteringen.">
-                                In 2025 I attended a business bootcamp in Malaga, Spain, where me and several classmates helped a local startup improve their business operations. We flew from the Netherlands to Spain for two weeks to work intensively on business strategies, marketing plans, and operational improvements.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Current Education -->
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <img src="pictures/Scalda_Logo.png" alt="Scalda Logo" class="institution-logo">
-                                <div>
-                                    <h3 data-en="Software Development" data-nl="Software Development">Software Development</h3>
-                                    <p class="institution">Scalda Vlissingen</p>
-                                    <p class="period" data-en="2024 - Present" data-nl="2024 - Heden">2024 - Present</p>
-                                </div>
-                            </div>
-                            <p class="description" data-en="Currently studying Software Development with focus on Java, MySQL, HTML, CSS, JavaScript, and SCRUM methodologies. Building strong foundations in both front-end and back-end development." data-nl="Momenteel studeer ik Software Development met focus op Java, MySQL, HTML, CSS, JavaScript en SCRUM-methodologieën. Het opbouwen van sterke fundamenten in zowel front-end als back-end development.">
-                                Currently studying Software Development with focus on Java, MySQL, HTML, CSS, 
-                                JavaScript, and SCRUM methodologies. Building strong foundations in both 
-                                front-end and back-end development.
-                            </p>
-                        </div>
-                    </div>
-
-
-
-                    <!-- Previous Education -->
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <img src="pictures/logoParent_Pieterzeeman.png" alt="Pieter Zeeman Logo" class="institution-logo">
-                                <div>
-                                    <h3 data-en="MAVO Diploma - Mixed Learning Track (PIE)" data-nl="MAVO Diploma - Gemengde Leerlijn (PIE)">MAVO Diploma - Mixed Learning Track (PIE)</h3>
-                                    <p class="institution">Pieter Zeeman Lyceum, Zierikzee</p>
-                                    <p class="period" data-en="Graduated" data-nl="Afgestudeerd">Graduated</p>
-                                </div>
-                            </div>
-                            <p class="description" data-en="Completed MAVO with specialization in PIE (Production, Installation, and Energy), focusing on metalworking, electrical installations, logic gates, and CAD drawing." data-nl="MAVO afgerond met specialisatie in PIE (Productie, Installatie en Energie), gericht op metaalbewerking, elektrische installaties, logische poorten en CAD-tekenen.">
-                                Completed MAVO with specialization in PIE (Production, Installation, and Energy), 
-                                focusing on metalworking, electrical installations, logic gates, and CAD drawing.
-                            </p>
-                        </div>
-                    </div>
+            <!-- Previous Education -->
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <img
+                    src="pictures/logoParent_Pieterzeeman.png"
+                    alt="Pieter Zeeman Logo"
+                    class="institution-logo"
+                  />
+                  <div>
+                    <h3
+                      data-en="MAVO Diploma - Mixed Learning Track (PIE)"
+                      data-nl="MAVO Diploma - Gemengde Leerlijn (PIE)"
+                    >
+                      MAVO Diploma - Mixed Learning Track (PIE)
+                    </h3>
+                    <p class="institution">Pieter Zeeman Lyceum, Zierikzee</p>
+                    <p
+                      class="period"
+                      data-en="Graduated"
+                      data-nl="Afgestudeerd"
+                    >
+                      Graduated
+                    </p>
+                  </div>
                 </div>
+                <p
+                  class="description"
+                  data-en="Completed MAVO with specialization in PIE (Production, Installation, and Energy), focusing on metalworking, electrical installations, logic gates, and CAD drawing."
+                  data-nl="MAVO afgerond met specialisatie in PIE (Productie, Installatie en Energie), gericht op metaalbewerking, elektrische installaties, logische poorten en CAD-tekenen."
+                >
+                  Completed MAVO with specialization in PIE (Production,
+                  Installation, and Energy), focusing on metalworking,
+                  electrical installations, logic gates, and CAD drawing.
+                </p>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
+      <!-- Experience Section -->
+      <section id="experience" class="experience-section">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="Work Experience"
+            data-nl="Werkervaring"
+          >
+            Work Experience
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="Click on cards to read more"
+            data-nl="Klik op kaarten voor meer informatie"
+          >
+            Click on cards to read more
+          </p>
 
+          <div class="experience-grid">
+            <!-- Experience 1: DHZ -->
+            <div class="experience-card" data-experience="dhz">
+              <div class="experience-icon">
+                <img src="pictures/DHZL.png" alt="Dental House Zierikzee" />
+              </div>
+              <h3 data-en="Receptionist" data-nl="Receptionist">
+                Receptionist
+              </h3>
+              <p class="company">Dental House Zierikzee</p>
+              <p
+                class="period"
+                data-en="Current Position"
+                data-nl="Huidige Positie"
+              >
+                Current Position
+              </p>
+              <div class="experience-details">
+                <p
+                  data-en="Working at reception desk, managing patient intake and scheduling. Responsible for appointment coordination, patient registration, and providing excellent customer service in a professional healthcare environment."
+                  data-nl="Werken aan de receptie, het beheren van patiëntenintake en planning. Verantwoordelijk voor afspraakcoördinatie, patiëntregistratie en het bieden van uitstekende klantenservice in een professionele zorgomgeving."
+                >
+                  Working at reception desk, managing patient intake and
+                  scheduling. Responsible for appointment coordination, patient
+                  registration, and providing excellent customer service in a
+                  professional healthcare environment.
+                </p>
+              </div>
+            </div>
 
-        <!-- Experience Section -->
-        <section id="experience" class="experience-section">
-            <div class="container">
-                <h2 class="section-title" data-en="Work Experience" data-nl="Werkervaring">Work Experience</h2>
-                <p class="section-subtitle" data-en="Click on cards to read more" data-nl="Klik op kaarten voor meer informatie">Click on cards to read more</p>
-                
-                <div class="experience-grid">
-                    <!-- Experience 1: DHZ -->
-                    <div class="experience-card" data-experience="dhz">
-                        <div class="experience-icon">
-                            <img src="pictures/DHZL.png" alt="Dental House Zierikzee">
-                        </div>
-                        <h3 data-en="Receptionist" data-nl="Receptionist">Receptionist</h3>
-                        <p class="company">Dental House Zierikzee</p>
-                        <p class="period" data-en="Current Position" data-nl="Huidige Positie">Current Position</p>
-                        <div class="experience-details">
-                            <p data-en="Working at reception desk, managing patient intake and scheduling. Responsible for appointment coordination, patient registration, and providing excellent customer service in a professional healthcare environment." data-nl="Werken aan de receptie, het beheren van patiëntenintake en planning. Verantwoordelijk voor afspraakcoördinatie, patiëntregistratie en het bieden van uitstekende klantenservice in een professionele zorgomgeving.">
-                                Working at reception desk, managing patient intake and scheduling. 
-                                Responsible for appointment coordination, patient registration, and 
-                                providing excellent customer service in a professional healthcare environment.
-                            </p>
-                        </div>
-                    </div>
+            <!-- Experience 2: Albert Heijn -->
+            <div class="experience-card" data-experience="ah">
+              <div class="experience-icon">
+                <img src="pictures/Albert_Heijn_Logo.png" alt="Albert Heijn" />
+              </div>
+              <h3 data-en="Stock Clerk" data-nl="Vakkenvuller">Stock Clerk</h3>
+              <p class="company">Albert Heijn Zierikzee</p>
+              <p
+                class="period"
+                data-en="Previous Position"
+                data-nl="Vorige Positie"
+              >
+                Previous Position
+              </p>
+              <div class="experience-details">
+                <p
+                  data-en="Worked as a stock clerk at Albert Heijn Haringvlietstraat. Learned about financial management through regular team discussions about store progress and revenue. Developed structured work habits and organizational skills."
+                  data-nl="Werkte als vakkenvuller bij Albert Heijn Haringvlietstraat. Leerde over financieel management door regelmatige teamdiscussies over winkelvoortgang en omzet. Ontwikkelde gestructureerde werkgewoonten en organisatorische vaardigheden."
+                >
+                  Worked as a stock clerk at Albert Heijn Haringvlietstraat.
+                  Learned about financial management through regular team
+                  discussions about store progress and revenue. Developed
+                  structured work habits and organizational skills.
+                </p>
+              </div>
+            </div>
 
+            <!-- Experience 3: Jumbo -->
+            <div class="experience-card" data-experience="jumbo">
+              <div class="experience-icon">
+                <img src="pictures/Jumbo_Logo.png" alt="Jumbo" />
+              </div>
+              <h3 data-en="Stock Clerk" data-nl="Vakkenvuller">Stock Clerk</h3>
+              <p class="company">Jumbo Schot, Nieuwerkerk</p>
+              <p
+                class="period"
+                data-en="Previous Position"
+                data-nl="Vorige Positie"
+              >
+                Previous Position
+              </p>
+              <div class="experience-details">
+                <p
+                  data-en="Worked as stock clerk at ages 13-14. Learned the importance of attention to detail, including expiration date management, FIFO (First In First Out) stocking methods, and efficient work practices."
+                  data-nl="Werkte als vakkenvuller op 13-14-jarige leeftijd. Leerde het belang van aandacht voor detail, inclusief beheer van vervaldatums, FIFO (First In First Out) voorraadmethoden en efficiënte werkpraktijken."
+                >
+                  Worked as stock clerk at ages 13-14. Learned the importance of
+                  attention to detail, including expiration date management,
+                  FIFO (First In First Out) stocking methods, and efficient work
+                  practices.
+                </p>
+              </div>
+            </div>
 
+            <!-- Experience 4: Lifeguard Instructor -->
+            <div class="experience-card" data-experience="rbzd">
+              <div class="experience-icon">
+                <img src="pictures/rbzd.png" alt="Lifeguard Training" />
+              </div>
+              <h3
+                data-en="Lifeguard Instructor"
+                data-nl="Reddingszwem Instructeur"
+              >
+                Lifeguard Instructor
+              </h3>
+              <p class="company">Reddingszwemmen</p>
+              <p
+                class="period"
+                data-en="Previous Position"
+                data-nl="Vorige Positie"
+              >
+                Previous Position
+              </p>
+              <div class="experience-details">
+                <p
+                  data-en="Taught lifeguard skills to children every Friday evening. Been practicing lifeguarding since age 7. Certified in First Aid (EHBO) for 2 years. Love working with children and sharing water safety knowledge"
+                  data-nl="Leerde reddingsvaardigheden aan kinderen elke vrijdagavond. Bezig met reddingszwemmen sinds 7-jarige leeftijd. Gecertificeerd in EHBO voor 2 jaar. Hou van werken met kinderen en het delen van kennis over waterveiligheid"
+                >
+                  Taught lifeguard skills to children every Friday evening. Been
+                  practicing lifeguarding since age 7. Certified in First Aid
+                  (EHBO) for 2 years. Love working with children and sharing
+                  water safety knowledge
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                    <!-- Experience 2: Albert Heijn -->
-                    <div class="experience-card" data-experience="ah">
-                        <div class="experience-icon">
-                            <img src="pictures/Albert_Heijn_Logo.png" alt="Albert Heijn">
-                        </div>
-                        <h3 data-en="Stock Clerk" data-nl="Vakkenvuller">Stock Clerk</h3>
-                        <p class="company">Albert Heijn Zierikzee</p>
-                        <p class="period" data-en="Previous Position" data-nl="Vorige Positie">Previous Position</p>
-                        <div class="experience-details">
-                            <p data-en="Worked as a stock clerk at Albert Heijn Haringvlietstraat. Learned about financial management through regular team discussions about store progress and revenue. Developed structured work habits and organizational skills." data-nl="Werkte als vakkenvuller bij Albert Heijn Haringvlietstraat. Leerde over financieel management door regelmatige teamdiscussies over winkelvoortgang en omzet. Ontwikkelde gestructureerde werkgewoonten en organisatorische vaardigheden.">
-                                Worked as a stock clerk at Albert Heijn Haringvlietstraat. Learned about 
-                                financial management through regular team discussions about store progress 
-                                and revenue. Developed structured work habits and organizational skills.
-                            </p>
-                        </div>
-                    </div>
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="Get In Touch"
+            data-nl="Neem Contact Op"
+          >
+            Get In Touch
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="Let's discuss your next project or opportunity"
+            data-nl="Laten we uw volgende project of kans bespreken"
+          >
+            Let's discuss your next project or opportunity
+          </p>
 
-
-
-                    <!-- Experience 3: Jumbo -->
-                    <div class="experience-card" data-experience="jumbo">
-                        <div class="experience-icon">
-                            <img src="pictures/Jumbo_Logo.png" alt="Jumbo">
-                        </div>
-                        <h3 data-en="Stock Clerk" data-nl="Vakkenvuller">Stock Clerk</h3>
-                        <p class="company">Jumbo Schot, Nieuwerkerk</p>
-                        <p class="period" data-en="Previous Position" data-nl="Vorige Positie">Previous Position</p>
-                        <div class="experience-details">
-                            <p data-en="Worked as stock clerk at ages 13-14. Learned the importance of attention to detail, including expiration date management, FIFO (First In First Out) stocking methods, and efficient work practices." data-nl="Werkte als vakkenvuller op 13-14-jarige leeftijd. Leerde het belang van aandacht voor detail, inclusief beheer van vervaldatums, FIFO (First In First Out) voorraadmethoden en efficiënte werkpraktijken.">
-                                Worked as stock clerk at ages 13-14. Learned the importance of attention 
-                                to detail, including expiration date management, FIFO (First In First Out) 
-                                stocking methods, and efficient work practices.
-                            </p>
-                        </div>
-                    </div>
-
-
-
-                    <!-- Experience 4: Lifeguard Instructor -->
-                    <div class="experience-card" data-experience="rbzd">
-                        <div class="experience-icon">
-                            <img src="pictures/rbzd.png" alt="Lifeguard Training">
-                        </div>
-                        <h3 data-en="Lifeguard Instructor" data-nl="Reddingszwem Instructeur">Lifeguard Instructor</h3>
-                        <p class="company">Reddingszwemmen</p>
-                        <p class="period" data-en="Previous Position" data-nl="Vorige Positie">Previous Position</p>
-                        <div class="experience-details">
-                            <p data-en="Taught lifeguard skills to children every Friday evening. Been practicing lifeguarding since age 7. Certified in First Aid (EHBO) for 2 years. Love working with children and sharing water safety knowledge" data-nl="Leerde reddingsvaardigheden aan kinderen elke vrijdagavond. Bezig met reddingszwemmen sinds 7-jarige leeftijd. Gecertificeerd in EHBO voor 2 jaar. Hou van werken met kinderen en het delen van kennis over waterveiligheid">
-                                Taught lifeguard skills to children every Friday evening. Been practicing 
-                                lifeguarding since age 7. 
-                                Certified in First Aid (EHBO) for 2 years. Love working with children 
-                                and sharing water safety knowledge
-                            </p>
-                        </div>
-                    </div>
+          <div class="contact-content">
+            <div class="contact-info">
+              <h3 data-en="Contact Information" data-nl="Contactinformatie">
+                Contact Information
+              </h3>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <strong data-en="Location" data-nl="Locatie">Location</strong>
+                  <p>Zierikzee, Netherlands</p>
                 </div>
-            </div>
-        </section>
-
-
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section">
-            <div class="container">
-                <h2 class="section-title" data-en="Get In Touch" data-nl="Neem Contact Op">Get In Touch</h2>
-                <p class="section-subtitle" data-en="Let's discuss your next project or opportunity" data-nl="Laten we uw volgende project of kans bespreken">Let's discuss your next project or opportunity</p>
-                
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h3 data-en="Contact Information" data-nl="Contactinformatie">Contact Information</h3>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <strong data-en="Location" data-nl="Locatie">Location</strong>
-                                <p>Zierikzee, Netherlands</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <strong>Email</strong>
-                                <p data-en="Available upon request" data-nl="Beschikbaar op aanvraag">Available upon request</p>
-                            </div>
-                        </div>
-                        <div class="contact-socials">
-                            <a href="https://github.com/Tim-olr" target="_blank" class="social-btn">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                            <a href="https://www.linkedin.com/in/tim-olree-93151a352/" target="_blank" class="social-btn">
-                                <i class="fab fa-linkedin"></i> LinkedIn
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-                        <input type="hidden" name="access_key" value="a27aef06-f905-4a6d-8c29-1f1b37889961">
-                        <div class="form-group">
-                            <label for="name" data-en="Name *" data-nl="Naam *">Name *</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message" data-en="Message *" data-nl="Bericht *">Message *</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i> <span data-en="Send Message" data-nl="Verstuur Bericht">Send Message</span>
-                        </button>
-                    </form>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <strong>Email</strong>
+                  <p
+                    data-en="Available upon request"
+                    data-nl="Beschikbaar op aanvraag"
+                  >
+                    Available upon request
+                  </p>
                 </div>
+              </div>
+              <div class="contact-socials">
+                <a
+                  href="https://github.com/Tim-olr"
+                  target="_blank"
+                  class="social-btn"
+                >
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/tim-olree-93151a352/"
+                  target="_blank"
+                  class="social-btn"
+                >
+                  <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+              </div>
             </div>
-        </section>
+
+            <form
+              class="contact-form"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="a27aef06-f905-4a6d-8c29-1f1b37889961"
+              />
+              <div class="form-group">
+                <label for="name" data-en="Name *" data-nl="Naam *"
+                  >Name *</label
+                >
+                <input type="text" id="name" name="name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="message" data-en="Message *" data-nl="Bericht *"
+                  >Message *</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i>
+                <span data-en="Send Message" data-nl="Verstuur Bericht"
+                  >Send Message</span
+                >
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
-
-
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Tim Olree.</p>
-            <p data-en="Built with passion and dedication" data-nl="Gebouwd met passie en toewijding">Built with passion and dedication</p>
-        </div>
+      <div class="container">
+        <p>&copy; 2026 Tim Olree.</p>
+        <p
+          data-en="Built with passion and dedication"
+          data-nl="Gebouwd met passie en toewijding"
+        >
+          Built with passion and dedication
+        </p>
+      </div>
     </footer>
-
-
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="js/javaScriptScrum.js"></script>
-</body>
+  </body>
 </html>

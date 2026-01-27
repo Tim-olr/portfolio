@@ -168,7 +168,7 @@ languageToggle.addEventListener('click', () => {
     
     // Update button text
     const langText = languageToggle.querySelector('.lang-text');
-    langText.textContent = currentLanguage === 'en' ? 'NL' : 'EN';
+    langText.textContent = currentLanguage === 'en' ? 'EN' : 'NL';
     
     // Store language preference
     localStorage.setItem('preferredLanguage', currentLanguage);
@@ -199,7 +199,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if (savedLanguage) {
         currentLanguage = savedLanguage;
         const langText = languageToggle.querySelector('.lang-text');
-        langText.textContent = currentLanguage === 'en' ? 'NL' : 'EN';
+        langText.textContent = currentLanguage === 'en' ? 'EN' : 'NL';
         document.documentElement.setAttribute('data-lang', currentLanguage);
         updateLanguage(currentLanguage);
     }

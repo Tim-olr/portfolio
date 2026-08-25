@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tim Olree - Software Developer</title>
+	  <meta name="description"
+      content="Tim Olree, also known as Timolr, is a Dutch software and game developer. Explore his projects, games, code and portfolio.">
+    <title>Tim Olree Software Developer</title>
     <link rel="stylesheet" href="css/CSS_Scrum.css" />
     <link
       rel="stylesheet"
@@ -13,9 +15,24 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+	  <script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Person",
+		  "@id": "https://timolr.nl/#tim-olree",
+		  "name": "Tim Olree",
+		  "alternateName": "Timolr",
+		  "url": "https://timolr.nl/",
+		  "description": "Tim Olree, also known as Timolr, is a Dutch software and game developer."
+		  "jobTitle": "Software Developer",
+		  "sameAs": [
+		    "https://github.com/Tim-olr/Timolr.github.io",
+		    "https://tim-olr.itch.io/"
+		  ]
+		}
+</script>
   </head>
   <body>
-    <!-- Mobile Menu Toggle -->
     <button
       class="mobile-menu-toggle"
       id="mobileMenuToggle"
@@ -26,7 +43,6 @@
       <span></span>
     </button>
 
-    <!-- Navigation -->
     <nav class="navbar" id="navbar">
       <ul class="nav-links">
         <li><a href="#home" class="nav-link">Home</a></li>
@@ -48,9 +64,7 @@
       </ul>
     </nav>
 
-    <!-- Main Content -->
     <main class="main-content">
-      <!-- Hero Section -->
       <section id="home" class="hero-section">
         <div class="hero-content">
           <div class="hero-text">
@@ -67,10 +81,10 @@
             </p>
             <p
               class="hero-description"
-              data-en="17-year-old software development student passionate about creating innovative solutions and building engaging digital experiences."
-              data-nl="17-jarige softwareontwikkelingsstudent gepassioneerd over het creëren van innovatieve oplossingen en het bouwen van boeiende digitale ervaringen."
+              data-en="18 year old software development student passionate about creating innovative solutions and building engaging digital experiences."
+              data-nl="18 jarige softwareontwikkelingsstudent gepassioneerd over het creëren van innovatieve oplossingen en het bouwen van boeiende digitale ervaringen."
             >
-              17-year-old software development student passionate about creating
+              18 year old software development student passionate about creating
               innovative solutions and building engaging digital experiences.
             </p>
             <div class="hero-cta">
@@ -111,7 +125,7 @@
           </div>
           <div class="hero-image">
             <div class="image-wrapper">
-              <img src="pictures/close.jpg" alt="Tim Olree" />
+              <img src="pictures/close.png" alt="Tim Olree" />
             </div>
           </div>
         </div>
@@ -121,7 +135,6 @@
         </div>
       </section>
 
-      <!-- About Section -->
       <section id="about" class="about-section">
         <div class="container">
           <h2 class="section-title" data-en="About Me" data-nl="Over Mij">
@@ -130,21 +143,21 @@
           <div class="about-content">
             <div class="about-text">
               <p
-                data-en="I'm Tim Olree, a 17-year-old software developer from Zierikzee, Netherlands. Currently studying Software Development at Scalda Vlissingen, where I'm mastering Java, MySQL, HTML, CSS, JavaScript, and Agile methodologies."
-                data-nl="Ik ben Tim Olree, een 17-jarige softwareontwikkelaar uit Zierikzee, Nederland. Momenteel studeer ik Software Development aan Scalda Vlissingen, waar ik Java, MySQL, HTML, CSS, JavaScript en Agile methodologieën leer beheersen."
+                data-en="I'm Tim Olree, an 18 year old software developer from Zierikzee, Netherlands. Currently studying Software Development at Scalda Vlissingen, where I'm mastering Java, MySQL, HTML, CSS, JavaScript, and Agile methodologies."
+                data-nl="Ik ben Tim Olree, een 18 jarige softwareontwikkelaar uit Zierikzee, Nederland. Momenteel studeer ik Software Development aan Scalda Vlissingen, waar ik Java, MySQL, HTML, CSS, JavaScript en Agile methodologieën leer beheersen."
               >
-                I'm Tim Olree, a 17-year-old software developer from Zierikzee,
+                I'm Tim Olree, an 18 year old software developer from Zierikzee,
                 Netherlands. Currently studying Software Development at Scalda
                 Vlissingen, where I'm mastering Java, MySQL, HTML, CSS,
                 JavaScript, and Agile methodologies.
               </p>
               <p
-                data-en="I'm a social person who loves making connections and solving problems collaboratively. My interests include gaming, swimming, and music - which helps me stay focused during intensive coding sessions."
-                data-nl="Ik ben een sociaal persoon die graag connecties maakt en samen problemen oplost. Mijn interesses zijn onder meer gamen, zwemmen en muziek - wat me helpt gefocust te blijven tijdens intensieve codeersessies."
+                data-en="I'm a social person who loves making connections and solving problems collaboratively. My interests include gaming, gymming, and music - which helps me stay focused during intensive coding sessions."
+                data-nl="Ik ben een sociaal persoon die graag connecties maakt en samen problemen oplost. Mijn interesses zijn onder meer gamen, sporten en muziek - wat me helpt gefocust te blijven tijdens intensieve codeersessies."
               >
                 I'm a social person who loves making connections and solving
-                problems collaboratively. My interests include gaming, swimming,
-                and music - which helps me stay focused during intensive coding
+                problems collaboratively. My interests include gaming, gymming,
+                and music, which helps me stay focused during intensive coding
                 sessions.
               </p>
               <div class="skills-grid">
@@ -165,7 +178,7 @@
                     <li>Git/GitHub</li>
                     <li>MySQL</li>
                     <li>Godot Engine</li>
-                    <li>Gradle</li>
+                    <li>Maven and Gradle</li>
                   </ul>
                 </div>
                 <div class="skill-category">
@@ -192,7 +205,6 @@
                 Interests & Hobbies
               </h3>
               <div class="interest-cards">
-                <!-- Interest 1 -->
                 <div class="interest-card" data-interest="gaming">
                   <div class="interest-icon">
                     <i class="fas fa-gamepad"></i>
@@ -203,19 +215,18 @@
                   </p>
                   <div class="interest-details">
                     <p
-                      data-en="I enjoy playing a variety of games, from story-driven RPGs to sandbox games. Gaming helps me relax and also inspires my interest in game development. Some of my favorite games are: Elden Ring (which I have the playstation platinum trophy for), Minecraft, and Hollow Knight."
-                      data-nl="Ik speel graag verschillende games, van verhaal rijke RPG's tot sandbox games. Gamen helpt me ontspannen en inspireert ook mijn interesse in game-ontwikkeling. Een paar van mijn favoriete games zijn: Elden Ring (waarvoor ik de playstation platinum trophy heb), Minecraft en Hollow Knight."
+                      data-en="I enjoy playing a variety of games, from story driven RPGs to sandbox games. Gaming helps me relax and also inspires my interest in game development. Some of my favorite games are: Elden Ring (which I have the playstation platinum trophy for), Deep Rock Galactic, and Hollow Knight."
+                      data-nl="Ik speel graag verschillende games, van verhaal rijke RPG's tot sandbox games. Gamen helpt me ontspannen en inspireert ook mijn interesse in game ontwikkeling. Een paar van mijn favoriete games zijn: Elden Ring (waarvoor ik de playstation platinum trophy heb), Deep Rock Galactic en Hollow Knight."
                     >
-                      I enjoy playing a variety of games, from story-driven RPGs
+                      I enjoy playing a variety of games, from story driven RPGs
                       to sandbox games. Gaming helps me relax and also inspires
                       my interest in game development. Some of my favorite games
                       are: Elden Ring (which I have the playstation platinum
-                      trophy for), Minecraft, and Hollow Knight.
+                      trophy for), Deep Rock Galactic, and Hollow Knight.
                     </p>
                   </div>
                 </div>
 
-                <!-- Interest 2 -->
                 <div class="interest-card" data-interest="music">
                   <div class="interest-icon">
                     <i class="fas fa-music"></i>
@@ -263,7 +274,6 @@
         </div>
       </section>
 
-      <!-- Projects Section -->
       <section id="projects" class="projects-section">
         <div class="container">
           <h2
@@ -279,6 +289,13 @@
             data-nl="Klik op afbeeldingen voor grotere versies"
           >
             Click on images to view larger versions
+          </p>
+          <p
+            class="section-subtitle"
+            data-en="Click on the names to go to a more detailed page of the project"
+            data-nl="Klik op de namen om naar een meer gedetailleerde pagina van het project te gaan"
+          >
+            Click on the names to go to a more detailed page of the project
           </p>
 
           <div class="projects-grid">
@@ -307,7 +324,7 @@
                 </a>
               </div>
               <div class="project-content">
-                <h3>Planfond</h3>
+                <h3><a href="planfond.html">Planfond</a></h3>
                 <p class="project-tech">
                   <span class="tech-tag">Java</span>
                   <span class="tech-tag">Hibernate</span>
@@ -328,33 +345,32 @@
               </div>
             </div>
 
-            <!-- Project 2: Godot Game -->
             <div class="project-card">
               <div class="project-image">
                 <a
-                  href="pictures/Schermafbeelding 2026-01-14 153513.png"
+                  href="pictures/mindfull/Schermafbeelding 2026-06-11 103928.png"
                   data-fancybox="godot"
-                  data-caption="Boss 'Claude'"
+                  data-caption="The player having the spirit 'Keep me closer' active"
                 >
                   <img
-                    src="pictures/Schermafbeelding 2026-01-14 153513.png"
-                    alt="Godot Game Boss"
+                    src="pictures/mindfull/Schermafbeelding 2026-06-11 103928.png"
+                    alt="Player with spirit"
                   />
                 </a>
                 <a
-                  href="pictures/Schermafbeelding 2025-02-18 094453.png"
+                  href="pictures/mindfull/Schermafbeelding 2026-06-11 103940.png"
                   data-fancybox="godot"
-                  data-caption="Structured code and player scene"
+                  data-caption="The inventory and enemies health bars"
                 >
                   <img
-                    src="pictures/Schermafbeelding 2025-02-18 094453.png"
-                    alt="Godot Game Code"
+                    src="pictures/mindfull/Schermafbeelding 2026-06-11 103940.png"
+                    alt="Inventory and health bars"
                     style="display: none"
                   />
                 </a>
               </div>
               <div class="project-content">
-                <h3>Cro</h3>
+                <h3><a href="mindfull.html">A Mindfull</a></h3>
                 <p class="project-tech">
                   <span class="tech-tag">Godot Engine</span>
                   <span class="tech-tag">GDScript</span>
@@ -362,52 +378,56 @@
                 </p>
                 <p>
                   <span
-                    data-en="Collaborative project developing a roguelike boss-rush dungeon crawler with elemental mechanics. Features dynamic stat-boost system and efficient time management practices."
-                    data-nl="Samenwerkingsproject waarbij een roguelike boss-rush dungeon crawler met elementaire mechanica wordt ontwikkeld. Bevat dynamisch stat-boost systeem en efficiënte tijdmanagementpraktijken."
-                    >Collaborative project developing a roguelike boss-rush
-                    dungeon crawler with elemental mechanics. Features dynamic
-                    stat-boost system and efficient time management
-                    practices.</span
-                  >
+                    data-en="A project of my own where you dive deep into a world full of lore.
+                    This game is about you, the player, gathering spirits to
+                    fight Sarroth and his minions, who are trying to banish
+                    spirits from this world. Spirits are figures floating behind
+                    their carrier. Every spirit has a unique attack, passive and
+                    active ability. Feel free to join my"
+                    data-nl="Een project van mijzelf waarin je diep duikt in een wereld vol lore.
+                    Dit spel gaat over jou, de speler, het verzamelen van spirits om
+                    Sarroth en zijn onderdanen te bestrijden, die proberen spirits uit deze wereld te verbannen. Spirits zijn figuren die drijven achter hun drager. Elke spirit heeft een unieke aanval, passieve en actieve vaardigheid. Voel je vrij om mijn"
+                    >A project of my own diving deep into a world full of lore.
+                    This game is about you, the player, gathering spirits to
+                    fight Sarroth and his minions, who are trying to banish
+                    spirits from this world. Spirits are figures floating behind
+                    their carrier. Every spirit has a unique attack, passive and
+                    active ability. Feel free to join my
+                  </span>
                   <a
-                    href="https://cloenk.itch.io/cro-beta"
+                    href="https://discord.gg/6F6SFhkTeY"
                     target="_blank"
                     class="itch-link"
-                    data-en="Official itch page for Cro"
-                    data-nl="Officiële itch pagina voor Cro"
-                    >Official itch page for Cro</a
+                    data-en="Discord"
+                    data-nl="Discord"
+                    >Discord</a
+                  >
+                  <span
+                    data-en="to stay updated on development and join the testing phases!"
+                    data-nl="binnen te komen, om op de hoogte te blijven van de ontwikkeling en deel te nemen aan de testfasen!"
+                    >to stay updated on development and join the testing
+                    phases!</span
                   >
                 </p>
               </div>
             </div>
 
-            <!-- Project 3: Home page -->
             <div class="project-card">
               <div class="project-image">
                 <a
-                  href="pictures/homepage/Schermafbeelding 2026-01-14 155220.png"
-                  data-fancybox="minecraft"
-                  data-caption="Homepage for me"
+                  href="#"
+                  class="iframe-trigger"
+                  data-iframe-open="https://www.homepage.timolr.nl/"
+                  aria-label="Open homepage live preview"
                 >
                   <img
                     src="pictures/homepage/Schermafbeelding 2026-01-14 155220.png"
                     alt="Homepage"
                   />
                 </a>
-                <a
-                  href="pictures/homepage/Schermafbeelding 2026-01-14 155249.png"
-                  data-fancybox="minecraft"
-                  data-caption="QR code generation"
-                >
-                  <img
-                    src="pictures/homepage/Schermafbeelding 2026-01-14 155249.png"
-                    alt="QR Code generation"
-                    style="display: none"
-                  />
-                </a>
               </div>
               <div class="project-content">
-                <h3>Homepage</h3>
+                <h3><a href="homepage.html">Homepage</a></h3>
                 <p class="project-tech">
                   <span class="tech-tag">HTML</span>
                   <span class="tech-tag">CSS</span>
@@ -434,6 +454,200 @@
                 </p>
               </div>
             </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <a
+                  href="pictures/apimo/endpoint_json.png"
+                  data-fancybox="apimo"
+                  data-caption="The endpoint JSON response for the education resource endpoints of the API"
+                >
+                  <img
+                    src="pictures/apimo/endpoint_json.png"
+                    alt="Endpoint JSON response"
+                  />
+                </a>
+                <a
+                  href="pictures/apimo/edu_res.png"
+                  data-fancybox="apimo"
+                  data-caption="Code for the education resource endpoints of the API"
+                >
+                  <img
+                    src="pictures/apimo/edu_res.png"
+                    alt="Education resource endpoints"
+                  />
+                </a>
+                <a
+                  href="pictures/apimo/jackson_conf.png"
+                  data-fancybox="apimo"
+                  data-caption="Code for the Jackson configuration of the API"
+                >
+                  <img
+                    src="pictures/apimo/jackson_conf.png"
+                    alt="Jackson configuration"
+                    style="display: none"
+                  />
+                </a>
+              </div>
+              <div class="project-content">
+                <h3><a href="Apimo.html">Apimo</a></h3>
+                <p class="project-tech">
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">Maven</span>
+                  <span class="tech-tag">API development</span>
+                </p>
+                <p>
+                  <span
+                    data-en="A project that my teacher gave me and two other classmates. We created an API in Java using Maven and Hibernate
+                    for a project called Pasimo. Pasimo is filled with data that other school projects need, such as accounts, people, classrooms,
+                    educations, check-ins and more."
+                    data-nl="Een project dat mijn docent me gaf en twee andere medestudenten. We hebben een API gemaakt in Java met Maven en Hibernate
+                    voor een project genaamd Pasimo. Pasimo is gevuld met data die andere schoolprojecten nodig hebben, zoals accounts, mensen, klassen,
+                    educaties, check-ins en meer.."
+                    >A project that my teacher gave me and two other classmates.
+                    We created an API in Java using Maven and Hibernate for a
+                    project called Pasimo. Pasimo is filled with data that other
+                    school projects need, such as accounts, people, classrooms,
+                    educations, check-ins and more.
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                 <a
+                  href="pictures/sarah_tim/login_page.png"
+                  data-fancybox="sarah_tim"
+                  data-caption="The login page of the site. You can't create an account yourself, so you have to ask the admin to create an account for you if you want to use the site"
+                >
+                  <img
+                    src="pictures/sarah_tim/login_page.png"
+                    alt="Login page"
+                  />
+                <a
+                  href="pictures/sarah_tim/welcome_page.png"
+                  data-fancybox="sarah_tim"
+                  data-caption="The welcome page containing a daily memory"
+                >
+                  <img
+                    src="pictures/sarah_tim/welcome_page.png"
+                    alt="Welcome page with daily memory"
+                  />
+                </a>
+                <a
+                  href="pictures/sarah_tim/galery_view.png"
+                  data-fancybox="sarah_tim"
+                  data-caption="The gallery view of all the memories that have been published to the site"
+                >
+                  <img
+                    src="pictures/sarah_tim/edu_res.png"
+                    alt="Gallery view of memories"
+                  />
+                </a>
+                <a
+                  href="pictures/sarah_tim/timeline_view.png"
+                  data-fancybox="sarah_tim"
+                  data-caption="The timeline view of the memories"
+                >
+                  <img
+                    src="pictures/sarah_tim/timeline_view.png"
+                    alt="Timeline view of memories"
+                    style="display: none"
+                  />
+                </a>
+              </div>
+              <div class="project-content">
+                <h3><a href="sarah-en-tim.html">Sarah en Tim</a></h3>
+                <p class="project-tech">
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">Maven</span>
+                  <span class="tech-tag">Spring Boot</span>
+                </p>
+                <p>
+                  <span
+                    data-en="A project that I made for me and my girlfriend for
+                    valentines day, using Java, SpringBoot, Maven and Hibernate.
+                    I made it because I wanted to learn how Spring Boot worked
+                    and I wanted to make something special for my girlfriend in
+                    the process of it."
+                    data-nl="Een project dat ik maakte voor mij en mijn vriendin voor valentijnsdag, met Java, SpringBoot, Maven en Hibernate. Ik maakte het omdat ik wilde leren hoe Spring Boot werkte en ik wilde iets speciaals maken voor mijn vriendin in het proces."
+                    >A project that I made for me and my girlfriend for
+                    valentines day, using Java, SpringBoot, Maven and Hibernate.
+                    I made it because I wanted to learn how Spring Boot worked
+                    and I wanted to make something special for my girlfriend in
+                    the process of it.
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <a
+                  href="pictures/brammy/starting.png"
+                  data-fancybox="brammy"
+                  data-caption="The starting area of the game. The game starts in the classroom where we strudy."
+                >
+                  <img
+                    src="pictures/brammy/starting.png"
+                    alt="Starting area of the game"
+                    style="display: none"
+                  />
+                </a>
+                 <a
+                  href="pictures/brammy/brammy.png"
+                  data-fancybox="brammy"
+                  data-caption="The Brammy entity"
+                >
+                  <img
+                    src="pictures/brammy/brammy.png"
+                    alt="Brammy entity"
+                  />
+                <a
+                  href="pictures/brammy/open_seq.png"
+                  data-fancybox="brammy"
+                  data-caption="The opening sequence of the game where Brammy pops out of the container and starts chasing you around the school building"
+                >
+                  <img
+                    src="pictures/brammy/open_seq.png"
+                    alt="Opening sequence of the game"
+                  />
+                </a>
+                <a
+                  href="pictures/brammy/intellij.png"
+                  data-fancybox="brammy"
+                  data-caption="If you interact with this, you turn on Intellij mode, which is hardcore mode."
+                >
+                  <img
+                    src="pictures/brammy/intellij.png"
+                    alt="Intellij mode"
+                  />
+                </a>
+              </div>
+              <div class="project-content">
+                <h3><a href="brammy.html">Escape Brammy</a></h3>
+                <p class="project-tech">
+                  <span class="tech-tag">Godot</span>
+                  <span class="tech-tag">GD Script</span>
+                  <span class="tech-tag">3D Horror game</span>
+                </p>
+                <p>
+                  <span
+                    data-en="A project that I made in a team of 5 for a hackaton hosted by Syntess Software and Scalda Vlissingen.
+                    The game is a 3D horror game where you have to escape an entity called Brammy inside of 
+                    our education building. Brammy represented our teacher."
+                    data-nl="Een project dat ik maakte in een team van 5 voor een hackaton georganiseerd door Syntess Software en Scalda Vlissingen.
+                    Het spel is een 3D horror spel waar je moet ontwijken van een entiteit genaamd Brammy binnen 
+                    ons educatiegebouw. Brammy vertegenwoordigde onze docent."
+                    >A project that I made in a team of 5 for a hackaton hosted by Syntess Software and Scalda Vlissingen.
+                    The game is a 3D horror game where you have to escape an entity called Brammy inside of 
+                    our education building. Brammy represented our teacher.
+                  </span>
+                </p>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -693,7 +907,7 @@
               <div class="experience-details">
                 <p
                   data-en="Taught lifeguard skills to children every Friday evening. Been practicing lifeguarding since age 7. Certified in First Aid (EHBO) for 2 years. Love working with children and sharing water safety knowledge"
-                  data-nl="Leerde reddingsvaardigheden aan kinderen elke vrijdagavond. Bezig met reddingszwemmen sinds 7-jarige leeftijd. Gecertificeerd in EHBO voor 2 jaar. Hou van werken met kinderen en het delen van kennis over waterveiligheid"
+                  data-nl="Leerde reddingsvaardigheden aan kinderen elke vrijdagavond. Bezig met reddingszwemmen sinds 7 jarige leeftijd. Gecertificeerd in EHBO voor 2 jaar. Hou van werken met kinderen en het delen van kennis over waterveiligheid"
                 >
                   Taught lifeguard skills to children every Friday evening. Been
                   practicing lifeguarding since age 7. Certified in First Aid
@@ -825,8 +1039,76 @@
       </div>
     </footer>
 
+    <!-- Iframe Modal -->
+    <div
+      class="iframe-modal-overlay"
+      id="iframeModal"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Live site preview"
+    >
+      <div class="iframe-modal-container">
+        <div class="iframe-modal-header">
+          <span>homepage.timolr.nl</span>
+          <a
+            href="https://www.homepage.timolr.nl/"
+            target="_blank"
+            rel="noopener"
+            >Open in new tab ↗</a
+          >
+          <button
+            class="iframe-modal-close"
+            id="iframeModalClose"
+            aria-label="Close"
+          >
+            &times;
+          </button>
+        </div>
+        <iframe
+          id="iframeModalFrame"
+          src=""
+          title="Live site preview"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="js/javaScriptScrum.js"></script>
+    <script>
+      const iframeModal = document.getElementById("iframeModal");
+      const iframeModalFrame = document.getElementById("iframeModalFrame");
+      const iframeModalClose = document.getElementById("iframeModalClose");
+
+      document.querySelectorAll(".iframe-trigger").forEach((trigger) => {
+        trigger.addEventListener("click", (e) => {
+          e.preventDefault();
+          iframeModalFrame.src = trigger.dataset.iframeOpen;
+          iframeModal.classList.add("active");
+          document.body.style.overflow = "hidden";
+        });
+      });
+
+      function closeIframeModal() {
+        iframeModal.classList.add("closing");
+        setTimeout(() => {
+          iframeModal.classList.remove("active", "closing");
+          iframeModalFrame.src = "";
+          document.body.style.overflow = "";
+        }, 200);
+      }
+
+      iframeModalClose.addEventListener("click", closeIframeModal);
+
+      iframeModal.addEventListener("click", (e) => {
+        if (e.target === iframeModal) closeIframeModal();
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && iframeModal.classList.contains("active"))
+          closeIframeModal();
+      });
+    </script>
   </body>
 </html>

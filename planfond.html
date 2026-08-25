@@ -1,0 +1,705 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planfond Tim Olree</title>
+    <link rel="stylesheet" href="css/CSS_Scrum.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <button
+      class="mobile-menu-toggle"
+      id="mobileMenuToggle"
+      aria-label="Toggle menu"
+    >
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="navbar" id="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Portfolio</a></li>
+        <li><a href="#overview" class="nav-link">Overview</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#tech" class="nav-link">Tech Stack</a></li>
+        <li><a href="#gallery" class="nav-link">Screenshots</a></li>
+        <li><a href="#learnings" class="nav-link">Learnings</a></li>
+        <li>
+          <button
+            class="language-toggle"
+            id="languageToggle"
+            aria-label="Toggle language"
+          >
+            <i class="fas fa-globe"></i>
+            <span class="lang-text">EN</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="project-page-main">
+      <section class="project-hero-section">
+        <div class="project-hero-inner container">
+          <a href="index.html#projects" class="back-link">
+            <i class="fas fa-arrow-left"></i>
+            <span data-en="Back to Portfolio" data-nl="Terug naar Portfolio"
+              >Back to Portfolio</span
+            >
+          </a>
+          <span
+            class="project-type-label"
+            data-en="School Project · Team of 5"
+            data-nl="Schoolproject · Team van 5"
+            >School Project · Team of 5</span
+          >
+          <h1>Planfond</h1>
+          <p
+            class="project-tagline"
+            data-en="A comprehensive school planning application, room reservations, locker management, inventory tracking, and an admin panel, all in one."
+            data-nl="Een uitgebreide schoolplanningsapplicatie, kamerreserveringen, kluisbeheer, voorraadbeheer en een beheerpaneel, alles in één."
+          >
+            A comprehensive school planning application, room reservations,
+            locker management, inventory tracking, and an admin panel, all in
+            one.
+          </p>
+          <div class="project-hero-tags">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">Hibernate</span>
+            <span class="tech-tag">Struts2</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">JSP</span>
+            <span class="tech-tag">SCRUM</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Info Bar -->
+      <div class="project-info-bar">
+        <div class="project-info-grid">
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-calendar"></i></div>
+            <div>
+              <span class="info-card-label" data-en="Period" data-nl="Periode"
+                >Period</span
+              >
+              <span class="info-card-value">2025</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-users"></i></div>
+            <div>
+              <span
+                class="info-card-label"
+                data-en="Team size"
+                data-nl="Teamgrootte"
+                >Team size</span
+              >
+              <span
+                class="info-card-value"
+                data-en="5 developers"
+                data-nl="5 ontwikkelaars"
+                >5 developers</span
+              >
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-code-branch"></i></div>
+            <div>
+              <span
+                class="info-card-label"
+                data-en="Methodology"
+                data-nl="Methodologie"
+                >Methodology</span
+              >
+              <span class="info-card-value">SCRUM / Agile</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-layer-group"></i></div>
+            <div>
+              <span class="info-card-label" data-en="Type" data-nl="Type"
+                >Type</span
+              >
+              <span
+                class="info-card-value"
+                data-en="Full-stack Web App"
+                data-nl="Full-stack Webapp"
+                >Full-stack Web App</span
+              >
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div>
+              <span class="info-card-label" data-en="School" data-nl="School"
+                >School</span
+              >
+              <span class="info-card-value">Scalda Vlissingen</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Overview -->
+      <section class="project-overview-section" id="overview">
+        <div class="container">
+          <div class="overview-grid">
+            <div class="overview-text">
+              <h2 data-en="About this project" data-nl="Over dit project">
+                About this project
+              </h2>
+              <p
+                data-en="Planfond is a full-stack web application built by a team of five students at Scalda Vlissingen. The goal was to create a practical planning tool for our school that real staff and students could use to manage rooms, lockers, and resources."
+                data-nl="Planfond is een full-stack webapplicatie gebouwd door een team van vijf studenten aan Scalda Vlissingen. Het doel was om een praktisch planningsinstrument voor onze school te maken dat medewerkers en studenten kunnen gebruiken om kamers, kluisjes en middelen te beheren."
+              >
+                Planfond is a full-stack web application built by a team of five
+                students at Scalda Vlissingen. The goal was to create a
+                practical planning tool for our school that real staff and
+                students could use to manage rooms, lockers, and resources.
+              </p>
+              <p
+                data-en="The application features an interactive floor-plan map where rooms are placed visually. Users can click on a room to see its availability and make a reservation. Lockers work similarly, a student can browse available lockers and reserve one. An inventory module lets staff track equipment and supplies per room."
+                data-nl="De applicatie heeft een interactieve plattegrondkaart waarop kamers visueel worden geplaatst. Gebruikers kunnen op een kamer klikken om de beschikbaarheid te zien en een reservering te maken. Kluisjes werken op dezelfde manier, een student kan beschikbare kluisjes bekijken en er één reserveren. Een inventarismodule stelt medewerkers in staat om apparatuur en benodigdheden per kamer bij te houden."
+              >
+                The application features an interactive floor-plan map where
+                rooms are placed visually. Users can click on a room to see its
+                availability and make a reservation. Lockers work similarly, a
+                student can browse available lockers and reserve one. An
+                inventory module lets staff track equipment and supplies per
+                room.
+              </p>
+              <p
+                data-en="We followed an Agile SCRUM process throughout the project: daily stand-ups, sprint planning, retrospectives, and a product backlog in Jira. My personal contributions covered the room reservation flow, the interactive map rendering, and parts of the admin panel."
+                data-nl="We volgden een Agile SCRUM-proces gedurende het project: dagelijkse stand-ups, sprintplanning, retrospectives en een product backlog in Jira. Mijn persoonlijke bijdragen omvatten de kamerreserveringsstroom, de interactieve kaartrendering en delen van het beheerpaneel."
+              >
+                We followed an Agile SCRUM process throughout the project: daily
+                stand-ups, sprint planning, retrospectives, and a product
+                backlog in Jira. My personal contributions covered the room
+                reservation flow, the interactive map rendering, and parts of
+                the admin panel.
+              </p>
+              <p
+                data-en="The back end is built with Java, using Hibernate as the ORM layer for database operations and Struts2 as the MVC framework. Views are rendered through JSP templates and the data is persisted in a MySQL database."
+                data-nl="De back-end is gebouwd met Java, waarbij Hibernate wordt gebruikt als ORM-laag voor databasebewerkingen en Struts2 als MVC-framework. Views worden weergegeven via JSP-sjablonen en de gegevens worden opgeslagen in een MySQL-database."
+              >
+                The back end is built with Java, using Hibernate as the ORM
+                layer for database operations and Struts2 as the MVC framework.
+                Views are rendered through JSP templates and the data is
+                persisted in a MySQL database.
+              </p>
+            </div>
+            <div>
+              <div class="overview-highlights">
+                <h3 data-en="Key highlights" data-nl="Belangrijkste punten">
+                  Key highlights
+                </h3>
+                <ul class="highlight-list">
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Interactive SVG floor-plan map with clickable rooms"
+                      data-nl="Interactieve SVG-plattegrond met klikbare kamers"
+                      >Interactive SVG floor-plan map with clickable rooms</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Role-based access: admin vs. regular user"
+                      data-nl="Rolgebaseerde toegang: beheerder vs. gewone gebruiker"
+                      >Role-based access: admin vs. regular user</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Conflict detection, prevents double-booking of rooms or lockers"
+                      data-nl="Conflictdetectie, voorkomt dubbele reserveringen van kamers of kluisjes"
+                      >Conflict detection, prevents double-booking of rooms or
+                      lockers</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Hibernate ORM handling complex entity relationships"
+                      data-nl="Hibernate ORM voor het afhandelen van complexe entiteitsrelaties"
+                      >Hibernate ORM handling complex entity relationships</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Complete SCRUM workflow over multiple sprints"
+                      data-nl="Volledig SCRUM-workflow over meerdere sprints"
+                      >Complete SCRUM workflow over multiple sprints</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Admin panel for full CRUD on users, rooms, and inventory"
+                      data-nl="Beheerpaneel voor volledige CRUD op gebruikers, kamers en inventaris"
+                      >Admin panel for full CRUD on users, rooms, and
+                      inventory</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="project-features-section" id="features">
+        <div class="container">
+          <h2 class="section-title" data-en="Features" data-nl="Functies">
+            Features
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="Everything the application can do"
+            data-nl="Alles wat de applicatie kan doen"
+          >
+            Everything the application can do
+          </p>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-lock"></i></div>
+              <h3
+                data-en="User Authentication"
+                data-nl="Gebruikersauthenticatie"
+              >
+                User Authentication
+              </h3>
+              <p
+                data-en="Secure login and registration with hashed passwords. Session management keeps users logged in, and role-based permissions restrict what regular users and admins can access."
+                data-nl="Veilig inloggen en registreren met gehashte wachtwoorden. Sessiebeheer houdt gebruikers ingelogd en rolgebaseerde rechten beperken wat gewone gebruikers en beheerders kunnen inzien."
+              >
+                Secure login and registration with hashed passwords. Session
+                management keeps users logged in, and role-based permissions
+                restrict what regular users and admins can access.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-map"></i></div>
+              <h3
+                data-en="Interactive Floor Map"
+                data-nl="Interactieve Plattegrond"
+              >
+                Interactive Floor Map
+              </h3>
+              <p
+                data-en="A visual floor plan of the school building rendered in the browser. Rooms are positioned on the map and colour-coded by availability. Clicking a room opens a panel to view details and create a reservation."
+                data-nl="Een visuele plattegrond van het schoolgebouw weergegeven in de browser. Kamers zijn gepositioneerd op de kaart en kleurgecodeerd op beschikbaarheid. Klikken op een kamer opent een paneel om details te bekijken en een reservering te maken."
+              >
+                A visual floor plan of the school building rendered in the
+                browser. Rooms are positioned on the map and colour-coded by
+                availability. Clicking a room opens a panel to view details and
+                create a reservation.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-calendar-check"></i>
+              </div>
+              <h3 data-en="Room Reservations" data-nl="Kamerreserveringen">
+                Room Reservations
+              </h3>
+              <p
+                data-en="Users can reserve rooms for specific dates and times. The system automatically detects conflicts and prevents double-booking. Reservations can be viewed, edited, or cancelled from the user dashboard."
+                data-nl="Gebruikers kunnen kamers reserveren voor specifieke datums en tijden. Het systeem detecteert automatisch conflicten en voorkomt dubbele boekingen. Reserveringen kunnen worden bekeken, bewerkt of geannuleerd via het gebruikersdashboard."
+              >
+                Users can reserve rooms for specific dates and times. The system
+                automatically detects conflicts and prevents double-booking.
+                Reservations can be viewed, edited, or cancelled from the user
+                dashboard.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-box"></i></div>
+              <h3 data-en="Locker Management" data-nl="Kluisbeheer">
+                Locker Management
+              </h3>
+              <p
+                data-en="Students can browse a list of lockers, filter by floor or size, and claim an available one. The reservation is tied to their account. Staff can view all locker assignments and free up lockers as needed."
+                data-nl="Studenten kunnen een lijst met kluisjes bekijken, filteren op verdieping of grootte en een beschikbaar kluisje claimen. De reservering is gekoppeld aan hun account. Medewerkers kunnen alle kluistoewijzingen bekijken en kluisjes indien nodig vrijmaken."
+              >
+                Students can browse a list of lockers, filter by floor or size,
+                and claim an available one. The reservation is tied to their
+                account. Staff can view all locker assignments and free up
+                lockers as needed.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-clipboard-list"></i>
+              </div>
+              <h3 data-en="Inventory System" data-nl="Inventarissysteem">
+                Inventory System
+              </h3>
+              <p
+                data-en="Each room has an inventory list of equipment and supplies (projectors, chairs, whiteboards, etc.). Staff can add, update, and remove items. The system shows which resources are available and in which rooms."
+                data-nl="Elke kamer heeft een inventarislijst van apparatuur en benodigdheden (projectors, stoelen, whiteboards, enz.). Medewerkers kunnen items toevoegen, bijwerken en verwijderen. Het systeem toont welke middelen beschikbaar zijn en in welke kamers."
+              >
+                Each room has an inventory list of equipment and supplies
+                (projectors, chairs, whiteboards, etc.). Staff can add, update,
+                and remove items. The system shows which resources are available
+                and in which rooms.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-user-shield"></i></div>
+              <h3 data-en="Admin Panel" data-nl="Beheerpaneel">Admin Panel</h3>
+              <p
+                data-en="Admins have access to a dedicated management panel for full CRUD operations on users, rooms, lockers, reservations, and inventory. They can promote users to admin, override reservations, and generate usage reports."
+                data-nl="Beheerders hebben toegang tot een speciaal beheerpaneel voor volledige CRUD-bewerkingen op gebruikers, kamers, kluisjes, reserveringen en inventaris. Ze kunnen gebruikers promoveren naar beheerder, reserveringen overschrijven en gebruiksrapporten genereren."
+              >
+                Admins have access to a dedicated management panel for full CRUD
+                operations on users, rooms, lockers, reservations, and
+                inventory. They can promote users to admin, override
+                reservations, and generate usage reports.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech Stack -->
+      <section class="project-tech-section" id="tech">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="Tech Stack"
+            data-nl="Technologieën"
+          >
+            Tech Stack
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="The technologies powering Planfond"
+            data-nl="De technologieën achter Planfond"
+          >
+            The technologies powering Planfond
+          </p>
+          <div class="tech-stack-grid">
+            <div class="tech-stack-card">
+              <h3>Java</h3>
+              <span
+                class="tech-role"
+                data-en="Back-end logic"
+                data-nl="Back-end logica"
+                >Back-end logic</span
+              >
+              <p
+                data-en="Core language for all server-side business logic, data models, and application flow."
+                data-nl="Kerntaal voor alle server-side bedrijfslogica, datamodellen en applicatiestroom."
+              >
+                Core language for all server-side business logic, data models,
+                and application flow.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>Hibernate</h3>
+              <span class="tech-role">ORM / Persistence</span>
+              <p
+                data-en="Maps Java objects to MySQL tables, handles entity relationships, and manages database sessions and transactions."
+                data-nl="Zet Java-objecten om naar MySQL-tabellen, beheert entiteitsrelaties en beheert databasesessies en transacties."
+              >
+                Maps Java objects to MySQL tables, handles entity relationships,
+                and manages database sessions and transactions.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>Struts2</h3>
+              <span class="tech-role">MVC Framework</span>
+              <p
+                data-en="Provides the MVC structure: routing HTTP requests to Java actions, binding form data, and forwarding to JSP views."
+                data-nl="Biedt de MVC-structuur: HTTP-verzoeken doorsturen naar Java-acties, formuliergegevens koppelen en doorsturen naar JSP-views."
+              >
+                Provides the MVC structure: routing HTTP requests to Java
+                actions, binding form data, and forwarding to JSP views.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>MySQL</h3>
+              <span class="tech-role" data-en="Database" data-nl="Database"
+                >Database</span
+              >
+              <p
+                data-en="Relational database storing users, rooms, lockers, reservations, and inventory with foreign-key constraints and indexes."
+                data-nl="Relationele database voor het opslaan van gebruikers, kamers, kluisjes, reserveringen en inventaris met externe-sleutelbeperkingen en indexen."
+              >
+                Relational database storing users, rooms, lockers, reservations,
+                and inventory with foreign-key constraints and indexes.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>JSP</h3>
+              <span class="tech-role" data-en="View Layer" data-nl="View-laag"
+                >View Layer</span
+              >
+              <p
+                data-en="JavaServer Pages used as the templating engine for generating dynamic HTML pages from server-side data."
+                data-nl="JavaServer Pages gebruikt als sjabloonengine voor het genereren van dynamische HTML-pagina's vanuit server-side gegevens."
+              >
+                JavaServer Pages used as the templating engine for generating
+                dynamic HTML pages from server-side data.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>Git / GitHub</h3>
+              <span
+                class="tech-role"
+                data-en="Version Control"
+                data-nl="Versiebeheer"
+                >Version Control</span
+              >
+              <p
+                data-en="Branching strategy with feature branches and pull requests to manage parallel work across 5 developers."
+                data-nl="Branchingstrategie met feature-branches en pull requests om parallel werk van 5 ontwikkelaars te beheren."
+              >
+                Branching strategy with feature branches and pull requests to
+                manage parallel work across 5 developers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="project-gallery-section" id="gallery">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="Screenshots"
+            data-nl="Schermafbeeldingen"
+          >
+            Screenshots
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="Click any image to view full size"
+            data-nl="Klik op een afbeelding voor volledig formaat"
+          >
+            Click any image to view full size
+          </p>
+          <div class="gallery-grid">
+            <a
+              href="pictures/planfond/Schermafbeelding 2026-01-14 093517.png"
+              data-fancybox="planfond-gallery"
+              data-caption="Interactive floor-plan map showing rooms placed on the building layout"
+              class="screenshot-item"
+            >
+              <img
+                src="pictures/planfond/Schermafbeelding 2026-01-14 093517.png"
+                alt="Planfond floor map"
+              />
+              <div
+                class="screenshot-caption"
+                data-en="Interactive floor-plan map"
+                data-nl="Interactieve plattegrondkaart"
+              >
+                Interactive floor-plan map
+              </div>
+            </a>
+
+            <a
+              href="pictures/planfond/Schermafbeelding 2026-01-14 093840.png"
+              data-fancybox="planfond-gallery"
+              data-caption="Pop-up panel for creating a new room on the map"
+              class="screenshot-item"
+            >
+              <img
+                src="pictures/planfond/Schermafbeelding 2026-01-14 093840.png"
+                alt="Room creation pop-up"
+              />
+              <div
+                class="screenshot-caption"
+                data-en="Room creation pop-up"
+                data-nl="Pop-up voor kameraan maken"
+              >
+                Room creation pop-up
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Learnings -->
+      <section class="project-learnings-section" id="learnings">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="Challenges & Learnings"
+            data-nl="Uitdagingen & Leerpunten"
+          >
+            Challenges &amp; Learnings
+          </h2>
+          <div class="learnings-grid">
+            <div class="learnings-column">
+              <h3>
+                <i class="fas fa-bolt"></i>
+                <span
+                  data-en="Challenges we faced"
+                  data-nl="Uitdagingen die we tegenkwamen"
+                  >Challenges we faced</span
+                >
+              </h3>
+              <ul class="learnings-list">
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Configuring Hibernate session factories and connection pooling for the first time, required deep reading of the documentation."
+                    data-nl="Het voor het eerst configureren van Hibernate sessie-fabrieken en verbindingspooling, vereiste diepgaande documentatiestudie."
+                    >Configuring Hibernate session factories and connection
+                    pooling for the first time, required deep reading of the
+                    documentation.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Building the interactive floor-map with vanilla JavaScript: placing rooms accurately and handling click events on dynamic elements."
+                    data-nl="Het bouwen van de interactieve plattegrond met vanilla JavaScript: kamers nauwkeurig plaatsen en klikgebeurtenissen afhandelen op dynamische elementen."
+                    >Building the interactive floor-map with vanilla JavaScript:
+                    placing rooms accurately and handling click events on
+                    dynamic elements.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Coordinating Git branches across 5 developers without merge conflicts, we learned good branch hygiene the hard way."
+                    data-nl="Git-branches coördineren met 5 ontwikkelaars zonder merge-conflicten, we leerden goede branch-hygiëne op de harde manier."
+                    >Coordinating Git branches across 5 developers without merge
+                    conflicts, we learned good branch hygiene the hard
+                    way.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Designing the database schema to handle overlapping reservation time-windows efficiently."
+                    data-nl="Het ontwerpen van het databaseschema om overlappende reserveringstijdvensters efficiënt af te handelen."
+                    >Designing the database schema to handle overlapping
+                    reservation time-windows efficiently.</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="learnings-column">
+              <h3>
+                <i class="fas fa-lightbulb"></i>
+                <span data-en="What I learned" data-nl="Wat ik heb geleerd"
+                  >What I learned</span
+                >
+              </h3>
+              <ul class="learnings-list">
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Enterprise Java patterns: the MVC pattern via Struts2, ORM via Hibernate, and how they work together."
+                    data-nl="Enterprise Java-patronen: het MVC-patroon via Struts2, ORM via Hibernate, en hoe ze samenwerken."
+                    >Enterprise Java patterns: the MVC pattern via Struts2, ORM
+                    via Hibernate, and how they work together.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="How to run a real SCRUM sprint: writing user stories, estimating story points, and reviewing a demo with stakeholders."
+                    data-nl="Hoe je een echte SCRUM-sprint uitvoert: gebruikersverhalen schrijven, story points schatten en een demo reviewen met belanghebbenden."
+                    >How to run a real SCRUM sprint: writing user stories,
+                    estimating story points, and reviewing a demo with
+                    stakeholders.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Relational database design, normalisation, foreign keys, and writing efficient HQL queries."
+                    data-nl="Relationeel databaseontwerp, normalisatie, externe sleutels en het schrijven van efficiënte HQL-queries."
+                    >Relational database design, normalisation, foreign keys,
+                    and writing efficient HQL queries.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Teamwork under pressure: splitting features, reviewing each other's code, and communicating blockers early."
+                    data-nl="Teamwork onder druk: functies opsplitsen, elkaars code reviewen en belemmeringen vroeg communiceren."
+                    >Teamwork under pressure: splitting features, reviewing each
+                    other's code, and communicating blockers early.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Deploying a Java web application to a local and remote Tomcat server and troubleshooting classpath and dependency issues."
+                    data-nl="Een Java-webapplicatie implementeren op een lokale en remote Tomcat-server en problemen met classpaths en afhankelijkheden oplossen."
+                    >Deploying a Java web application to a local and remote
+                    Tomcat server and troubleshooting classpath and dependency
+                    issues.</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="project-cta-section">
+        <h2 data-en="Want to see more?" data-nl="Wil je meer zien?">
+          Want to see more?
+        </h2>
+        <p
+          data-en="Head back to my portfolio to explore my other projects or get in touch."
+          data-nl="Ga terug naar mijn portfolio om mijn andere projecten te bekijken of neem contact op."
+        >
+          Head back to my portfolio to explore my other projects or get in
+          touch.
+        </p>
+        <div class="cta-actions">
+          <a href="index.html#projects" class="btn btn-primary">
+            <i class="fas fa-arrow-left"></i>
+            <span data-en="All Projects" data-nl="Alle Projecten"
+              >All Projects</span
+            >
+          </a>
+          <a href="index.html#contact" class="btn btn-secondary">
+            <i class="fas fa-envelope"></i>
+            <span data-en="Get In Touch" data-nl="Neem Contact Op"
+              >Get In Touch</span
+            >
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="js/projectPage.js"></script>
+  </body>
+</html>

@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APImo - Tim Olree</title>
+    <link rel="stylesheet" href="css/CSS_Scrum.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <button
+      class="mobile-menu-toggle"
+      id="mobileMenuToggle"
+      aria-label="Toggle menu"
+    >
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="navbar" id="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Portfolio</a></li>
+        <li><a href="#overview" class="nav-link">Overview</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#tech" class="nav-link">Tech Stack</a></li>
+        <li><a href="#gallery" class="nav-link">Screenshots</a></li>
+        <li><a href="#learnings" class="nav-link">Learnings</a></li>
+        <li>
+          <button
+            class="language-toggle"
+            id="languageToggle"
+            aria-label="Toggle language"
+          >
+            <i class="fas fa-globe"></i>
+            <span class="lang-text">EN</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="project-page-main">
+      <section class="project-hero-section">
+        <div class="project-hero-inner container">
+          <a href="index.html#projects" class="back-link">
+            <i class="fas fa-arrow-left"></i>
+            <span data-en="Back to Portfolio" data-nl="Terug naar Portfolio"
+              >Back to Portfolio</span
+            >
+          </a>
+          <span
+            class="project-type-label"
+            data-en="School Project · Team of 3"
+            data-nl="Schoolproject · Team van 3"
+            >School Project · Team of 3</span
+          >
+          <h1>APImo</h1>
+          <p
+            class="project-tagline"
+            data-en="A REST API providing structured access to education, team, student, teacher, check-in, calendar and account data from the Pasimo database."
+            data-nl="Een REST API die gestructureerde toegang biedt tot opleiding-, team-, student-, docent-, check-in-, kalender- en accountdata uit de Pasimo-database."
+          >
+            A REST API providing structured access to education, team, student,
+            teacher, check-in, calendar and account data from the Pasimo
+            database.
+          </p>
+          <div class="project-hero-tags">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">Hibernate</span>
+            <span class="tech-tag">Jackson</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">Postman</span>
+            <span class="tech-tag">Maven</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Info Bar -->
+      <div class="project-info-bar">
+        <div class="project-info-grid">
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-calendar"></i></div>
+            <div>
+              <span class="info-card-label" data-en="Period" data-nl="Periode"
+                >Period</span
+              >
+              <span class="info-card-value">2026</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-users"></i></div>
+            <div>
+              <span
+                class="info-card-label"
+                data-en="Team size"
+                data-nl="Teamgrootte"
+                >Team size</span
+              >
+              <span
+                class="info-card-value"
+                data-en="3 developers"
+                data-nl="3 ontwikkelaars"
+                >3 developers</span
+              >
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-layer-group"></i></div>
+            <div>
+              <span class="info-card-label" data-en="Type" data-nl="Type"
+                >Type</span
+              >
+              <span
+                class="info-card-value"
+                data-en="REST API"
+                data-nl="REST API"
+                >REST API</span
+              >
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div>
+              <span class="info-card-label" data-en="School" data-nl="School"
+                >School</span
+              >
+              <span class="info-card-value">Scalda Vlissingen</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Overview -->
+      <section class="project-overview-section" id="overview">
+        <div class="container">
+          <div class="overview-grid">
+            <div class="overview-text">
+              <h2 data-en="About this project" data-nl="Over dit project">
+                About this project
+              </h2>
+              <p
+                data-en="APImo is a REST API we built so that other projects at our school can consume data from the Pasimo database without having to implement their own database connection. We started by building the core library: the Hibernate session factory, entity classes that mirror the Pasimo schema, and a Jackson configuration to serialise those entities to JSON."
+                data-nl="APImo is een REST API die we hebben gebouwd zodat andere projecten op school data uit de Pasimo-database kunnen gebruiken zonder zelf een databaseverbinding te hoeven implementeren. We zijn begonnen met de kernbibliotheek: de Hibernate sessie-factory, entity-klassen die het Pasimo-schema weerspiegelen en een Jackson-configuratie om die entities naar JSON te serialiseren."
+              >
+                APImo is a REST API we built so that other projects at our
+                school can consume data from the Pasimo database without having
+                to implement their own database connection. We started by
+                building the core library: the Hibernate session factory, entity
+                classes that mirror the Pasimo schema, and a Jackson
+                configuration to serialise those entities to JSON.
+              </p>
+              <p
+                data-en="The API exposes seven resource groups, educations, education teams, teams, students, teachers, check-ins, calendars and accounts, each accessible through clean REST endpoints. We documented every endpoint in a shared Postman collection so any consumer project could test and integrate the API straight away."
+                data-nl="De API biedt zeven resourcegroepen, opleidingen, opleidingsteams, teams, studenten, docenten, check-ins, kalenders en accounts, elk toegankelijk via overzichtelijke REST-endpoints. We hebben elk endpoint gedocumenteerd in een gedeelde Postman-collectie, zodat elk consumerproject de API direct kon testen en integreren."
+              >
+                The API exposes seven resource groups, educations, education
+                teams, teams, students, teachers, check-ins, calendars and
+                accounts, each accessible through clean REST endpoints. We
+                documented every endpoint in a shared Postman collection so any
+                consumer project could test and integrate the API straight away.
+              </p>
+              <p
+                data-en="I was responsible for the education, education-team, team and check-in endpoints, as well as the complete API configuration (Hibernate setup, Jackson serialiser, servlet mapping). I also provided debugging support to my teammates, since I had the most prior experience with Java and REST APIs. Throughout the project we followed an Agile SCRUM process: daily stand-ups, sprint planning, retrospectives and a product backlog maintained in Jira."
+                data-nl="Ik was verantwoordelijk voor de opleiding-, opleidingsteam-, team- en check-in-endpoints, evenals de volledige API-configuratie (Hibernate-setup, Jackson-serialiser, servlet-mapping). Ik heb ook debugging-ondersteuning geboden aan mijn teamgenoten, omdat ik de meeste voorafgaande ervaring had met Java en REST API's. Gedurende het hele project volgden we een Agile SCRUM-proces: dagelijkse stand-ups, sprintplanning, retrospectives en een product backlog bijgehouden in Jira."
+              >
+                I was responsible for the education, education-team, team and
+                check-in endpoints, as well as the complete API configuration
+                (Hibernate setup, Jackson serialiser, servlet mapping). I also
+                provided debugging support to my teammates, since I had the most
+                prior experience with Java and REST APIs. Throughout the project
+                we followed an Agile SCRUM process: daily stand-ups, sprint
+                planning, retrospectives and a product backlog maintained in
+                Jira.
+              </p>
+            </div>
+            <div>
+              <div class="overview-highlights">
+                <h3 data-en="Key highlights" data-nl="Belangrijkste punten">
+                  Key highlights
+                </h3>
+                <ul class="highlight-list">
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="REST endpoints for 7 resource types: educations, teams, students, teachers, check-ins, calendars and accounts"
+                      data-nl="REST-endpoints voor 7 resourcetypen: opleidingen, teams, studenten, docenten, check-ins, kalenders en accounts"
+                      >REST endpoints for 7 resource types: educations, teams,
+                      students, teachers, check-ins, calendars and
+                      accounts</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Hibernate ORM mapping complex Pasimo database entities with relationships"
+                      data-nl="Hibernate ORM die complexe Pasimo-database-entities met relaties in kaart brengt"
+                      >Hibernate ORM mapping complex Pasimo database entities
+                      with relationships</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Jackson configured for clean JSON serialisation, handling circular references between entities"
+                      data-nl="Jackson geconfigureerd voor schone JSON-serialisatie, met afhandeling van circulaire verwijzingen tussen entities"
+                      >Jackson configured for clean JSON serialisation, handling
+                      circular references between entities</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Shared Postman collection documenting every endpoint for easy integration by consumer projects"
+                      data-nl="Gedeelde Postman-collectie die elk endpoint documenteert voor eenvoudige integratie door consumerprojecten"
+                      >Shared Postman collection documenting every endpoint for
+                      easy integration by consumer projects</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Maven build system with clean dependency management across the whole team"
+                      data-nl="Maven-buildsysteem met overzichtelijk afhankelijkheidsbeheer voor het hele team"
+                      >Maven build system with clean dependency management
+                      across the whole team</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Full SCRUM workflow over multiple sprints with Jira backlog, stand-ups and retrospectives"
+                      data-nl="Volledig SCRUM-workflow over meerdere sprints met Jira-backlog, stand-ups en retrospectives"
+                      >Full SCRUM workflow over multiple sprints with Jira
+                      backlog, stand-ups and retrospectives</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="project-features-section" id="features">
+        <div class="container">
+          <h2 class="section-title" data-en="Features" data-nl="Functies">
+            Features
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="Everything the API can do"
+            data-nl="Alles wat de API kan doen"
+          >
+            Everything the API can do
+          </p>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <h3 data-en="Education Endpoints" data-nl="Opleiding-endpoints">
+                Education Endpoints
+              </h3>
+              <p
+                data-en="Retrieve all educations or a single education by ID. A separate set of endpoints exposes the education-team junction so consumers can find which teams belong to which education."
+                data-nl="Haal alle opleidingen of een enkele opleiding op via ID. Een aparte set endpoints onthult de opleiding-team-koppeling, zodat consumers kunnen zien welke teams bij welke opleiding horen."
+              >
+                Retrieve all educations or a single education by ID. A separate
+                set of endpoints exposes the education-team junction so
+                consumers can find which teams belong to which education.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-users"></i></div>
+              <h3 data-en="Team Endpoints" data-nl="Team-endpoints">
+                Team Endpoints
+              </h3>
+              <p
+                data-en="Query all teams stored in Pasimo or fetch a specific team by its ID. Returns team metadata including name, associated education and member count."
+                data-nl="Bevraag alle teams die zijn opgeslagen in Pasimo of haal een specifiek team op via ID. Geeft team-metadata terug, inclusief naam, gekoppelde opleiding en het aantal leden."
+              >
+                Query all teams stored in Pasimo or fetch a specific team by its
+                ID. Returns team metadata including name, associated education
+                and member count.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-user-graduate"></i>
+              </div>
+              <h3
+                data-en="Student & Teacher Endpoints"
+                data-nl="Student- & Docent-endpoints"
+              >
+                Student &amp; Teacher Endpoints
+              </h3>
+              <p
+                data-en="Look up all students or teachers, or filter by ID. Each response includes relevant profile data such as name, email and linked team or subject, making it easy to build user-facing features on top of the API."
+                data-nl="Zoek alle studenten of docenten op, of filter op ID. Elke respons bevat relevante profieldata zoals naam, e-mail en gekoppeld team of vak, waardoor het eenvoudig is om gebruikersgerichte functies bovenop de API te bouwen."
+              >
+                Look up all students or teachers, or filter by ID. Each response
+                includes relevant profile data such as name, email and linked
+                team or subject, making it easy to build user-facing features on
+                top of the API.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-clipboard-check"></i>
+              </div>
+              <h3 data-en="Check-in Endpoints" data-nl="Check-in-endpoints">
+                Check-in Endpoints
+              </h3>
+              <p
+                data-en="Access attendance records from the Pasimo database. Endpoints allow filtering check-ins by student or by date range, enabling other applications to display or process attendance data without direct database access."
+                data-nl="Toegang tot aanwezigheidsregistraties uit de Pasimo-database. Endpoints bieden filtering van check-ins op student of op datumbereik, zodat andere applicaties aanwezigheidsdata kunnen tonen of verwerken zonder directe databasetoegang."
+              >
+                Access attendance records from the Pasimo database. Endpoints
+                allow filtering check-ins by student or by date range, enabling
+                other applications to display or process attendance data without
+                direct database access.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-calendar-alt"></i>
+              </div>
+              <h3 data-en="Calendar Endpoints" data-nl="Kalender-endpoints">
+                Calendar Endpoints
+              </h3>
+              <p
+                data-en="Retrieve calendar events and schedules stored in Pasimo. Consumer applications can use these endpoints to show timetable data to students or staff without needing their own scheduling logic."
+                data-nl="Haal kalendergebeurtenissen en roosters op uit Pasimo. Consumerende applicaties kunnen deze endpoints gebruiken om roosterdata te tonen aan studenten of medewerkers, zonder eigen planningslogica te hoeven implementeren."
+              >
+                Retrieve calendar events and schedules stored in Pasimo.
+                Consumer applications can use these endpoints to show timetable
+                data to students or staff without needing their own scheduling
+                logic.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-user-circle"></i></div>
+              <h3 data-en="Account Endpoints" data-nl="Account-endpoints">
+                Account Endpoints
+              </h3>
+              <p
+                data-en="Expose account records from the Pasimo database, allowing other
+                projects to retrieve user credentials and profile information
+                for authentication and personalisation purposes. Also involves
+                authentication logic for accounts."
+                data-nl="Onthul accountrecords uit de Pasimo-database, zodat andere projecten gebruikersgegevens en profielinformatie kunnen ophalen voor authenticatie- en personalisatiedoeleinden. Omvat ook authenticatielogica voor accounts."
+              >
+                Expose account records from the Pasimo database, allowing other
+                projects to retrieve user credentials and profile information
+                for authentication and personalisation purposes. Also involves
+                authentication logic for accounts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech Stack -->
+      <section class="project-tech-section" id="tech">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="Tech Stack"
+            data-nl="Technologieën"
+          >
+            Tech Stack
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="The technologies powering APImo"
+            data-nl="De technologieën achter APImo"
+          >
+            The technologies powering APImo
+          </p>
+          <div class="tech-stack-grid">
+            <div class="tech-stack-card">
+              <h3>Java</h3>
+              <span
+                class="tech-role"
+                data-en="Back-end logic"
+                data-nl="Back-end logica"
+                >Back-end logic</span
+              >
+              <p
+                data-en="Core language for all server-side business logic, entity models, request handling and response formatting."
+                data-nl="Kerntaal voor alle server-side bedrijfslogica, entity-modellen, verzoekafhandeling en responsopmaak."
+              >
+                Core language for all server-side business logic, entity models,
+                request handling and response formatting.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>Hibernate</h3>
+              <span class="tech-role">ORM / Persistence</span>
+              <p
+                data-en="Maps Java entity classes to the existing Pasimo MySQL schema. Handles complex relationships, lazy loading and HQL queries without writing raw SQL."
+                data-nl="Koppelt Java-entity-klassen aan het bestaande Pasimo MySQL-schema. Beheert complexe relaties, lazy loading en HQL-queries zonder ruwe SQL te schrijven."
+              >
+                Maps Java entity classes to the existing Pasimo MySQL schema.
+                Handles complex relationships, lazy loading and HQL queries
+                without writing raw SQL.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>Jackson</h3>
+              <span
+                class="tech-role"
+                data-en="JSON Serialisation"
+                data-nl="JSON-serialisatie"
+                >JSON Serialisation</span
+              >
+              <p
+                data-en="Converts Java objects to JSON responses. Configured with custom serialisers to prevent infinite loops caused by bidirectional entity relationships."
+                data-nl="Zet Java-objecten om naar JSON-responses. Geconfigureerd met aangepaste serialisers om oneindige lussen door bidirectionele entity-relaties te voorkomen."
+              >
+                Converts Java objects to JSON responses. Configured with custom
+                serialisers to prevent infinite loops caused by bidirectional
+                entity relationships.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>MySQL</h3>
+              <span class="tech-role" data-en="Database" data-nl="Database"
+                >Database</span
+              >
+              <p
+                data-en="The Pasimo relational database containing all school data. APImo connects to it read-only, surfacing its tables through the REST layer."
+                data-nl="De Pasimo-relationele database met alle schooldata. APImo maakt er alleen-lezen verbinding mee en maakt de tabellen toegankelijk via de REST-laag."
+              >
+                The Pasimo relational database containing all school data. APImo
+                connects to it read-only, surfacing its tables through the REST
+                layer.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>Postman</h3>
+              <span
+                class="tech-role"
+                data-en="API Testing & Docs"
+                data-nl="API-testen & Docs"
+                >API Testing &amp; Docs</span
+              >
+              <p
+                data-en="Shared collection used to test every endpoint during development and serve as living documentation for teams integrating with the API."
+                data-nl="Gedeelde collectie gebruikt om elk endpoint te testen tijdens de ontwikkeling en als levende documentatie voor teams die de API integreren."
+              >
+                Shared collection used to test every endpoint during development
+                and serve as living documentation for teams integrating with the
+                API.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>Maven</h3>
+              <span class="tech-role" data-en="Build Tool" data-nl="Buildtool"
+                >Build Tool</span
+              >
+              <p
+                data-en="Manages all project dependencies (Hibernate, Jackson, MySQL connector) and standardises the build process across the whole team."
+                data-nl="Beheert alle projectafhankelijkheden (Hibernate, Jackson, MySQL-connector) en standaardiseert het bouwproces voor het hele team."
+              >
+                Manages all project dependencies (Hibernate, Jackson, MySQL
+                connector) and standardises the build process across the whole
+                team.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="project-gallery-section" id="gallery">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="Screenshots"
+            data-nl="Schermafbeeldingen"
+          >
+            Screenshots
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="Click any image to view full size"
+            data-nl="Klik op een afbeelding voor volledig formaat"
+          >
+            Click any image to view full size
+          </p>
+          <div class="gallery-grid">
+            <a
+              href="pictures/apimo/edu_res.png"
+              data-fancybox="apimo-gallery"
+              data-caption="Education resource endpoint returning a list of educations as JSON"
+              class="screenshot-item"
+            >
+              <img
+                src="pictures/apimo/edu_res.png"
+                alt="Education endpoint response"
+              />
+              <div
+                class="screenshot-caption"
+                data-en="Education endpoint response"
+                data-nl="Opleiding-endpoint respons"
+              >
+                Education endpoint response
+              </div>
+            </a>
+
+            <a
+              href="pictures/apimo/jackson_conf.png"
+              data-fancybox="apimo-gallery"
+              data-caption="Jackson configuration handling JSON serialisation of Hibernate entities"
+              class="screenshot-item"
+            >
+              <img
+                src="pictures/apimo/jackson_conf.png"
+                alt="Jackson configuration"
+              />
+              <div
+                class="screenshot-caption"
+                data-en="Jackson configuration"
+                data-nl="Jackson-configuratie"
+              >
+                Jackson configuration
+              </div>
+            </a>
+
+            <a
+              href="pictures/apimo/endpoint_json.png"
+              data-fancybox="apimo-gallery"
+              data-caption="Raw JSON response from an API endpoint tested in Postman"
+              class="screenshot-item"
+            >
+              <img
+                src="pictures/apimo/endpoint_json.png"
+                alt="Endpoint JSON response in Postman"
+              />
+              <div
+                class="screenshot-caption"
+                data-en="Endpoint JSON response in Postman"
+                data-nl="Endpoint JSON-respons in Postman"
+              >
+                Endpoint JSON response in Postman
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Learnings -->
+      <section class="project-learnings-section" id="learnings">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="Challenges & Learnings"
+            data-nl="Uitdagingen & Leerpunten"
+          >
+            Challenges &amp; Learnings
+          </h2>
+          <div class="learnings-grid">
+            <div class="learnings-column">
+              <h3>
+                <i class="fas fa-bolt"></i>
+                <span
+                  data-en="Challenges we faced"
+                  data-nl="Uitdagingen die we tegenkwamen"
+                  >Challenges we faced</span
+                >
+              </h3>
+              <ul class="learnings-list">
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Configuring Hibernate from scratch in a plain Java servlet app, no Spring to auto-wire the session factory, so we had to read the documentation carefully and handle the lifecycle manually."
+                    data-nl="Hibernate from scratch configureren in een gewone Java servlet-app, geen Spring om de sessie-factory automatisch te koppelen, dus we moesten de documentatie zorgvuldig lezen en de levenscyclus handmatig afhandelen."
+                    >Configuring Hibernate from scratch in a plain Java servlet
+                    app, no Spring to auto-wire the session factory, so we had
+                    to read the documentation carefully and handle the lifecycle
+                    manually.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Mapping the pre-existing Pasimo schema to Java entities with bidirectional relationships caused infinite JSON loops until we properly configured Jackson with @JsonManagedReference and @JsonBackReference."
+                    data-nl="Het mappen van het bestaande Pasimo-schema naar Java-entities met bidirectionele relaties veroorzaakte oneindige JSON-lussen, totdat we Jackson correct hadden geconfigureerd met @JsonManagedReference en @JsonBackReference."
+                    >Mapping the pre-existing Pasimo schema to Java entities
+                    with bidirectional relationships caused infinite JSON loops
+                    until we properly configured Jackson with
+                    @JsonManagedReference and @JsonBackReference.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Designing a consistent REST URL structure across all seven resource groups so the API felt coherent to any team consuming it."
+                    data-nl="Het ontwerpen van een consistente REST URL-structuur voor alle zeven resourcegroepen, zodat de API coherent aanvoelde voor elk team dat er gebruik van maakte."
+                    >Designing a consistent REST URL structure across all seven
+                    resource groups so the API felt coherent to any team
+                    consuming it.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Coordinating work across three developers on a shared codebase, merge conflicts and diverging entity models made early communication essential."
+                    data-nl="Werk coördineren tussen drie ontwikkelaars op een gedeelde codebase, merge-conflicten en uiteenlopende entity-modellen maakten vroege communicatie essentieel."
+                    >Coordinating work across three developers on a shared
+                    codebase, merge conflicts and diverging entity models made
+                    early communication essential.</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="learnings-column">
+              <h3>
+                <i class="fas fa-lightbulb"></i>
+                <span data-en="What I learned" data-nl="Wat ik heb geleerd"
+                  >What I learned</span
+                >
+              </h3>
+              <ul class="learnings-list">
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="How to build a REST API in pure Java: servlet setup, request routing, reading path parameters, and writing JSON responses without a framework doing it for you."
+                    data-nl="Hoe je een REST API bouwt in pure Java: servlet-setup, verzoekrouting, pathparameters lezen en JSON-responses schrijven zonder dat een framework het voor je doet."
+                    >How to build a REST API in pure Java: servlet setup,
+                    request routing, reading path parameters, and writing JSON
+                    responses without a framework doing it for you.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Deep understanding of Hibernate: entity annotations, session management, lazy vs. eager loading, and writing HQL queries to filter data efficiently."
+                    data-nl="Diepgaand begrip van Hibernate: entity-annotaties, sessiebeheer, lazy vs. eager loading en het schrijven van HQL-queries om data efficiënt te filteren."
+                    >Deep understanding of Hibernate: entity annotations,
+                    session management, lazy vs. eager loading, and writing HQL
+                    queries to filter data efficiently.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Jackson internals: how object graphs are serialised, why circular references break JSON output, and how to resolve them with annotations and custom serialisers."
+                    data-nl="Jackson-internals: hoe objectgrafen worden geserialiseerd, waarom circulaire verwijzingen JSON-uitvoer breken en hoe je ze oplost met annotaties en aangepaste serialisers."
+                    >Jackson internals: how object graphs are serialised, why
+                    circular references break JSON output, and how to resolve
+                    them with annotations and custom serialisers.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Using Postman not just for testing but as living API documentation, well-named requests and saved examples let teammates and consumer teams understand the API without extra docs."
+                    data-nl="Postman gebruiken niet alleen voor testen, maar als levende API-documentatie, goed benoemde verzoeken en opgeslagen voorbeelden laten teamgenoten en consumerteams de API begrijpen zonder extra documentatie."
+                    >Using Postman not just for testing but as living API
+                    documentation, well-named requests and saved examples let
+                    teammates and consumer teams understand the API without
+                    extra docs.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Running a real SCRUM process: splitting the resource list into sprint tasks, estimating story points, and demoing working endpoints to a product owner at the end of each sprint."
+                    data-nl="Een echt SCRUM-proces uitvoeren: de resourcelijst opsplitsen in sprinttaken, story points schatten en werkende endpoints demonstreren aan een product owner aan het einde van elke sprint."
+                    >Running a real SCRUM process: splitting the resource list
+                    into sprint tasks, estimating story points, and demoing
+                    working endpoints to a product owner at the end of each
+                    sprint.</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="project-cta-section">
+        <h2 data-en="Want to see more?" data-nl="Wil je meer zien?">
+          Want to see more?
+        </h2>
+        <p
+          data-en="Head back to my portfolio to explore my other projects or get in touch."
+          data-nl="Ga terug naar mijn portfolio om mijn andere projecten te bekijken of neem contact op."
+        >
+          Head back to my portfolio to explore my other projects or get in
+          touch.
+        </p>
+        <div class="cta-actions">
+          <a href="index.html#projects" class="btn btn-primary">
+            <i class="fas fa-arrow-left"></i>
+            <span data-en="All Projects" data-nl="Alle Projecten"
+              >All Projects</span
+            >
+          </a>
+          <a href="index.html#contact" class="btn btn-secondary">
+            <i class="fas fa-envelope"></i>
+            <span data-en="Get In Touch" data-nl="Neem Contact Op"
+              >Get In Touch</span
+            >
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="js/projectPage.js"></script>
+  </body>
+</html>

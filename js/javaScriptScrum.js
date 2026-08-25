@@ -151,9 +151,9 @@ function updateAge() {
     if (heroDescription) {
         const currentLang = document.documentElement.getAttribute('data-lang') || 'en';
         if (currentLang === 'en') {
-            heroDescription.textContent = `${age}-year-old software development student passionate about creating innovative solutions and building engaging digital experiences.`;
+            heroDescription.textContent = `${age} year old software development student passionate about creating innovative solutions and building engaging digital experiences.`;
         } else {
-            heroDescription.textContent = `${age}-jarige softwareontwikkelingsstudent gepassioneerd over het creëren van innovatieve oplossingen en het bouwen van boeiende digitale ervaringen.`;
+            heroDescription.textContent = `${age} jarige softwareontwikkelingsstudent gepassioneerd over het creëren van innovatieve oplossingen en het bouwen van boeiende digitale ervaringen.`;
         }
     }
 }

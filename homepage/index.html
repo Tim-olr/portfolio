@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>T-Mail Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="emailAppCss.css">
+</head>
+
+<body>
+  <nav class="menu" role="navigation" aria-label="Menú principal">
+    <a href="https://mijn.scalda.nl/home" class="link-school" aria-label="Projects" target="_blank" data-sticky>
+      <span class="link-icon">school</span>
+      <div data-sticky-area></div>
+    </a>
+    <a href="https://dhz.medicplek.nl/" class="link-work" aria-label="Messages" target="_blank" data-sticky>
+      <span class="link-icon">work</span>
+      <div data-sticky-area></div>
+    </a>
+    <a href="https://trello.com/u/timolree/boards" class="link-trello" aria-label="Settings" target="_blank" data-sticky>
+      <span class="link-icon">note</span>
+      <div data-sticky-area></div>
+    </a>
+    <a href="Discord:" class="link-discord" aria-label="Chat" data-sticky>
+      <span class="link-icon">chat</span>
+      <div data-sticky-area></div>
+    </a>
+    <a href="https://delphinity.atlassian.net/jira/software/c/projects/PLAN/boards/995?assignee=712020%3A307e33d7-1365-4127-822b-91708a9564f3" target="_blank" class="link-jira" aria-label="Chat" data-sticky>
+      <span class="link-icon">lan</span>
+      <div data-sticky-area></div>
+    </a>
+    <a href="https://delphinity.atlassian.net/wiki/spaces/PLAN/overview?homepageId=1934524530" target="_blank" class="link-conf" aria-label="Chat" data-sticky>
+      <span class="link-icon">ad</span>
+      <div data-sticky-area></div>
+    </a>
+    <a href="https://bitbucket.org/delphinitysd/planfond_pilot/src/develop/" target="_blank" class="link-bit" aria-label="Chat" data-sticky>
+      <span class="link-icon">bucket_check</span>
+      <div data-sticky-area></div>
+    </a>
+  </nav>
+  
+<h2 class="quote">Quote of the day:</h2><h2 class="welcomeH2" id="dailyQuote">Kom op mannen!</h2>
+    
+  <div class="wrapper">
+    <input id="qr" placeholder="Enter link">
+    <img id="qrImage">
+    <button id="qrButton" data-sticky>
+        QR
+    <div data-sticky-area></div>
+      </button>
+    </div>
+  </div>
+  
+  <div class="bubble"></div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script type="module">
+
+    const quotes = [
+      "Kom op mannen!",
+      "Mijn plafond is jullie vloer!",
+      "Wie gooide dat?!?",
+      "Kanoa",
+      "Er is altijd wat te doen...",
+      "Je kan niet altijd 6 gooien",
+      "Pullrequest, denied!"
+    ];
+    
+    // Get day of year to ensure same quote for entire day
+    function getDayOfYear() {
+      const now = new Date();
+      const start = new Date(now.getFullYear(), 0, 0);
+      const diff = now - start;
+      const oneDay = 1000 * 60 * 60 * 24;
+      return Math.floor(diff / oneDay);
+    }
+    
+    // Set quote based on day
+    const dayOfYear = getDayOfYear();
+    const quoteIndex = dayOfYear % quotes.length;
+    document.getElementById('dailyQuote').textContent = quotes[quoteIndex];
+    
+    // QR Code functionality
+    const btn = document.querySelector("#qrButton");
+    const qrImage = document.querySelector("#qrImage");
+    const qrInput = document.getElementById("qr");
+    
+    btn.addEventListener("click", () => {
+      if (qrInput.value) {
+        qrImage.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(qrInput.value)}`;
+      }
+    });
+
+    // Simple vector class
+    class Vec2 {
+      constructor(x = 0, y = 0) {
+        this.x = x;
+        this.y = y;
+      }
+      
+      clone() {
+        return new Vec2(this.x, this.y);
+      }
+      
+      copy(v) {
+        this.x = v.x;
+        this.y = v.y;
+        return this;
+      }
+      
+      sub(v) {
+        this.x -= v.x;
+        this.y -= v.y;
+        return this;
+      }
+      
+      lerp(v, t) {
+        this.x += (v.x - this.x) * t;
+        this.y += (v.y - this.y) * t;
+        return this;
+      }
+    }
+
+    // Elastic Cursor Class
+    class ElasticCursor {
+      constructor(el) {
+        this.node = el;
+        this.pos = {
+          prev: new Vec2(-100, -100),
+          now: new Vec2(-100, -100),
+          aim: new Vec2(-100, -100),
+          ease: 0.1
+        };
+        this.size = {
+          prev: 1,
+          now: 1,
+          aim: 1,
+          ease: 0.1
+        };
+        this.active = false;
+        this.target = null;
+        this._bindEvents();
+      }
+      
+      _bindEvents() {
+        gsap.utils.toArray("[data-sticky]").forEach((el) => {
+          const area = el.querySelector("[data-sticky-area]");
+          
+          if (!area) return;
+          
+          area.addEventListener("pointerover", () => {
+            this.active = true;
+            this.target = area;
+            el.classList.add("is-bubbled");
+          });
+          
+          area.addEventListener("pointerout", () => {
+            this.active = false;
+            this.target = null;
+            el.classList.remove("is-bubbled");
+          });
+          
+          const moveX = gsap.quickTo(el, "x", { duration: 1, ease: "elastic.out(1, 0.3)" });
+          const moveY = gsap.quickTo(el, "y", { duration: 1, ease: "elastic.out(1, 0.3)" });
+          
+          el.addEventListener("pointermove", (ev) => {
+            const { clientX, clientY } = ev;
+            const { width, height, left, top } = el.getBoundingClientRect();
+            const dx = clientX - (left + width / 2);
+            const dy = clientY - (top + height / 2);
+            moveX(dx * 0.2);
+            moveY(dy * 0.2);
+          });
+          
+          el.addEventListener("pointerout", () => {
+            moveX(0);
+            moveY(0);
+          });
+        });
+      }
+      
+      moveTo(x, y) {
+        if (this.active && this.target) {
+          const rect = this.target.getBoundingClientRect();
+          const cx = rect.x + rect.width / 2;
+          const cy = rect.y + rect.height / 2;
+          const dx = x - cx;
+          const dy = y - cy;
+          
+          this.pos.aim.x = cx + dx * 0.15;
+          this.pos.aim.y = cy + dy * 0.15;
+          this.size.aim = 2;
+          
+          const angle = Math.atan2(dy, dx) * (180 / Math.PI);
+          const dist = Math.sqrt(dx * dx + dy * dy) * 0.01;
+          
+          gsap.set(this.node, { rotate: angle });
+          gsap.to(this.node, {
+            scaleX: this.size.aim + Math.pow(Math.min(dist, 0.6), 3) * 3,
+            scaleY: this.size.aim - Math.pow(Math.min(dist, 0.3), 3) * 3,
+            duration: 0.5,
+            ease: "power4.out",
+            overwrite: true
+          });
+        } else {
+          this.pos.aim.x = x;
+          this.pos.aim.y = y;
+          this.size.aim = 1;
+        }
+      }
+      
+      update() {
+        this.pos.now.lerp(this.pos.aim, this.pos.ease);
+        this.size.now = gsap.utils.interpolate(this.size.now, this.size.aim, this.size.ease);
+        
+        const diff = this.pos.now.clone().sub(this.pos.prev);
+        this.pos.prev.copy(this.pos.now);
+        this.size.prev = this.size.now;
+        
+        gsap.set(this.node, {
+          x: this.pos.now.x,
+          y: this.pos.now.y
+        });
+        
+        if (!this.active) {
+          const ang = Math.atan2(diff.y, diff.x) * (180 / Math.PI);
+          const dist = Math.sqrt(diff.x ** 2 + diff.y ** 2) * 0.04;
+          
+          gsap.set(this.node, {
+            rotate: ang,
+            scaleX: this.size.now + Math.min(dist, 1),
+            scaleY: this.size.now - Math.min(dist, 0.3)
+          });
+        }
+      }
+    }
+
+    // Initialize cursor
+    const bubbleCursor = new ElasticCursor(document.querySelector(".bubble"));
+    
+    window.addEventListener("mousemove", (e) => {
+      bubbleCursor.moveTo(e.clientX, e.clientY);
+    });
+    
+    function frame() {
+      bubbleCursor.update();
+      requestAnimationFrame(frame);
+    }
+    frame();
+  </script>
+</body>
+</html>

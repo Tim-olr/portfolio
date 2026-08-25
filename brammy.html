@@ -1,0 +1,823 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brammy</title>
+    <link rel="stylesheet" href="css/CSS_Scrum.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <button
+      class="mobile-menu-toggle"
+      id="mobileMenuToggle"
+      aria-label="Toggle menu"
+    >
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="navbar" id="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Portfolio</a></li>
+        <li><a href="#overview" class="nav-link">Overview</a></li>
+        <li><a href="#contributions" class="nav-link">My Work</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#tech" class="nav-link">Tech Stack</a></li>
+        <li><a href="#gallery" class="nav-link">Screenshots</a></li>
+        <li><a href="#learnings" class="nav-link">Learnings</a></li>
+        <li>
+          <button
+            class="language-toggle"
+            id="languageToggle"
+            aria-label="Toggle language"
+          >
+            <i class="fas fa-globe"></i>
+            <span class="lang-text">EN</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="project-page-main">
+      <!-- Hero -->
+      <section class="project-hero-section">
+        <div class="project-hero-inner container">
+          <a href="index.html#projects" class="back-link">
+            <i class="fas fa-arrow-left"></i>
+            <span data-en="Back to Portfolio" data-nl="Terug naar Portfolio"
+              >Back to Portfolio</span
+            >
+          </a>
+          <span
+            class="project-type-label"
+            data-en="School Project · Team"
+            data-nl="Schoolproject · Team"
+            >School Project · Team</span
+          >
+          <h1>Brammy</h1>
+          <p
+            class="project-tagline"
+            data-en="A 3D stealth horror game built in Godot. Escape your teacher Brammy through the halls of your own school before he catches you."
+            data-nl="Een 3D stealth-horrorgame gebouwd in Godot. Ontsnapt aan je leraar Brammy door de gangen van je eigen school voordat hij je pakt."
+          >
+            A 3D stealth horror game built in Godot. Escape your teacher Brammy
+            through the halls of your own school before he catches you.
+          </p>
+          <div class="project-hero-tags">
+            <span class="tech-tag">Godot 4</span>
+            <span class="tech-tag">GDScript</span>
+            <span class="tech-tag">Game Design</span>
+            <span class="tech-tag">Sound Design</span>
+            <span class="tech-tag">Team Project</span>
+          </div>
+          <div class="project-hero-actions">
+            <a
+              href="https://github.com/Tim-olr/escape-brammies"
+              target="_blank"
+              class="btn btn-white"
+            >
+              <i class="fab fa-github"></i>
+              <span data-en="View on GitHub" data-nl="Bekijk op GitHub"
+                >View on GitHub</span
+              >
+            </a>
+            <a
+              href="https://tim-olr.itch.io/escape-brammys"
+              target="_blank"
+              class="btn btn-outline-white"
+            >
+              <i class="fab fa-itch-io"></i>
+              <span data-en="Play on itch.io" data-nl="Spelen op itch.io"
+                >Play on itch.io</span
+              >
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Info Bar -->
+      <div class="project-info-bar">
+        <div class="project-info-grid">
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-calendar"></i></div>
+            <div>
+              <span class="info-card-label" data-en="Status" data-nl="Status"
+                >Status</span
+              >
+              <span
+                class="info-card-value"
+                data-en="Completed"
+                data-nl="Afgerond"
+                >Completed</span
+              >
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-users"></i></div>
+            <div>
+              <span
+                class="info-card-label"
+                data-en="Team size"
+                data-nl="Teamgrootte"
+                >Team size</span
+              >
+              <span class="info-card-value" data-en="Team" data-nl="Team"
+                >Team</span
+              >
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-gamepad"></i></div>
+            <div>
+              <span class="info-card-label" data-en="Engine" data-nl="Engine"
+                >Engine</span
+              >
+              <span class="info-card-value">Godot 4</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-code"></i></div>
+            <div>
+              <span class="info-card-label" data-en="Language" data-nl="Taal"
+                >Language</span
+              >
+              <span class="info-card-value">GDScript</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-ghost"></i></div>
+            <div>
+              <span class="info-card-label" data-en="Genre" data-nl="Genre"
+                >Genre</span
+              >
+              <span
+                class="info-card-value"
+                data-en="Stealth Horror"
+                data-nl="Stealth Horror"
+                >Stealth Horror</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Overview -->
+      <section class="project-overview-section" id="overview">
+        <div class="container">
+          <div class="overview-grid">
+            <div class="overview-text">
+              <h2 data-en="About this project" data-nl="Over dit project">
+                About this project
+              </h2>
+              <p
+                data-en="Brammy is a 3D stealth horror game made as a school project. The game is set inside the actual Scalda building where we study, with every corridor, classroom, and stairwell modelled after the real thing. The goal is simple: sneak around, collect three key items, and use them to repair the exit door before Brammy catches you."
+                data-nl="Brammy is een 3D stealth-horrorgame gemaakt als schoolproject. De game speelt zich af in het echte Scalda-gebouw waar wij studeren, met elke gang, klas en trap gemodelleerd naar de werkelijkheid. Het doel is simpel: sluip rond, verzamel drie sleutelitems en gebruik ze om de uitgangsdeur te repareren voordat Brammy je pakt."
+              >
+                Brammy is a 3D stealth horror game made as a school project. The
+                game is set inside the actual Scalda building where we study,
+                with every corridor, classroom, and stairwell modelled after the
+                real thing. The goal is simple: sneak around, collect three key
+                items, and use them to repair the exit door before Brammy
+                catches you.
+              </p>
+              <p
+                data-en="The enemy, Brammy, is inspired by our real teacher. He roams the building and hunts you by sight and sound. You can find a breaker box on the map to turn on the lights, which gives you a better view but also makes you more visible to Brammy. You carry one of each item at a time: the Button, the Wires, and the Engine. Each must be brought to and used on the door separately to complete the repair."
+                data-nl="De vijand, Brammy, is geïnspireerd op onze echte leraar. Hij dwaalt door het gebouw en jaagt op je via zicht en geluid. Je kunt een zekeringkast op de kaart vinden om de lichten aan te zetten, wat je een beter zicht geeft maar je ook zichtbaarder maakt voor Brammy. Je draagt één item tegelijk: de Knop, de Draden en de Motor. Elk moet apart naar de deur worden gebracht en gebruikt om de reparatie te voltooien."
+              >
+                The enemy, Brammy, is inspired by our real teacher. He roams the
+                building and hunts you by sight and sound. You can find a
+                breaker box on the map to turn on the lights, which gives you a
+                better view but also makes you more visible to Brammy. You carry
+                one of each item at a time: the Button, the Wires, and the
+                Engine. Each must be brought to and used on the door separately
+                to complete the repair.
+              </p>
+              <p
+                data-en="The game ships with two difficulty modes. Eclipse mode is the standard experience: three inventory slots, normal stamina, and a manageable Brammy. IntelliJ mode cranks up the pressure: Brammy is 25% faster, you have only one inventory slot, and your stamina and stamina recovery are both cut by 33%. Every step counts."
+                data-nl="De game heeft twee moeilijkheidsgraden. Eclipse-modus is de standaardbeleving: drie inventarisslots, normale stamina en een beheersbare Brammy. IntelliJ-modus zet de druk op: Brammy is 25% sneller, je hebt maar één inventarisslot en je stamina en stamina-herstel zijn beide met 33% verlaagd. Elke stap telt."
+              >
+                The game ships with two difficulty modes. Eclipse mode is the
+                standard experience: three inventory slots, normal stamina, and
+                a manageable Brammy. IntelliJ mode cranks up the pressure:
+                Brammy is 25% faster, you have only one inventory slot, and your
+                stamina and stamina recovery are both cut by 33%. Every step
+                counts.
+              </p>
+            </div>
+            <div>
+              <div class="overview-highlights">
+                <h3 data-en="Key highlights" data-nl="Belangrijkste punten">
+                  Key highlights
+                </h3>
+                <ul class="highlight-list">
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Map based on the real Scalda building where we study"
+                      data-nl="Kaart gebaseerd op het echte Scalda-gebouw waar wij studeren"
+                      >Map based on the real Scalda building where we
+                      study</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Brammy is inspired by our actual teacher"
+                      data-nl="Brammy is geïnspireerd op onze echte leraar"
+                      >Brammy is inspired by our actual teacher</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="3 repair items: Button, Wires and Engine, each carried and used separately"
+                      data-nl="3 reparatie-items: Knop, Draden en Motor, elk apart gedragen en gebruikt"
+                      >3 repair items: Button, Wires and Engine, each carried
+                      and used separately</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Breaker box mechanic to toggle the lights"
+                      data-nl="Zekeringkast mechanic om de lichten te schakelen"
+                      >Breaker box mechanic to toggle the lights</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="IntelliJ mode for a brutal one-slot, high-speed challenge"
+                      data-nl="IntelliJ-modus voor een brutale één-slot, hoge-snelheid uitdaging"
+                      >IntelliJ mode for a brutal one-slot, high-speed
+                      challenge</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Collectible items that permanently affect Brammy or the player"
+                      data-nl="Verzamelobjecten die Brammy of de speler permanent beïnvloeden"
+                      >Collectible items that permanently affect Brammy or the
+                      player</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- My Contributions -->
+      <section class="project-features-section" id="contributions">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="My Contributions"
+            data-nl="Mijn Bijdragen"
+          >
+            My Contributions
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="Everything I built for Brammy"
+            data-nl="Alles wat ik heb gebouwd voor Brammy"
+          >
+            Everything I built for Brammy
+          </p>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-user-secret"></i></div>
+              <h3 data-en="Brammy Entity" data-nl="Brammy Entiteit">
+                Brammy Entity
+              </h3>
+              <p
+                data-en="I built the entire Brammy character from scratch: his AI, pathfinding, sight cone, hearing radius, and all state transitions (idle, patrol, chase, catch). He is the heart of the game and everything that makes him scary came from my code."
+                data-nl="Ik heb het volledige Brammy-personage van scratch gebouwd: zijn AI, pathfinding, zichtskegel, gehoorradius en alle toestandsovergangen (idle, patrol, achtervolging, vangen). Hij is het hart van de game en alles wat hem eng maakt, komt uit mijn code."
+              >
+                I built the entire Brammy character from scratch: his AI,
+                pathfinding, sight cone, hearing radius, and all state
+                transitions (idle, patrol, chase, catch). He is the heart of the
+                game and everything that makes him scary came from my code.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-running"></i></div>
+              <h3 data-en="All Player Logic" data-nl="Alle Spelerslogica">
+                All Player Logic
+              </h3>
+              <p
+                data-en="I coded all player systems: walking, sprinting with a stamina bar, looking direction, and the full inventory system. This includes picking up and dropping items, slot management, and the one-slot restriction that kicks in on IntelliJ mode."
+                data-nl="Ik heb alle spelerssystemen geprogrammeerd: lopen, sprinten met een staminabalk, kijkrichting en het volledige inventarissysteem. Dit omvat het oppakken en neerzetten van items, slotbeheer en de één-slot-beperking die actief is in IntelliJ-modus."
+              >
+                I coded all player systems: walking, sprinting with a stamina
+                bar, looking direction, and the full inventory system. This
+                includes picking up and dropping items, slot management, and the
+                one-slot restriction that kicks in on IntelliJ mode.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-boxes"></i></div>
+              <h3
+                data-en="All Items &amp; Upgrades"
+                data-nl="Alle Items &amp; Upgrades"
+              >
+                All Items &amp; Upgrades
+              </h3>
+              <p
+                data-en="I designed and implemented every collectible item and upgrade in the game. Each one has a unique effect that changes how you play or how dangerous Brammy is. See the full breakdown in the Items and Upgrades section below."
+                data-nl="Ik heb elk verzamelobject en elke upgrade in de game ontworpen en geïmplementeerd. Elk heeft een uniek effect dat verandert hoe je speelt of hoe gevaarlijk Brammy is. Zie de volledige uitleg in de Items en Upgrades sectie hieronder."
+              >
+                I designed and implemented every collectible item and upgrade in
+                the game. Each one has a unique effect that changes how you play
+                or how dangerous Brammy is. See the full breakdown in the Items
+                and Upgrades section below.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-volume-up"></i></div>
+              <h3 data-en="All Sounds" data-nl="Alle Geluiden">All Sounds</h3>
+              <p
+                data-en="I handled the entire sound design for the game: ambient tension, footstep audio, Brammy's chase sounds, item pick-up effects, and UI feedback. Sound is a huge part of what makes Brammy feel threatening, and I built all of it."
+                data-nl="Ik heb het volledige geluidsontwerp voor de game verzorgd: omgevingsspanning, voetstapgeluiden, Brammy's achtervolging geluiden, item oppak-effecten en UI-feedback. Geluid is een groot deel van wat Brammy dreigend laat aanvoelen, en ik heb het allemaal gebouwd."
+              >
+                I handled the entire sound design for the game: ambient tension,
+                footstep audio, Brammy's chase sounds, item pick-up effects, and
+                UI feedback. Sound is a huge part of what makes Brammy feel
+                threatening, and I built all of it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features / Items -->
+      <section class="project-tech-section" id="features">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="Items &amp; Upgrades"
+            data-nl="Items &amp; Upgrades"
+          >
+            Items &amp; Upgrades
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="Every item I built and what it does"
+            data-nl="Elk item dat ik heb gebouwd en wat het doet"
+          >
+            Every item I built and what it does
+          </p>
+          <div class="tech-stack-grid">
+            <div class="tech-stack-card">
+              <h3>SQL Injection</h3>
+              <span
+                class="tech-role"
+                data-en="Usable Item"
+                data-nl="Bruikbaar Item"
+                >Usable Item</span
+              >
+              <p
+                data-en="Stops time for 5 seconds. Use it to freeze Brammy mid-chase and slip past him. A high-risk, high-reward escape when he is right behind you."
+                data-nl="Stopt de tijd gedurende 5 seconden. Gebruik het om Brammy te bevriezen midden in een achtervolging en langs hem te slippen. Een hoog-risico, hoog-beloning ontsnapping als hij vlak achter je zit."
+              >
+                Stops time for 5 seconds. Use it to freeze Brammy mid-chase and
+                slip past him. A high-risk, high-reward escape when he is right
+                behind you.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>Struts2</h3>
+              <span
+                class="tech-role"
+                data-en="Permanent Debuff"
+                data-nl="Permanente Debuff"
+                >Permanent Debuff</span
+              >
+              <p
+                data-en="When collected, Brammy becomes 10% slower for the rest of the game. A meaningful advantage that makes every encounter slightly less lethal, if you can reach it safely."
+                data-nl="Wanneer verzameld, wordt Brammy 10% langzamer voor de rest van de game. Een betekenisvolle voordeel dat elke ontmoeting iets minder dodelijk maakt, als je het veilig kunt bereiken."
+              >
+                When collected, Brammy becomes 10% slower for the rest of the
+                game. A meaningful advantage that makes every encounter slightly
+                less lethal, if you can reach it safely.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>White Brew</h3>
+              <span
+                class="tech-role"
+                data-en="Permanent Buff"
+                data-nl="Permanente Buff"
+                >Permanent Buff</span
+              >
+              <p
+                data-en="Permanently speeds the player up by 10%. Once grabbed, you are faster for the rest of the run, stacking your odds of outrunning Brammy when it matters most."
+                data-nl="Versnelt de speler permanent met 10%. Eenmaal gepakt, ben je de rest van de run sneller, wat je kansen vergroot om Brammy te ontlopen wanneer het er het meest toe doet."
+              >
+                Permanently speeds the player up by 10%. Once grabbed, you are
+                faster for the rest of the run, stacking your odds of outrunning
+                Brammy when it matters most.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>Screwdriver</h3>
+              <span
+                class="tech-role"
+                data-en="Permanent Debuff on Brammy"
+                data-nl="Permanente Debuff op Brammy"
+                >Permanent Debuff on Brammy</span
+              >
+              <p
+                data-en="Decreases Brammy's sight range by 20% permanently. He becomes noticeably less perceptive for the rest of the game, giving you more room to move in the open."
+                data-nl="Vermindert Brammy's zichtbereik permanent met 20%. Hij wordt merkbaar minder opmerkzaam voor de rest van de game, waardoor je meer ruimte hebt om open te bewegen."
+              >
+                Decreases Brammy's sight range by 20% permanently. He becomes
+                noticeably less perceptive for the rest of the game, giving you
+                more room to move in the open.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>Scrum Bell</h3>
+              <span class="tech-role" data-en="Key Item" data-nl="Sleutelitem"
+                >Key Item</span
+              >
+              <p
+                data-en="The Scrum Bell is used to unlock the Button item. Without it, the Button cannot be obtained, making the Scrum Bell an indirect but essential step in completing the door repair."
+                data-nl="De Scrum Bell wordt gebruikt om het Knop-item te ontgrendelen. Zonder de bell kan de Knop niet worden verkregen, waardoor de Scrum Bell een indirecte maar essentiële stap is om de deurreparatie te voltooien."
+              >
+                The Scrum Bell is used to unlock the Button item. Without it,
+                the Button cannot be obtained, making the Scrum Bell an indirect
+                but essential step in completing the door repair.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech Stack -->
+      <section class="project-features-section" id="tech">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="Tech Stack"
+            data-nl="Technologieën"
+          >
+            Tech Stack
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="Tools and technologies behind Brammy"
+            data-nl="Tools en technologieën achter Brammy"
+          >
+            Tools and technologies behind Brammy
+          </p>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-robot"></i></div>
+              <h3>Godot 4</h3>
+              <p
+                data-en="The game is built entirely in Godot Engine 4. The node-based scene system made it easy to structure the player, Brammy, items, and the map as independent, reusable components."
+                data-nl="De game is volledig gebouwd in Godot Engine 4. Het node-gebaseerde scènesysteem maakte het gemakkelijk om de speler, Brammy, items en de kaart te structureren als onafhankelijke, herbruikbare componenten."
+              >
+                The game is built entirely in Godot Engine 4. The node-based
+                scene system made it easy to structure the player, Brammy,
+                items, and the map as independent, reusable components.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-code"></i></div>
+              <h3>GDScript</h3>
+              <p
+                data-en="All game logic is written in GDScript, Godot's Python-like scripting language. It kept iteration fast and made it easy to prototype and tweak Brammy's AI and player movement on the fly."
+                data-nl="Alle spellogica is geschreven in GDScript, Godot's Python-achtige scripttaal. Dit hield de iteratie snel en maakte het gemakkelijk om Brammy's AI en spelersbeweging snel te prototypen en aan te passen."
+              >
+                All game logic is written in GDScript, Godot's Python-like
+                scripting language. It kept iteration fast and made it easy to
+                prototype and tweak Brammy's AI and player movement on the fly.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-map"></i></div>
+              <h3 data-en="Level Design" data-nl="Levelontwerp">
+                Level Design
+              </h3>
+              <p
+                data-en="The Scalda building layout was recreated in 3D. Walls, rooms, corridors, and the breaker box all needed careful placement to reflect the real building while still being fun to navigate."
+                data-nl="De indeling van het Scalda-gebouw werd nagemaakt in 3D. Muren, kamers, gangen en de zekeringkast moesten zorgvuldig worden geplaatst om het echte gebouw weer te geven en tegelijkertijd leuk te navigeren."
+              >
+                The Scalda building layout was recreated in 3D. Walls, rooms,
+                corridors, and the breaker box all needed careful placement to
+                reflect the real building while still being fun to navigate.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-volume-up"></i></div>
+              <h3
+                data-en="Audio / Sound Design"
+                data-nl="Audio / Geluidsontwerp"
+              >
+                Audio / Sound Design
+              </h3>
+              <p
+                data-en="Godot's AudioStreamPlayer nodes power all the in-game sound. Positional audio adds tension by letting the player hear Brammy's footsteps getting closer, a core part of the fear."
+                data-nl="Godot's AudioStreamPlayer-nodes sturen alle in-game geluiden aan. Positionele audio voegt spanning toe doordat de speler Brammy's voetstappen dichter kan horen komen, een kernonderdeel van de angst."
+              >
+                Godot's AudioStreamPlayer nodes power all the in-game sound.
+                Positional audio adds tension by letting the player hear
+                Brammy's footsteps getting closer, a core part of the fear.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fab fa-github"></i></div>
+              <h3>Git / GitHub</h3>
+              <p
+                data-en="Version control throughout the entire project. We used branches to split work between team members, keeping the Brammy AI, player systems, and level design isolated until they were ready to merge."
+                data-nl="Versiebeheer gedurende het hele project. We gebruikten branches om werk te verdelen tussen teamleden, zodat de Brammy AI, spelerssystemen en levelontwerp geïsoleerd bleven totdat ze klaar waren om samen te voegen."
+              >
+                Version control throughout the entire project. We used branches
+                to split work between team members, keeping the Brammy AI,
+                player systems, and level design isolated until they were ready
+                to merge.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="project-gallery-section" id="gallery">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="Screenshots"
+            data-nl="Schermafbeeldingen"
+          >
+            Screenshots
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="Click any image to view full size"
+            data-nl="Klik op een afbeelding voor volledig formaat"
+          >
+            Click any image to view full size
+          </p>
+          <div class="gallery-grid">
+            <a
+              href="pictures/brammy/brammy.png"
+              data-fancybox="brammy-gallery"
+              data-caption="Brammy, the relentless teacher stalking the halls"
+              class="screenshot-item"
+            >
+              <img
+                src="pictures/brammy/brammy.png"
+                alt="Brammy character portrait"
+              />
+              <div
+                class="screenshot-caption"
+                data-en="Gameplay, corridor sneaking"
+                data-nl="Gameplay, gang sluipen"
+              >
+                Brammy stalking the halls of Scalda, ready to catch the player
+                if they aren't careful.
+              </div>
+            </a>
+
+            <a
+              href="pictures/brammy/open_seq.png"
+              data-fancybox="brammy-gallery"
+              data-caption="The opening sequence where the player sees Brammy for the first time and gets chased through the halls"
+              class="screenshot-item"
+            >
+              <img
+                src="pictures/brammy/open_seq.png"
+                alt="opening sequence, Brammy chase through the halls"
+              />
+              <div
+                class="screenshot-caption"
+                data-en="Brammy chase sequence"
+                data-nl="Brammy achtervolging"
+              >
+                Brammy spawning sequence
+              </div>
+            </a>
+
+            <a
+              href="pictures/brammy/starting.png"
+              data-fancybox="brammy-gallery"
+              data-caption="Player starting position: the initial location where the player begins the game"
+              class="screenshot-item"
+            >
+              <img src="pictures/brammy/starting.png" alt="Starting position" />
+              <div
+                class="screenshot-caption"
+                data-en="Inventory &amp; item system"
+                data-nl="Inventaris &amp; itemsysteem"
+              >
+                Starting position
+              </div>
+            </a>
+
+            <a
+              href="pictures/brammy/intellij.png"
+              data-fancybox="brammy-gallery"
+              data-caption="IntelliJ mode: one slot, faster Brammy, less stamina"
+              class="screenshot-item"
+            >
+              <img src="pictures/brammy/intellij.png" alt="IntelliJ mode" />
+              <div
+                class="screenshot-caption"
+                data-en="IntelliJ mode"
+                data-nl="IntelliJ-modus"
+              >
+                IntelliJ mode
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Learnings -->
+      <section class="project-learnings-section" id="learnings">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="Challenges &amp; Learnings"
+            data-nl="Uitdagingen &amp; Leerpunten"
+          >
+            Challenges &amp; Learnings
+          </h2>
+          <div class="learnings-grid">
+            <div class="learnings-column">
+              <h3>
+                <i class="fas fa-bolt"></i>
+                <span
+                  data-en="Challenges I faced"
+                  data-nl="Uitdagingen die ik tegenkwam"
+                  >Challenges I faced</span
+                >
+              </h3>
+              <ul class="learnings-list">
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Building Brammy's AI so he felt genuinely threatening without being unfair. The sight cone, hearing radius, and chase states all had to feel natural."
+                    data-nl="Brammy's AI bouwen zodat hij echt dreigend aanvoelde zonder oneerlijk te zijn. De zichtskegel, gehoorradius en achtervolging-toestanden moesten allemaal natuurlijk aanvoelen."
+                    >Building Brammy's AI so he felt genuinely threatening
+                    without being unfair. The sight cone, hearing radius, and
+                    chase states all had to feel natural.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Balancing the stamina system so sprinting was useful but not spammable. Too fast and there is no tension, too slow and the game becomes frustrating."
+                    data-nl="Het staminasysteem balanceren zodat sprinten nuttig maar niet spambaar was. Te snel en er is geen spanning, te traag en de game wordt frustrerend."
+                    >Balancing the stamina system so sprinting was useful but
+                    not spammable. Too fast and there is no tension, too slow
+                    and the game becomes frustrating.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Making the item and upgrade effects stack correctly across the whole session without causing bugs when multiple items were picked up."
+                    data-nl="De item- en upgrade-effecten correct laten stapelen gedurende de hele sessie zonder bugs te veroorzaken wanneer meerdere items werden opgepakt."
+                    >Making the item and upgrade effects stack correctly across
+                    the whole session without causing bugs when multiple items
+                    were picked up.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Designing the inventory system so it worked identically in both difficulty modes, just with a different slot limit, without duplicating code."
+                    data-nl="Het inventarissysteem ontwerpen zodat het identiek werkte in beide moeilijkheidsgraden, maar met een andere slotlimiet, zonder code te dupliceren."
+                    >Designing the inventory system to work identically in both
+                    difficulty modes, just with a different slot limit, without
+                    duplicating code.</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="learnings-column">
+              <h3>
+                <i class="fas fa-lightbulb"></i>
+                <span data-en="What I learned" data-nl="Wat ik heb geleerd"
+                  >What I learned</span
+                >
+              </h3>
+              <ul class="learnings-list">
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="How to build a finite state machine for enemy AI: idle, patrol, alert, chase, and catch states each with clean transitions."
+                    data-nl="Hoe een eindige toestandsmachine te bouwen voor vijand-AI: idle, patrol, alert, achtervolging en vangen-toestanden elk met schone overgangen."
+                    >How to build a finite state machine for enemy AI: idle,
+                    patrol, alert, chase, and catch states each with clean
+                    transitions.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="That sound design is not decoration, it is gameplay. Getting Brammy's audio right was as important as getting his movement right."
+                    data-nl="Dat geluidsontwerp geen decoratie is, het is gameplay. Het goed krijgen van Brammy's audio was net zo belangrijk als het goed krijgen van zijn beweging."
+                    >That sound design is not decoration, it is gameplay.
+                    Getting Brammy's audio right was as important as getting his
+                    movement right.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Designing game systems with difficulty modes in mind from the start is much cleaner than bolting them on later. The inventory slot limit taught me that."
+                    data-nl="Spelsystemen ontwerpen met moeilijkheidsgraden in gedachten vanaf het begin is veel schoner dan ze er later op te bolten. De inventarisslotlimiet leerde me dat."
+                    >Designing game systems with difficulty modes in mind from
+                    the start is much cleaner than bolting them on later. The
+                    inventory slot limit taught me that.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Working in a team on a shared Godot project: coordinating scenes, avoiding merge conflicts, and keeping each system modular enough for others to use."
+                    data-nl="Werken in een team aan een gedeeld Godot-project: coördineren van scènes, vermijden van merge-conflicten en elk systeem modulair genoeg houden voor anderen om te gebruiken."
+                    >Working in a team on a shared Godot project: coordinating
+                    scenes, avoiding merge conflicts, and keeping each system
+                    modular enough for others to use.</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="project-cta-section">
+        <h2 data-en="Want to play it?" data-nl="Wil je het spelen?">
+          Want to play it?
+        </h2>
+        <p
+          data-en="Brammy is available on itch.io. Source code is on GitHub. Can you repair the door before he finds you?"
+          data-nl="Brammy is beschikbaar op itch.io. De broncode staat op GitHub. Kun jij de deur repareren voordat hij je vindt?"
+        >
+          Brammy is available on itch.io. Source code is on GitHub. Can you
+          repair the door before he finds you?
+        </p>
+        <div class="cta-actions">
+          <a
+            href="https://github.com/Tim-olr/escape-brammies"
+            target="_blank"
+            class="btn btn-primary"
+          >
+            <i class="fab fa-github"></i>
+            <span data-en="View on GitHub" data-nl="Bekijk op GitHub"
+              >View on GitHub</span
+            >
+          </a>
+          <a
+            href="https://tim-olr.itch.io/escape-brammys"
+            target="_blank"
+            class="btn btn-secondary"
+          >
+            <i class="fab fa-itch-io"></i>
+            <span data-en="Play on itch.io" data-nl="Spelen op itch.io"
+              >Play on itch.io</span
+            >
+          </a>
+          <a href="index.html#projects" class="btn btn-secondary">
+            <i class="fas fa-arrow-left"></i>
+            <span data-en="All Projects" data-nl="Alle Projecten"
+              >All Projects</span
+            >
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="js/projectPage.js"></script>
+  </body>
+</html>

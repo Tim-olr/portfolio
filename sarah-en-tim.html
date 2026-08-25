@@ -1,0 +1,709 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sarah en Tim</title>
+    <link rel="stylesheet" href="css/CSS_Scrum.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <button
+      class="mobile-menu-toggle"
+      id="mobileMenuToggle"
+      aria-label="Toggle menu"
+    >
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="navbar" id="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Portfolio</a></li>
+        <li><a href="#overview" class="nav-link">Overview</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#tech" class="nav-link">Tech Stack</a></li>
+        <li><a href="#gallery" class="nav-link">Screenshots</a></li>
+        <li><a href="#learnings" class="nav-link">Learnings</a></li>
+        <li>
+          <button
+            class="language-toggle"
+            id="languageToggle"
+            aria-label="Toggle language"
+          >
+            <i class="fas fa-globe"></i>
+            <span class="lang-text">EN</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="project-page-main">
+      <!-- Hero -->
+      <section class="project-hero-section">
+        <div class="project-hero-inner container">
+          <a href="index.html#projects" class="back-link">
+            <i class="fas fa-arrow-left"></i>
+            <span data-en="Back to Portfolio" data-nl="Terug naar Portfolio"
+              >Back to Portfolio</span
+            >
+          </a>
+          <span
+            class="project-type-label"
+            data-en="Personal Project · Solo"
+            data-nl="Persoonlijk Project · Solo"
+            >Personal Project · Solo</span
+          >
+          <h1>Sarah en Tim</h1>
+          <p
+            class="project-tagline"
+            data-en="A private site built to feel like a scrapbook of shared memories for me and my girlfriend."
+            data-nl="Een privé site gebouwd om aan te voelen als een plakboek van gedeelde herinneringen voor mij en mijn vriendin."
+          >
+            A private site built to feel like a scrapbook of shared memories for
+            me and my girlfriend.
+          </p>
+          <div class="project-hero-tags">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">Spring Boot</span>
+            <span class="tech-tag">Maven</span>
+            <span class="tech-tag">Hibernate</span>
+            <span class="tech-tag">Solo Dev</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Info Bar -->
+      <div class="project-info-bar">
+        <div class="project-info-grid">
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-calendar"></i></div>
+            <div>
+              <span class="info-card-label" data-en="Status" data-nl="Status"
+                >Status</span
+              >
+              <span class="info-card-value" data-en="Live" data-nl="Live"
+                >Live</span
+              >
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-user"></i></div>
+            <div>
+              <span
+                class="info-card-label"
+                data-en="Team size"
+                data-nl="Teamgrootte"
+                >Team size</span
+              >
+              <span class="info-card-value" data-en="Solo" data-nl="Solo"
+                >Solo</span
+              >
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-heart"></i></div>
+            <div>
+              <span class="info-card-label" data-en="Type" data-nl="Type"
+                >Type</span
+              >
+              <span
+                class="info-card-value"
+                data-en="Gift / Personal"
+                data-nl="Cadeau / Persoonlijk"
+                >Gift / Personal</span
+              >
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-tools"></i></div>
+            <div>
+              <span class="info-card-label" data-en="Backend" data-nl="Backend"
+                >Backend</span
+              >
+              <span class="info-card-value">Spring Boot</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-users"></i></div>
+            <div>
+              <span class="info-card-label" data-en="Users" data-nl="Gebruikers"
+                >Users</span
+              >
+              <span
+                class="info-card-value"
+                data-en="Private (invite only)"
+                data-nl="Privé (op uitnodiging)"
+                >Private (invite only)</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Overview -->
+      <section class="project-overview-section" id="overview">
+        <div class="container">
+          <div class="overview-grid">
+            <div class="overview-text">
+              <h2 data-en="About this project" data-nl="Over dit project">
+                About this project
+              </h2>
+              <p
+                data-en="Sarah en Tim is a private full-stack web application I built as a Valentine's Day gift for my girlfriend. The idea was simple: create a cosy, personal space where the two of us could store and revisit our shared memories, complete with photos, dates, and captions."
+                data-nl="Sarah en Tim is een privé full-stack webapplicatie die ik bouwde als Valentijnsdagcadeau voor mijn vriendin. Het idee was simpel: een gezellige, persoonlijke ruimte creëren waar wij samen onze herinneringen kunnen opslaan en terugbekijken, compleet met foto's, datums en bijschriften."
+              >
+                Sarah en Tim is a private full-stack web application I built as
+                a Valentine's Day gift for my girlfriend. The idea was simple:
+                create a cosy, personal space where the two of us could store
+                and revisit our shared memories, complete with photos, dates,
+                and captions.
+              </p>
+              <p
+                data-en="The site features a daily memory highlight on the home screen, a gallery view where all memories are shown as photo cards, and a timeline view where memories appear in chronological order with a scrapbook feel. Both of us can publish new memories, edit or delete existing ones, and leave a nice message on the memory"
+                data-nl="De site heeft een dagelijkse herinnering op de startpagina, een galerij waar alle herinneringen als fotokaartjes worden getoond en een tijdlijnweergave waar herinneringen chronologisch verschijnen met een plakboekgevoel. We kunnen allebei nieuwe herinneringen publiceren, bestaande bewerken of verwijderen en een leuk bericht achterlaten bij de herinnering."
+              >
+                The site features a daily memory highlight on the home screen, a
+                gallery view where all memories are shown as photo cards, and a
+                timeline view where memories appear in chronological order with
+                a scrapbook feel. Both of us can publish new memories, edit or
+                delete existing ones, and leave comments on each other's posts.
+              </p>
+              <p
+                data-en="Access is invite-only, there is no public registration. I built a small admin panel to manage users and memories. The project taught me Spring Boot from scratch, including REST controllers, Spring Security, JPA with Hibernate, and deploying a Java application to a live server."
+                data-nl="Toegang is op uitnodiging, er is geen openbare registratie. Ik bouwde een klein adminpaneel om gebruikers en herinneringen te beheren. Het project leerde me Spring Boot van scratch, inclusief REST controllers, Spring Security, JPA met Hibernate en het deployen van een Java-applicatie naar een live server."
+              >
+                Access is invite-only, there is no public registration. I built
+                a small admin panel to manage users and memories. The project
+                taught me Spring Boot from scratch, including REST controllers,
+                Spring Security, JPA with Hibernate, and deploying a Java
+                application to a live server.
+              </p>
+            </div>
+            <div>
+              <div class="overview-highlights">
+                <h3 data-en="Key highlights" data-nl="Belangrijkste punten">
+                  Key highlights
+                </h3>
+                <ul class="highlight-list">
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Built as a Valentine's Day gift, motivation driven by love"
+                      data-nl="Gebouwd als Valentijnsdagcadeau, motivatie gedreven door liefde"
+                      >Built as a Valentine's Day gift, motivation driven by
+                      love</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Daily memory shown on the home screen, changes each day"
+                      data-nl="Dagelijkse herinnering op de startpagina, verandert elke dag"
+                      >Daily memory shown on the home screen, changes each
+                      day</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Gallery and timeline views for browsing all memories"
+                      data-nl="Galerij en tijdlijnweergaven om alle herinneringen te bekijken"
+                      >Gallery and timeline views for browsing all
+                      memories</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Admin panel for user and memory management"
+                      data-nl="Adminpaneel voor gebruikers en herinneringsbeheer"
+                      >Admin panel for user and memory management</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Invite-only access, private and secure by design"
+                      data-nl="Alleen op uitnodiging, privé en veilig by design"
+                      >Invite-only access, private and secure by design</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="project-features-section" id="features">
+        <div class="container">
+          <h2 class="section-title" data-en="Features" data-nl="Functies">
+            Features
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="Everything the site can do"
+            data-nl="Alles wat de site kan doen"
+          >
+            Everything the site can do
+          </p>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-star"></i></div>
+              <h3 data-en="Daily Memory" data-nl="Dagelijkse Herinnering">
+                Daily Memory
+              </h3>
+              <p
+                data-en="Every day the home screen shows a random memory from our collection, so there is always something to smile about when you first open the site."
+                data-nl="Elke dag toont de startpagina een willekeurige herinnering uit onze collectie, zodat er altijd iets is om over te glimlachen als je de site opent."
+              >
+                Every day the home screen shows a random memory from our
+                collection, so there is always something to smile about when you
+                first open the site.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-images"></i></div>
+              <h3 data-en="Gallery View" data-nl="Galerij Weergave">
+                Gallery View
+              </h3>
+              <p
+                data-en="Browse all memories in a photo-grid layout. Each card shows the photo, the date, and a short caption. Clean and easy to scroll through."
+                data-nl="Bekijk alle herinneringen in een fotorasterindeling. Elke kaart toont de foto, de datum en een kort bijschrift. Schoon en gemakkelijk door te scrollen."
+              >
+                Browse all memories in a photo-grid layout. Each card shows the
+                photo, the date, and a short caption. Clean and easy to scroll
+                through.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-stream"></i></div>
+              <h3 data-en="Timeline View" data-nl="Tijdlijn Weergave">
+                Timeline View
+              </h3>
+              <p
+                data-en="See memories laid out chronologically in a scrapbook-style timeline. Photos appear staggered left and right, giving it a personal, handcrafted feel."
+                data-nl="Bekijk herinneringen chronologisch in een tijdlijn met plakboekstijl. Foto's verschijnen afwisselend links en rechts, wat een persoonlijk, handgemaakt gevoel geeft."
+              >
+                See memories laid out chronologically in a scrapbook-style
+                timeline. Photos appear staggered left and right, giving it a
+                personal, handcrafted feel.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-plus-circle"></i></div>
+              <h3
+                data-en="Add / Edit / Delete Memories"
+                data-nl="Herinneringen Beheren"
+              >
+                Add / Edit / Delete Memories
+              </h3>
+              <p
+                data-en="Both users can add new memories with a photo, date, and caption. Existing memories can be updated or removed at any time."
+                data-nl="Beide gebruikers kunnen nieuwe herinneringen toevoegen met een foto, datum en bijschrift. Bestaande herinneringen kunnen op elk moment worden bijgewerkt of verwijderd."
+              >
+                Both users can add new memories with a photo, date, and caption.
+                Existing memories can be updated or removed at any time.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-comment"></i></div>
+              <h3 data-en="Comments" data-nl="Beschrijvingen">Description</h3>
+              <p
+                data-en="We can leave a description to share the story of what we did
+                that day, how we felt, or any funny anecdotes related to the
+                memory. It adds a personal touch and makes each memory more
+                meaningful."
+                data-nl="We kunnen een beschrijving achterlaten om het verhaal te delen van wat we die dag deden, hoe we ons voelden of grappige anekdotes gerelateerd aan de herinnering. Het voegt een persoonlijk tintje toe en maakt elke herinnering betekenisvoller."
+              >
+                We can leave a description to share the story of what we did
+                that day, how we felt, or any funny anecdotes related to the
+                memory. It adds a personal touch and makes each memory more
+                meaningful.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-user-shield"></i></div>
+              <h3 data-en="Admin Panel" data-nl="Adminpaneel">Admin Panel</h3>
+              <p
+                data-en="A dedicated admin view lets me manage user accounts and oversee all memories on the site. Users cannot register themselves, access is granted manually."
+                data-nl="Een speciale adminweergave laat me gebruikersaccounts beheren en alle herinneringen op de site overzien. Gebruikers kunnen zich niet zelf registreren, toegang wordt handmatig verleend."
+              >
+                A dedicated admin view lets me manage user accounts and oversee
+                all memories on the site. Users cannot register themselves —
+                access is granted manually.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech Stack -->
+      <section class="project-tech-section" id="tech">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="Tech Stack"
+            data-nl="Technologieën"
+          >
+            Tech Stack
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="Tools and technologies behind Sarah en Tim"
+            data-nl="Tools en technologieën achter Sarah en Tim"
+          >
+            Tools and technologies behind Sarah en Tim
+          </p>
+          <div class="tech-stack-grid">
+            <div class="tech-stack-card">
+              <h3>Spring Boot</h3>
+              <span
+                class="tech-role"
+                data-en="Backend Framework"
+                data-nl="Backend Framework"
+                >Backend Framework</span
+              >
+              <p
+                data-en="Handles the entire server side: routing, REST controllers, authentication with Spring Security, and session management. My first real Spring Boot project."
+                data-nl="Beheert de volledige serverkant: routing, REST controllers, authenticatie met Spring Security en sessiebeheer. Mijn eerste echte Spring Boot-project."
+              >
+                Handles the entire server side: routing, REST controllers,
+                authentication with Spring Security, and session management. My
+                first real Spring Boot project.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>Hibernate / JPA</h3>
+              <span
+                class="tech-role"
+                data-en="ORM / Database"
+                data-nl="ORM / Database"
+                >ORM / Database</span
+              >
+              <p
+                data-en="Maps Java entities (Memory, User, Comment) to database tables. JPA repositories handle all CRUD operations cleanly without writing raw SQL."
+                data-nl="Koppelt Java-entiteiten (Memory, User, Comment) aan databasetabellen. JPA-repositories verwerken alle CRUD-operaties netjes zonder ruwe SQL te schrijven."
+              >
+                Maps Java entities (Memory, User, Comment) to database tables.
+                JPA repositories handle all CRUD operations cleanly without
+                writing raw SQL.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>Maven</h3>
+              <span class="tech-role" data-en="Build Tool" data-nl="Build Tool"
+                >Build Tool</span
+              >
+              <p
+                data-en="Manages all project dependencies and the build lifecycle. Used to package the application as a JAR for deployment."
+                data-nl="Beheert alle projectafhankelijkheden en de buildlevenscyclus. Gebruikt om de applicatie te verpakken als een JAR voor deployment."
+              >
+                Manages all project dependencies and the build lifecycle. Used
+                to package the application as a JAR for deployment.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>Spring Security</h3>
+              <span
+                class="tech-role"
+                data-en="Authentication"
+                data-nl="Authenticatie"
+                >Authentication</span
+              >
+              <p
+                data-en="Protects all routes behind login. Only authenticated users can view memories. Admin-only routes are locked behind a role check."
+                data-nl="Beveiligt alle routes achter een login. Alleen geauthenticeerde gebruikers kunnen herinneringen bekijken. Admin-only routes zijn vergrendeld achter een rolcontrole."
+              >
+                Protects all routes behind login. Only authenticated users can
+                view memories. Admin-only routes are locked behind a role check.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>HTML / CSS / JS</h3>
+              <span class="tech-role" data-en="Frontend" data-nl="Frontend"
+                >Frontend</span
+              >
+              <p
+                data-en="The frontend is server-rendered with Thymeleaf templates styled to give a warm, cream-yellow scrapbook feel that matches the sentimental nature of the project."
+                data-nl="De frontend is server-gerenderd met Thymeleaf-templates opgemaakt om een warme, crème-gele plakboekstijl te geven die past bij het sentimentele karakter van het project."
+              >
+                The frontend is server-rendered with Thymeleaf templates styled
+                to give a warm, cream-yellow scrapbook feel that matches the
+                sentimental nature of the project.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>Git / GitHub</h3>
+              <span
+                class="tech-role"
+                data-en="Version Control"
+                data-nl="Versiebeheer"
+                >Version Control</span
+              >
+              <p
+                data-en="Full version history throughout development. Separate branches for new features like the memory system and the admin panel."
+                data-nl="Volledige versiegeschiedenis tijdens de ontwikkeling. Aparte branches voor nieuwe functies zoals het herinneringsysteem en het adminpaneel."
+              >
+                Full version history throughout development. Separate branches
+                for new features like the memory system and the admin panel.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="project-gallery-section" id="gallery">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="Screenshots"
+            data-nl="Schermafbeeldingen"
+          >
+            Screenshots
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="Click any image to view full size"
+            data-nl="Klik op een afbeelding voor volledig formaat"
+          >
+            Click any image to view full size
+          </p>
+          <div class="gallery-grid">
+            <a
+              href="pictures/sarah_tim/login_page.png"
+              data-fancybox="sarah-tim-gallery"
+              data-caption="Login page, access is invite-only, no public registration"
+              class="screenshot-item"
+            >
+              <img src="pictures/sarah_tim/login_page.png" alt="Login page" />
+              <div
+                class="screenshot-caption"
+                data-en="Login page"
+                data-nl="Inlogpagina"
+              >
+                Login page
+              </div>
+            </a>
+
+            <a
+              href="pictures/sarah_tim/welcome_page.png"
+              data-fancybox="sarah-tim-gallery"
+              data-caption="Home screen, shows the relationship timer and today's daily memory"
+              class="screenshot-item"
+            >
+              <img
+                src="pictures/sarah_tim/welcome_page.png"
+                alt="Welcome page with daily memory"
+              />
+              <div
+                class="screenshot-caption"
+                data-en="Home, daily memory & timer"
+                data-nl="Home, dagelijkse herinnering & timer"
+              >
+                Home, daily memory &amp; timer
+              </div>
+            </a>
+
+            <a
+              href="pictures/sarah_tim/galery_view.png"
+              data-fancybox="sarah-tim-gallery"
+              data-caption="Gallery view, all memories shown as photo cards with date and caption"
+              class="screenshot-item"
+            >
+              <img
+                src="pictures/sarah_tim/galery_view.png"
+                alt="Gallery view of memories"
+              />
+              <div
+                class="screenshot-caption"
+                data-en="Gallery view"
+                data-nl="Galerij weergave"
+              >
+                Gallery view
+              </div>
+            </a>
+
+            <a
+              href="pictures/sarah_tim/timeline_view.png"
+              data-fancybox="sarah-tim-gallery"
+              data-caption="Timeline view, memories in chronological order with a scrapbook feel"
+              class="screenshot-item"
+            >
+              <img
+                src="pictures/sarah_tim/timeline_view.png"
+                alt="Timeline view of memories"
+              />
+              <div
+                class="screenshot-caption"
+                data-en="Timeline view"
+                data-nl="Tijdlijn weergave"
+              >
+                Timeline view
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Learnings -->
+      <section class="project-learnings-section" id="learnings">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="Challenges & Learnings"
+            data-nl="Uitdagingen & Leerpunten"
+          >
+            Challenges &amp; Learnings
+          </h2>
+          <div class="learnings-grid">
+            <div class="learnings-column">
+              <h3>
+                <i class="fas fa-bolt"></i>
+                <span
+                  data-en="Challenges I faced"
+                  data-nl="Uitdagingen die ik tegenkwam"
+                  >Challenges I faced</span
+                >
+              </h3>
+              <ul class="learnings-list">
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Learning Spring Boot from scratch with no prior experience, figuring out the project structure, annotations, and how all the pieces fit together."
+                    data-nl="Spring Boot leren van scratch zonder eerdere ervaring, de projectstructuur, annotaties en hoe alle stukken in elkaar passen uitzoeken."
+                    >Learning Spring Boot from scratch with no prior experience
+                    — figuring out the project structure, annotations, and how
+                    all the pieces fit together.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Configuring Spring Security correctly so only logged-in users can see the site, while keeping the login page publicly accessible."
+                    data-nl="Spring Security correct configureren zodat alleen ingelogde gebruikers de site kunnen zien, terwijl de inlogpagina openbaar toegankelijk blijft."
+                    >Configuring Spring Security correctly so only logged-in
+                    users can see the site, while keeping the login page
+                    publicly accessible.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Handling file uploads and storing images so they persist correctly after the server restarts."
+                    data-nl="Bestandsuploads afhandelen en afbeeldingen opslaan zodat ze correct bewaard blijven na herstart van de server."
+                    >Handling file uploads and storing images so they persist
+                    correctly after the server restarts.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Deploying a Spring Boot JAR to a live server and keeping it running reliably."
+                    data-nl="Een Spring Boot JAR deployen naar een live server en betrouwbaar laten draaien."
+                    >Deploying a Spring Boot JAR to a live server and keeping it
+                    running reliably.</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="learnings-column">
+              <h3>
+                <i class="fas fa-lightbulb"></i>
+                <span data-en="What I learned" data-nl="Wat ik heb geleerd"
+                  >What I learned</span
+                >
+              </h3>
+              <ul class="learnings-list">
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Spring Boot fundamentals: controllers, services, repositories, and how the layers communicate through dependency injection."
+                    data-nl="Spring Boot-fundamentals: controllers, services, repositories en hoe de lagen communiceren via dependency injection."
+                    >Spring Boot fundamentals: controllers, services,
+                    repositories, and how the layers communicate through
+                    dependency injection.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="JPA and Hibernate: mapping entities, defining relationships (one-to-many for comments), and letting the ORM manage the database schema."
+                    data-nl="JPA en Hibernate: entiteiten koppelen, relaties definiëren (one-to-many voor reacties) en de ORM het databaseschema laten beheren."
+                    >JPA and Hibernate: mapping entities, defining relationships
+                    (one-to-many for comments), and letting the ORM manage the
+                    database schema.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Role-based access control: separating regular user permissions from admin permissions without duplicating logic."
+                    data-nl="Rolgebaseerde toegangscontrole: reguliere gebruikersrechten scheiden van adminrechten zonder logica te dupliceren."
+                    >Role-based access control: separating regular user
+                    permissions from admin permissions without duplicating
+                    logic.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="That building something with a real emotional purpose makes the hard parts of learning a new framework worth it."
+                    data-nl="Dat het bouwen van iets met een echte emotionele doelstelling de moeilijke delen van het leren van een nieuw framework de moeite waard maakt."
+                    >That building something with a real emotional purpose makes
+                    the hard parts of learning a new framework worth it.</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="project-cta-section">
+        <h2 data-en="Want to see it live?" data-nl="Wil je het live zien?">
+          Want to see it live?
+        </h2>
+        <p
+          data-en="The site is private, but you can visit the login page at sarah-en-tim.nl to get a feel for the design."
+          data-nl="De site is privé, maar je kunt de inlogpagina bezoeken op sarah-en-tim.nl om een indruk te krijgen van het design."
+        >
+          The site is private, but you can ask me for an account and I will let
+          you in!
+        </p>
+        <div class="cta-actions">
+          <a href="index.html#projects" class="btn btn-secondary">
+            <i class="fas fa-arrow-left"></i>
+            <span data-en="All Projects" data-nl="Alle Projecten"
+              >All Projects</span
+            >
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="js/projectPage.js"></script>
+  </body>
+</html>

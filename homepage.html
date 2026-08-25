@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage Tim Olree</title>
+    <link rel="stylesheet" href="css/CSS_Scrum.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <button
+      class="mobile-menu-toggle"
+      id="mobileMenuToggle"
+      aria-label="Toggle menu"
+    >
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="navbar" id="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Portfolio</a></li>
+        <li><a href="#overview" class="nav-link">Overview</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#tech" class="nav-link">Tech Stack</a></li>
+        <li><a href="#gallery" class="nav-link">Screenshots</a></li>
+        <li><a href="#learnings" class="nav-link">Learnings</a></li>
+        <li>
+          <button
+            class="language-toggle"
+            id="languageToggle"
+            aria-label="Toggle language"
+          >
+            <i class="fas fa-globe"></i>
+            <span class="lang-text">EN</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="project-page-main">
+      <section class="project-hero-section">
+        <div class="project-hero-inner container">
+          <a href="index.html#projects" class="back-link">
+            <i class="fas fa-arrow-left"></i>
+            <span data-en="Back to Portfolio" data-nl="Terug naar Portfolio"
+              >Back to Portfolio</span
+            >
+          </a>
+          <span
+            class="project-type-label"
+            data-en="Personal Project · Solo · Live"
+            data-nl="Persoonlijk Project · Solo · Live"
+            >Personal Project · Solo · Live</span
+          >
+          <h1>Homepage</h1>
+          <p
+            class="project-tagline"
+            data-en="A personal browser start page I use every day, with a QR code generator, quick-access links, and a clean responsive layout built from scratch."
+            data-nl="Een persoonlijke browserstartpagina die ik elke dag gebruik, met een QR-codegenerator, snelkoppelingen en een overzichtelijke responsieve lay-out gebouwd vanaf nul."
+          >
+            A personal browser start page I use every day, with a QR code
+            generator, quick-access links, and a clean responsive layout built
+            from scratch.
+          </p>
+          <div class="project-hero-tags">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Responsive Design</span>
+            <span class="tech-tag">Etheron</span>
+          </div>
+          <div class="project-hero-actions">
+            <a
+              href="https://www.homepage.timolr.nl/"
+              target="_blank"
+              class="btn btn-white"
+            >
+              <i class="fas fa-external-link-alt"></i>
+              <span data-en="Visit Live Site" data-nl="Bezoek Live Site"
+                >Visit Live Site</span
+              >
+            </a>
+            <a
+              href="https://github.com/Tim-olr/homepage"
+              target="_blank"
+              class="btn btn-outline-white"
+            >
+              <i class="fab fa-github"></i>
+              <span data-en="View on GitHub" data-nl="Bekijk op GitHub"
+                >View on GitHub</span
+              >
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Info Bar -->
+      <div class="project-info-bar">
+        <div class="project-info-grid">
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-calendar"></i></div>
+            <div>
+              <span class="info-card-label" data-en="Period" data-nl="Periode"
+                >Period</span
+              >
+              <span
+                class="info-card-value"
+                data-en="2024 Present"
+                data-nl="2024 Heden"
+                >2024 Present</span
+              >
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-user"></i></div>
+            <div>
+              <span
+                class="info-card-label"
+                data-en="Team size"
+                data-nl="Teamgrootte"
+                >Team size</span
+              >
+              <span class="info-card-value" data-en="Solo" data-nl="Solo"
+                >Solo</span
+              >
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-globe"></i></div>
+            <div>
+              <span
+                class="info-card-label"
+                data-en="Hosted on"
+                data-nl="Gehost op"
+                >Hosted on</span
+              >
+              <span class="info-card-value">timolr.nl server</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-layer-group"></i></div>
+            <div>
+              <span class="info-card-label" data-en="Type" data-nl="Type"
+                >Type</span
+              >
+              <span
+                class="info-card-value"
+                data-en="Front-end"
+                data-nl="Front-end"
+                >Front-end</span
+              >
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div>
+              <span class="info-card-label" data-en="Status" data-nl="Status"
+                >Status</span
+              >
+              <span
+                class="info-card-value"
+                data-en="Live & In Use"
+                data-nl="Live & In Gebruik"
+                >Live &amp; In Use</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Overview -->
+      <section class="project-overview-section" id="overview">
+        <div class="container">
+          <div class="overview-grid">
+            <div class="overview-text">
+              <h2 data-en="About this project" data-nl="Over dit project">
+                About this project
+              </h2>
+              <p
+                data-en="This is the first project I built entirely on my own using HTML, CSS, and JavaScript, no frameworks, no tutorials to follow step by step, just me figuring things out. The goal was to put my front-end skills to the test and build something I would actually use every day."
+                data-nl="Dit is het eerste project dat ik volledig zelf heb gebouwd met HTML, CSS en JavaScript, geen frameworks, geen tutorials om stap voor stap te volgen, gewoon ik die dingen uitzoek. Het doel was om mijn front-end vaardigheden te testen en iets te bouwen dat ik elke dag echt zou gebruiken."
+              >
+                This is the first project I built entirely on my own using HTML,
+                CSS, and JavaScript, no frameworks, no tutorials to follow step
+                by step, just me figuring things out. The goal was to put my
+                front-end skills to the test and build something I would
+                actually use every day.
+              </p>
+              <p
+                data-en="The homepage serves as my personal browser start page. It has a grid of quick-access link cards organised by category (development tools, social media, school, entertainment), so I can open anything I need in one click instead of typing URLs every time."
+                data-nl="De homepage dient als mijn persoonlijke browserstartpagina. Het heeft een raster van snelkoppelingkaarten georganiseerd per categorie (ontwikkeltools, sociale media, school, entertainment), zodat ik alles wat ik nodig heb in één klik kan openen in plaats van elke keer URL's te typen."
+              >
+                The homepage serves as my personal browser start page. It has a
+                grid of quick-access link cards organised by category
+                (development tools, social media, school, entertainment), so I
+                can open anything I need in one click instead of typing URLs
+                every time.
+              </p>
+              <p
+                data-en="The QR code generator was a fun addition, I use it regularly to share links from my laptop to my phone without needing a messenger app. Type a URL, press generate, scan with your phone. That's it."
+                data-nl="De QR-codegenerator was een leuke toevoeging, ik gebruik hem regelmatig om links van mijn laptop naar mijn telefoon te delen zonder een messenger-app nodig te hebben. Typ een URL, druk op genereren, scan met je telefoon. Dat is alles."
+              >
+                The QR code generator was a fun addition, I use it regularly to
+                share links from my laptop to my phone without needing a
+                messenger app. Type a URL, press generate, scan with your phone.
+                That's it.
+              </p>
+              <p
+                data-en="The project is hosted on homepage.timolr.nl on Etheron Servers, meaning it's always available in any browser on any device. I've kept updating it since I first built it, adding new links and tweaking the design as my front-end skills improved."
+                data-nl="Het project wordt op homepage.timolr.nl op Etheron Servers gehost, wat betekent dat het altijd beschikbaar is in elke browser op elk apparaat. Ik heb het bijgewerkt since ik het voor het eerst heb gebouwd, waarbij ik nieuwe links heb toegevoegd en het ontwerp heb aangepast naarmate mijn front-end vaardigheden verbeterden."
+              >
+                The project is hosted on homepage.timolr.nl on Etheron Servers, meaning it's
+                always available in any browser on any device. I've kept
+                updating it since I first built it, adding new links and
+                tweaking the design as my front-end skills improved.
+              </p>
+            </div>
+            <div>
+              <div class="overview-highlights">
+                <h3 data-en="Key highlights" data-nl="Belangrijkste punten">
+                  Key highlights
+                </h3>
+                <ul class="highlight-list">
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Zero dependencies, pure HTML, CSS, and vanilla JavaScript"
+                      data-nl="Nul afhankelijkheden, pure HTML, CSS en vanilla JavaScript"
+                      >Zero dependencies, pure HTML, CSS, and vanilla
+                      JavaScript</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="QR code generator that works fully in the browser, no server needed"
+                      data-nl="QR-codegenerator die volledig in de browser werkt, geen server nodig"
+                      >QR code generator that works fully in the browser, no
+                      server needed</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Fully responsive, works on desktop, tablet, and mobile"
+                      data-nl="Volledig responsief, werkt op desktop, tablet en mobiel"
+                      >Fully responsive, works on desktop, tablet, and
+                      mobile</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Live on homepage.timolr.nl, publicly accessible at all times"
+                      data-nl="Live op homepage.timolr.nl, altijd publiek toegankelijk"
+                      >Live on homepage.timolr.nl, publicly accessible at all
+                      times</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Still used as my daily browser start page"
+                      data-nl="Nog steeds gebruikt als mijn dagelijkse browserstartpagina"
+                      >Still used as my daily browser start page</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Smooth CSS transitions and hover animations throughout"
+                      data-nl="Vloeiende CSS-overgangen en hover-animaties door de hele pagina"
+                      >Smooth CSS transitions and hover animations
+                      throughout</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="project-features-section" id="features">
+        <div class="container">
+          <h2 class="section-title" data-en="Features" data-nl="Functies">
+            Features
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="Everything the homepage can do"
+            data-nl="Alles wat de homepage kan doen"
+          >
+            Everything the homepage can do
+          </p>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-th-large"></i></div>
+              <h3 data-en="Quick-access Links" data-nl="Snelkoppelingen">
+                Quick-access Links
+              </h3>
+              <p
+                data-en="A categorised grid of link cards for the sites I use most. Each card shows a favicon and label. Clicking opens the site in a new tab. Categories include dev tools, school platforms, social media, and entertainment."
+                data-nl="Een gecategoriseerd raster van linkkarten voor de sites die ik het meest gebruik. Elke kaart toont een favicon en een label. Klikken opent de site in een nieuw tabblad. Categorieën omvatten dev tools, schoolplatforms, sociale media en entertainment."
+              >
+                A categorised grid of link cards for the sites I use most. Each
+                card shows a favicon and label. Clicking opens the site in a new
+                tab. Categories include dev tools, school platforms, social
+                media, and entertainment.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-qrcode"></i></div>
+              <h3 data-en="QR Code Generator" data-nl="QR-codegenerator">
+                QR Code Generator
+              </h3>
+              <p
+                data-en="Type or paste any URL into the input field and click Generate. A QR code appears instantly, rendered entirely client-side using a JavaScript library. Scan it with your phone to open the link immediately."
+                data-nl="Typ of plak een URL in het invoerveld en klik op Genereren. Er verschijnt onmiddellijk een QR-code, volledig aan de clientzijde weergegeven met een JavaScript-bibliotheek. Scan het met je telefoon om de link direct te openen."
+              >
+                Type or paste any URL into the input field and click Generate. A
+                QR code appears instantly, rendered entirely client-side using a
+                JavaScript library. Scan it with your phone to open the link
+                immediately.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+              <h3 data-en="Responsive Design" data-nl="Responsief Ontwerp">
+                Responsive Design
+              </h3>
+              <p
+                data-en="The layout adapts from a multi-column desktop grid down to a single-column mobile view. Touch targets are appropriately sized and the page is usable on any screen size without horizontal scrolling."
+                data-nl="De lay-out past zich aan van een meerkolomige desktopgrid tot een enkelvoudige mobiele weergave. Aanraakdoelen zijn passend van formaat en de pagina is bruikbaar op elk schermformaat zonder horizontaal scrollen."
+              >
+                The layout adapts from a multi-column desktop grid down to a
+                single-column mobile view. Touch targets are appropriately sized
+                and the page is usable on any screen size without horizontal
+                scrolling.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-paint-brush"></i></div>
+              <h3 data-en="Custom Styling" data-nl="Aangepaste Stijl">
+                Custom Styling
+              </h3>
+              <p
+                data-en="Entirely hand-written CSS with custom properties for theming. Hover animations on link cards, smooth transitions, a subtle gradient background, and consistent spacing throughout make the page pleasant to use."
+                data-nl="Volledig handgeschreven CSS met aangepaste eigenschappen voor thema's. Hover-animaties op linkkarten, vloeiende overgangen, een subtiele verloopachtergrond en consistente spatiëring door de hele pagina maken de pagina aangenaam in gebruik."
+              >
+                Entirely hand-written CSS with custom properties for theming.
+                Hover animations on link cards, smooth transitions, a subtle
+                gradient background, and consistent spacing throughout make the
+                page pleasant to use.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-cloud"></i></div>
+              <h3
+                data-en="Hosted server"
+                data-nl="Gehoste server"
+              >
+                Hosted server
+              </h3>
+              <p
+                data-en="Deployed on Etheron Servers, just like this portfolio website. Easy manageble. I did this, so the site was accecible from any of my devices. If it's my phone, tablet, PC, laptop or even my smart watch, it's possible."
+                data-nl="Gehost op Etheron Servers, net als deze portfolio website. Makkelijk en beheerbaar. Ik heb dit gedaan, zodat de site toegankelijk is op al mijn devices. Of het mijn telefoon, tablet, PC, laptop of zelfs mijn smartwatch is, is het mogelijk."
+              >
+                Deployed on Etheron Servers, just like this portfolio website. Easy manageble. I did this, so the site was accecible from any of my devices. If it's my phone, tablet, PC, laptop or even my smart watch, it's possible.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-sync-alt"></i></div>
+              <h3 data-en="Continuously Updated" data-nl="Continu Bijgewerkt">
+                Continuously Updated
+              </h3>
+              <p
+                data-en="I keep the homepage up to date as my daily needs change, new links, layout tweaks, and small features get added regularly. It has grown from a weekend project into a tool I genuinely rely on."
+                data-nl="Ik houd de homepage up-to-date naarmate mijn dagelijkse behoeften veranderen, nieuwe links, lay-outaanpassingen en kleine functies worden regelmatig toegevoegd. Het is gegroeid van een weekendproject naar een tool waarop ik echt vertrouw."
+              >
+                I keep the homepage up to date as my daily needs change, new
+                links, layout tweaks, and small features get added regularly. It
+                has grown from a weekend project into a tool I genuinely rely
+                on.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech Stack -->
+      <section class="project-tech-section" id="tech">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="Tech Stack"
+            data-nl="Technologieën"
+          >
+            Tech Stack
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="Kept intentionally simple, no frameworks"
+            data-nl="Bewust eenvoudig gehouden, geen frameworks"
+          >
+            Kept intentionally simple, no frameworks
+          </p>
+          <div class="tech-stack-grid">
+            <div class="tech-stack-card">
+              <h3>HTML5</h3>
+              <span class="tech-role" data-en="Structure" data-nl="Structuur"
+                >Structure</span
+              >
+              <p
+                data-en="Semantic markup for the page structure: sections, nav, article elements, and ARIA attributes for accessibility."
+                data-nl="Semantische opmaak voor de paginastructuur: secties, navigatie, artikelelementen en ARIA-attributen voor toegankelijkheid."
+              >
+                Semantic markup for the page structure: sections, nav, article
+                elements, and ARIA attributes for accessibility.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>CSS3</h3>
+              <span
+                class="tech-role"
+                data-en="Styling & Layout"
+                data-nl="Stijl & Lay-out"
+                >Styling &amp; Layout</span
+              >
+              <p
+                data-en="Custom properties, CSS Grid, Flexbox, media queries, and keyframe animations, written by hand without any preprocessor."
+                data-nl="Aangepaste eigenschappen, CSS Grid, Flexbox, mediaquery's en keyframe-animaties, handmatig geschreven zonder preprocessor."
+              >
+                Custom properties, CSS Grid, Flexbox, media queries, and
+                keyframe animations, written by hand without any preprocessor.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>JavaScript</h3>
+              <span
+                class="tech-role"
+                data-en="Interactivity"
+                data-nl="Interactiviteit"
+                >Interactivity</span
+              >
+              <p
+                data-en="Vanilla ES6+ for all dynamic behaviour: QR code generation, DOM manipulation, event listeners, and local state management."
+                data-nl="Vanilla ES6+ voor al het dynamische gedrag: QR-codegeneratie, DOM-manipulatie, event listeners en lokaal statusbeheer."
+              >
+                Vanilla ES6+ for all dynamic behaviour: QR code generation, DOM
+                manipulation, event listeners, and local state management.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>QR Code Library</h3>
+              <span
+                class="tech-role"
+                data-en="Client-side QR"
+                data-nl="Client-side QR"
+                >Client-side QR</span
+              >
+              <p
+                data-en="A lightweight JavaScript library renders QR codes entirely in the browser using canvas, no server request, no API key, instant output."
+                data-nl="Een lichtgewicht JavaScript-bibliotheek rendert QR-codes volledig in de browser met canvas, geen serververzoek, geen API-sleutel, directe uitvoer."
+              >
+                A lightweight JavaScript library renders QR codes entirely in
+                the browser using canvas, no server request, no API key, instant
+                output.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>Git</h3>
+              <span
+                class="tech-role"
+                data-en="Version Control"
+                data-nl="Versiebeheer"
+                >Version Control</span
+              >
+              <p
+                data-en="Complete change history with descriptive commits. Tagging stable versions before bigger redesigns made it easy to roll back if something broke."
+                data-nl="Volledige wijzigingsgeschiedenis met beschrijvende commits. Het taggen van stabiele versies vóór grotere herontwerpingen maakte het gemakkelijk om terug te draaien als er iets kapotging."
+              >
+                Complete change history with descriptive commits. Tagging stable
+                versions before bigger redesigns made it easy to roll back if
+                something broke.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="project-gallery-section" id="gallery">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="Screenshots"
+            data-nl="Schermafbeeldingen"
+          >
+            Screenshots
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="Click any image to view full size"
+            data-nl="Klik op een afbeelding voor volledig formaat"
+          >
+            Click any image to view full size
+          </p>
+          <div class="gallery-grid">
+            <a
+              href="pictures/homepage/Schermafbeelding 2026-01-14 155220.png"
+              data-fancybox="homepage-gallery"
+              data-caption="The homepage, link cards organised by category with a clean layout"
+              class="screenshot-item"
+            >
+              <img
+                src="pictures/homepage/Schermafbeelding 2026-01-14 155220.png"
+                alt="Homepage overview"
+              />
+              <div
+                class="screenshot-caption"
+                data-en="Homepage with quick-access link cards"
+                data-nl="Homepage met snelkoppelingkaarten"
+              >
+                Homepage with quick-access link cards
+              </div>
+            </a>
+
+            <a
+              href="pictures/homepage/Schermafbeelding 2026-01-14 155249.png"
+              data-fancybox="homepage-gallery"
+              data-caption="QR code generator, enter a URL and get an instant scannable QR code"
+              class="screenshot-item"
+            >
+              <img
+                src="pictures/homepage/Schermafbeelding 2026-01-14 155249.png"
+                alt="QR code generator"
+              />
+              <div
+                class="screenshot-caption"
+                data-en="Built-in QR code generator"
+                data-nl="Ingebouwde QR-codegenerator"
+              >
+                Built-in QR code generator
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Learnings -->
+      <section class="project-learnings-section" id="learnings">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="Challenges & Learnings"
+            data-nl="Uitdagingen & Leerpunten"
+          >
+            Challenges &amp; Learnings
+          </h2>
+          <div class="learnings-grid">
+            <div class="learnings-column">
+              <h3>
+                <i class="fas fa-bolt"></i>
+                <span
+                  data-en="Challenges I faced"
+                  data-nl="Uitdagingen die ik tegenkwam"
+                  >Challenges I faced</span
+                >
+              </h3>
+              <ul class="learnings-list">
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Making the QR generator work entirely client-side, understanding canvas rendering and how QR encoding works under the hood."
+                    data-nl="De QR-generator volledig aan de clientzijde laten werken, begrijpen van canvas-rendering en hoe QR-codering werkt onder de motorkap."
+                    >Making the QR generator work entirely client-side,
+                    understanding canvas rendering and how QR encoding works
+                    under the hood.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Getting a consistent layout across different browsers and screen sizes without a CSS reset framework."
+                    data-nl="Een consistente lay-out krijgen in verschillende browsers en schermformaten zonder een CSS-resetframework."
+                    >Getting a consistent layout across different browsers and
+                    screen sizes without a CSS reset framework.</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="learnings-column">
+              <h3>
+                <i class="fas fa-lightbulb"></i>
+                <span data-en="What I learned" data-nl="Wat ik heb geleerd"
+                  >What I learned</span
+                >
+              </h3>
+              <ul class="learnings-list">
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="CSS Grid and Flexbox in depth, when to use each and how to combine them for complex layouts."
+                    data-nl="CSS Grid en Flexbox in diepte, wanneer elk te gebruiken en hoe ze te combineren voor complexe lay-outs."
+                    >CSS Grid and Flexbox in depth, when to use each and how to
+                    combine them for complex layouts.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="How to integrate a third-party JavaScript library without a package manager, reading docs and loading scripts manually."
+                    data-nl="Hoe je een externe JavaScript-bibliotheek integreert zonder een pakketbeheerder, documentatie lezen en scripts handmatig laden."
+                    >How to integrate a third-party JavaScript library without a
+                    package manager, reading docs and loading scripts
+                    manually.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="The value of building something you actually use, daily use reveals friction points that you'd never catch in a one-off demo."
+                    data-nl="De waarde van het bouwen van iets dat je echt gebruikt, dagelijks gebruik onthult knelpunten die je nooit zou ontdekken in een eenmalige demo."
+                    >The value of building something you actually use, daily use
+                    reveals friction points that you'd never catch in a one-off
+                    demo.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Deploying and maintaining a live public project, the discipline of keeping it working as you iterate."
+                    data-nl="Een live openbaar project implementeren en onderhouden, de discipline om het werkend te houden terwijl je itereert."
+                    >Deploying and maintaining a live public project, the
+                    discipline of keeping it working as you iterate.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Responsive design without Bootstrap, understanding breakpoints, fluid typography, and touch-friendly interactions natively."
+                    data-nl="Responsief ontwerp zonder Bootstrap, begrijpen van breakpoints, vloeiende typografie en touch-vriendelijke interacties native."
+                    >Responsive design without Bootstrap, understanding
+                    breakpoints, fluid typography, and touch-friendly
+                    interactions natively.</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="project-cta-section">
+        <h2 data-en="Want to try it?" data-nl="Wil je het uitproberen?">
+          Want to try it?
+        </h2>
+        <p
+          data-en="The homepage is live and free to visit. Or head back to my portfolio to see the rest of my work."
+          data-nl="De homepage is live en gratis te bezoeken. Of ga terug naar mijn portfolio om de rest van mijn werk te bekijken."
+        >
+          The homepage is live and free to visit. Or head back to my portfolio
+          to see the rest of my work.
+        </p>
+        <div class="cta-actions">
+          <a
+            href="https://tim-olr.github.io/homepage/"
+            target="_blank"
+            class="btn btn-primary"
+          >
+            <i class="fas fa-external-link-alt"></i>
+            <span data-en="Visit Homepage" data-nl="Bezoek Homepage"
+              >Visit Homepage</span
+            >
+          </a>
+          <a href="index.html#projects" class="btn btn-secondary">
+            <i class="fas fa-arrow-left"></i>
+            <span data-en="All Projects" data-nl="Alle Projecten"
+              >All Projects</span
+            >
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="js/projectPage.js"></script>
+  </body>
+</html>

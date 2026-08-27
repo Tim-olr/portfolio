@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trouwsite | Tim Olree</title>
+    <link rel="stylesheet" href="css/CSS_Scrum.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <button
+      class="mobile-menu-toggle"
+      id="mobileMenuToggle"
+      aria-label="Toggle menu"
+    >
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="navbar" id="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Portfolio</a></li>
+        <li><a href="#overview" class="nav-link">Overview</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#tech" class="nav-link">Tech Stack</a></li>
+        <li><a href="#gallery" class="nav-link">Screenshots</a></li>
+        <li><a href="#learnings" class="nav-link">Learnings</a></li>
+        <li>
+          <button
+            class="language-toggle"
+            id="languageToggle"
+            aria-label="Toggle language"
+          >
+            <i class="fas fa-globe"></i>
+            <span class="lang-text">EN</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="project-page-main">
+      <!-- Hero -->
+      <section class="project-hero-section">
+        <div class="project-hero-inner container">
+          <a href="index.html#projects" class="back-link">
+            <i class="fas fa-arrow-left"></i>
+            <span data-en="Back to Portfolio" data-nl="Terug naar Portfolio"
+              >Back to Portfolio</span
+            >
+          </a>
+          <span
+            class="project-type-label"
+            data-en="Personal Project · Solo"
+            data-nl="Persoonlijk Project · Solo"
+            >Personal Project · Solo</span
+          >
+          <h1>Trouwsite</h1>
+          <p
+            class="project-tagline"
+            data-en="A wedding website built for my girlfriend's mom's wedding, with a guest photo wall, a curated slideshow gallery, and a full admin panel to manage every detail of the day."
+            data-nl="Een trouwsite gebouwd voor de bruiloft van de moeder van mijn vriendin, met een gastenfotomuur, een samengestelde slideshow-galerij en een compleet beheerpaneel om alle details van de dag te beheren."
+          >
+            A wedding website built for my girlfriend's mom's wedding, with a
+            guest photo wall, a curated slideshow gallery, and a full admin
+            panel to manage every detail of the day.
+          </p>
+          <div class="project-hero-tags">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">Spring Boot</span>
+          </div>
+          <div class="project-hero-actions">
+            <a
+              href="https://evert-en-jenny.nl"
+              target="_blank"
+              class="btn btn-white"
+            >
+              <i class="fas fa-arrow-up-right-from-square"></i>
+              <span data-en="Visit the site" data-nl="Bezoek de site"
+                >Visit the site</span
+              >
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Info Bar -->
+      <div class="project-info-bar">
+        <div class="project-info-grid">
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-calendar"></i></div>
+            <div>
+              <span class="info-card-label" data-en="Status" data-nl="Status"
+                >Status</span
+              >
+              <span
+                class="info-card-value"
+                data-en="Completed"
+                data-nl="Afgerond"
+                >Completed</span
+              >
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-user"></i></div>
+            <div>
+              <span
+                class="info-card-label"
+                data-en="Team size"
+                data-nl="Teamgrootte"
+                >Team size</span
+              >
+              <span class="info-card-value" data-en="Solo" data-nl="Solo"
+                >Solo</span
+              >
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-heart"></i></div>
+            <div>
+              <span
+                class="info-card-label"
+                data-en="Occasion"
+                data-nl="Gelegenheid"
+                >Occasion</span
+              >
+              <span
+                class="info-card-value"
+                data-en="A family wedding"
+                data-nl="Een bruiloft in de familie"
+                >A family wedding</span
+              >
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-server"></i></div>
+            <div>
+              <span
+                class="info-card-label"
+                data-en="Backend"
+                data-nl="Backend"
+                >Backend</span
+              >
+              <span class="info-card-value">Java · Spring Boot</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"
+              ><i class="fas fa-user-shield"></i
+            ></div>
+            <div>
+              <span
+                class="info-card-label"
+                data-en="Admin panel"
+                data-nl="Beheerpaneel"
+                >Admin panel</span
+              >
+              <span
+                class="info-card-value"
+                data-en="Fully custom"
+                data-nl="Volledig op maat"
+                >Fully custom</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Overview -->
+      <section class="project-overview-section" id="overview">
+        <div class="container">
+          <div class="overview-grid">
+            <div class="overview-text">
+              <h2 data-en="About this project" data-nl="Over dit project">
+                About this project
+              </h2>
+              <p
+                data-en="When my girlfriend's mom got engaged, I offered to build the wedding website myself instead of using an off-the-shelf template. I wanted the guests to be part of the day, not just spectators, so the site is built around collecting and sharing memories in real time, alongside all the practical information guests need."
+                data-nl="Toen de moeder van mijn vriendin zich verloofde, bood ik aan om de trouwsite zelf te bouwen in plaats van een kant-en-klaar sjabloon te gebruiken. Ik wilde dat de gasten onderdeel zijn van de dag, niet alleen toeschouwers, dus de site draait om het verzamelen en delen van herinneringen in realtime, naast alle praktische informatie die gasten nodig hebben."
+              >
+                When my girlfriend's mom got engaged, I offered to build the
+                wedding website myself instead of using an off-the-shelf
+                template. I wanted the guests to be part of the day, not just
+                spectators, so the site is built around collecting and sharing
+                memories in real time, alongside all the practical
+                information guests need.
+              </p>
+              <p
+                data-en="The frontend is built with plain HTML, CSS, and JavaScript, kept lightweight so it loads quickly on a phone in the middle of a wedding venue. The backend runs on Java and Spring Boot, handling photo uploads, moderation, and all the content the couple can manage themselves through the admin panel."
+                data-nl="De frontend is gebouwd met pure HTML, CSS en JavaScript, licht gehouden zodat hij snel laadt op een telefoon midden op een trouwlocatie. De backend draait op Java en Spring Boot, en regelt foto-uploads, moderatie en alle content die het bruidspaar zelf kan beheren via het beheerpaneel."
+              >
+                The frontend is built with plain HTML, CSS, and JavaScript,
+                kept lightweight so it loads quickly on a phone in the middle
+                of a wedding venue. The backend runs on Java and Spring Boot,
+                handling photo uploads, moderation, and all the content the
+                couple can manage themselves through the admin panel.
+              </p>
+              <p
+                data-en="A big focus was the guest photo flow: on the day itself, guests can upload photos straight from their phones. Nothing goes live automatically, an admin reviews every upload first, so the gallery stays a nice surprise instead of an unmoderated photo dump."
+                data-nl="Een grote focus lag op de gastenfoto-flow: op de dag zelf kunnen gasten foto's rechtstreeks vanaf hun telefoon uploaden. Niets komt automatisch online, een beheerder beoordeelt eerst elke upload, zodat de galerij een leuke verrassing blijft in plaats van een ongemodereerde fotodump."
+              >
+                A big focus was the guest photo flow: on the day itself,
+                guests can upload photos straight from their phones. Nothing
+                goes live automatically, an admin reviews every upload first,
+                so the gallery stays a nice surprise instead of an
+                unmoderated photo dump.
+              </p>
+              <p
+                data-en="Everything that could change, the date, the ceremony time, the upload window, the venue, the lunch location, the livestream link, and the gift wishlist, is editable from the admin panel, so the couple never had to ask me to change a line of code."
+                data-nl="Alles wat kon veranderen, de datum, de ceremonietijd, het uploadvenster, de locatie, de lunchlocatie, de livestream-link en het cadeauverlanglijstje, is aanpasbaar vanuit het beheerpaneel, zodat het bruidspaar mij nooit hoefde te vragen om een regel code te wijzigen."
+              >
+                Everything that could change, the date, the ceremony time,
+                the upload window, the venue, the lunch location, the
+                livestream link, and the gift wishlist, is editable from the
+                admin panel, so the couple never had to ask me to change a
+                line of code.
+              </p>
+            </div>
+            <div>
+              <div class="overview-highlights">
+                <h3 data-en="Key highlights" data-nl="Belangrijkste punten">
+                  Key highlights
+                </h3>
+                <ul class="highlight-list">
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Guest gallery with photos displayed in polaroid-style frames"
+                      data-nl="Gastengalerij met foto's weergegeven in polaroid-achtige kaders"
+                      >Guest gallery with photos displayed in polaroid-style
+                      frames</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Admin-curated gallery with a reorderable slideshow"
+                      data-nl="Door beheerders samengestelde galerij met een herschikbare slideshow"
+                      >Admin-curated gallery with a reorderable
+                      slideshow</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Wedding-day photo uploads with admin approval before publishing"
+                      data-nl="Uploads van bruiloftsfoto's met goedkeuring door de beheerder voordat ze worden gepubliceerd"
+                      >Wedding-day photo uploads with admin approval before
+                      publishing</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Full admin panel to manage every editable detail of the day"
+                      data-nl="Compleet beheerpaneel om elk aanpasbaar detail van de dag te beheren"
+                      >Full admin panel to manage every editable detail of the
+                      day</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Java and Spring Boot backend behind a lightweight HTML, CSS and JS frontend"
+                      data-nl="Java- en Spring Boot-backend achter een lichtgewicht HTML-, CSS- en JS-frontend"
+                      >Java and Spring Boot backend behind a lightweight HTML,
+                      CSS and JS frontend</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Built as a gift, entirely solo, for a wedding I care about"
+                      data-nl="Gebouwd als cadeau, volledig solo, voor een bruiloft die me na aan het hart ligt"
+                      >Built as a gift, entirely solo, for a wedding I care
+                      about</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="project-features-section" id="features">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="Site Features"
+            data-nl="Sitefuncties"
+          >
+            Site Features
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="What makes Trouwsite unique"
+            data-nl="Wat Trouwsite uniek maakt"
+          >
+            What makes Trouwsite unique
+          </p>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-images"></i></div>
+              <h3 data-en="Guest Gallery" data-nl="Gastengalerij">
+                Guest Gallery
+              </h3>
+              <p
+                data-en="Approved guest photos are displayed in polaroid-style frames, giving the page a warm, hand-picked scrapbook feel instead of a generic photo grid."
+                data-nl="Goedgekeurde gastenfoto's worden weergegeven in polaroid-achtige kaders, wat de pagina een warm, met de hand samengesteld plakboekgevoel geeft in plaats van een generiek fotorooster."
+              >
+                Approved guest photos are displayed in polaroid-style frames,
+                giving the page a warm, hand-picked scrapbook feel instead of
+                a generic photo grid.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-photo-film"></i></div>
+              <h3 data-en="Curated Gallery" data-nl="Samengestelde Galerij">
+                Curated Gallery
+              </h3>
+              <p
+                data-en="A separate gallery where admins upload the couple's own photos and set the exact order they appear in, which then plays as an automatic slideshow on the site."
+                data-nl="Een aparte galerij waar beheerders de eigen foto's van het bruidspaar uploaden en de exacte volgorde bepalen waarin ze verschijnen, die vervolgens als automatische slideshow op de site wordt afgespeeld."
+              >
+                A separate gallery where admins upload the couple's own
+                photos and set the exact order they appear in, which then
+                plays as an automatic slideshow on the site.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-camera-retro"></i></div>
+              <h3
+                data-en="Guest Photo Uploading"
+                data-nl="Foto's Uploaden door Gasten"
+              >
+                Guest Photo Uploading
+              </h3>
+              <p
+                data-en="On the wedding day itself, guests can upload photos straight from their phones during a set time window. Every upload waits for admin approval before it can appear on the site."
+                data-nl="Op de trouwdag zelf kunnen gasten foto's rechtstreeks vanaf hun telefoon uploaden binnen een ingesteld tijdvenster. Elke upload wacht op goedkeuring van een beheerder voordat deze op de site kan verschijnen."
+              >
+                On the wedding day itself, guests can upload photos straight
+                from their phones during a set time window. Every upload
+                waits for admin approval before it can appear on the site.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-user-shield"></i></div>
+              <h3 data-en="Full Admin Panel" data-nl="Compleet Beheerpaneel">
+                Full Admin Panel
+              </h3>
+              <p
+                data-en="Admins can add photos to both galleries, approve or reject guest uploads, and edit the wedding date, ceremony time, the upload window for guest photos, the venue, and the lunch location."
+                data-nl="Beheerders kunnen foto's toevoegen aan beide galerijen, gastenuploads goedkeuren of afwijzen, en de trouwdatum, ceremonietijd, het uploadvenster voor gastenfoto's, de locatie en de lunchlocatie bewerken."
+              >
+                Admins can add photos to both galleries, approve or reject
+                guest uploads, and edit the wedding date, ceremony time, the
+                upload window for guest photos, the venue, and the lunch
+                location.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-video"></i></div>
+              <h3
+                data-en="Livestream & Wishlist Links"
+                data-nl="Livestream- & Verlanglijstlinks"
+              >
+                Livestream &amp; Wishlist Links
+              </h3>
+              <p
+                data-en="The admin panel also controls the URL to the ceremony's live stream and the URL to the couple's gift wishlist, so guests who can't attend in person can still watch and contribute."
+                data-nl="Het beheerpaneel regelt ook de URL naar de livestream van de ceremonie en de URL naar het cadeauverlanglijstje van het bruidspaar, zodat gasten die niet persoonlijk aanwezig kunnen zijn toch kunnen kijken en bijdragen."
+              >
+                The admin panel also controls the URL to the ceremony's live
+                stream and the URL to the couple's gift wishlist, so guests
+                who can't attend in person can still watch and contribute.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-mobile-screen"></i></div>
+              <h3
+                data-en="Lightweight & Mobile-first"
+                data-nl="Lichtgewicht & Mobile-first"
+              >
+                Lightweight &amp; Mobile-first
+              </h3>
+              <p
+                data-en="Built with plain HTML, CSS, and JavaScript so it loads fast on any guest's phone, wherever the venue's signal happens to be that day."
+                data-nl="Gebouwd met pure HTML, CSS en JavaScript zodat het snel laadt op de telefoon van elke gast, waar het signaal van de locatie die dag ook is."
+              >
+                Built with plain HTML, CSS, and JavaScript so it loads fast on
+                any guest's phone, wherever the venue's signal happens to be
+                that day.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech Stack -->
+      <section class="project-tech-section" id="tech">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="Tech Stack"
+            data-nl="Technologieën"
+          >
+            Tech Stack
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="Tools and technologies behind Trouwsite"
+            data-nl="Tools en technologieën achter Trouwsite"
+          >
+            Tools and technologies behind Trouwsite
+          </p>
+          <div class="tech-stack-grid">
+            <div class="tech-stack-card">
+              <h3>HTML &amp; CSS</h3>
+              <span
+                class="tech-role"
+                data-en="Structure & Styling"
+                data-nl="Structuur & Styling"
+                >Structure &amp; Styling</span
+              >
+              <p
+                data-en="Hand-written markup and styling, focused on a clean, romantic look that stays fast and readable on mobile devices."
+                data-nl="Handgeschreven opmaak en styling, gericht op een strakke, romantische uitstraling die snel en leesbaar blijft op mobiele apparaten."
+              >
+                Hand-written markup and styling, focused on a clean, romantic
+                look that stays fast and readable on mobile devices.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>JavaScript</h3>
+              <span
+                class="tech-role"
+                data-en="Client-side Logic"
+                data-nl="Client-side Logica"
+                >Client-side Logic</span
+              >
+              <p
+                data-en="Powers the slideshow, the photo upload form, and the guest gallery, talking to the Spring Boot backend to fetch and submit content."
+                data-nl="Drijft de slideshow, het foto-uploadformulier en de gastengalerij aan, en communiceert met de Spring Boot-backend om content op te halen en te versturen."
+              >
+                Powers the slideshow, the photo upload form, and the guest
+                gallery, talking to the Spring Boot backend to fetch and
+                submit content.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>Java</h3>
+              <span
+                class="tech-role"
+                data-en="Backend Language"
+                data-nl="Backend Taal"
+                >Backend Language</span
+              >
+              <p
+                data-en="Handles photo storage, the guest upload approval workflow, and all the settings the admin panel exposes."
+                data-nl="Verzorgt fotoöpslag, het goedkeuringsproces voor gastenuploads, en alle instellingen die het beheerpaneel biedt."
+              >
+                Handles photo storage, the guest upload approval workflow, and
+                all the settings the admin panel exposes.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>Spring Boot</h3>
+              <span
+                class="tech-role"
+                data-en="Backend Framework"
+                data-nl="Backend Framework"
+                >Backend Framework</span
+              >
+              <p
+                data-en="Serves the REST endpoints behind both galleries, the guest upload flow, and the admin panel that ties all the wedding-day details together."
+                data-nl="Bedient de REST-endpoints achter beide galerijen, de gastenupload-flow en het beheerpaneel dat alle trouwdagdetails samenbrengt."
+              >
+                Serves the REST endpoints behind both galleries, the guest
+                upload flow, and the admin panel that ties all the
+                wedding-day details together.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>Git / GitHub</h3>
+              <span
+                class="tech-role"
+                data-en="Version Control"
+                data-nl="Versiebeheer"
+                >Version Control</span
+              >
+              <p
+                data-en="Full version history of the project, kept private given the personal, family nature of the site."
+                data-nl="Volledige versiegeschiedenis van het project, privé gehouden vanwege het persoonlijke, familiaire karakter van de site."
+              >
+                Full version history of the project, kept private given the
+                personal, family nature of the site.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="project-gallery-section" id="gallery">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="Screenshots"
+            data-nl="Schermafbeeldingen"
+          >
+            Screenshots
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="Screenshots are coming soon, once the wedding has taken place"
+            data-nl="Schermafbeeldingen volgen binnenkort, zodra de bruiloft heeft plaatsgevonden"
+          >
+            Screenshots are coming soon, once the wedding has taken place
+          </p>
+          <!--
+            Add screenshots here once available, following the pattern below:
+
+            <div class="gallery-grid">
+              <a
+                href="pictures/trouwsite/example.png"
+                data-fancybox="trouwsite-gallery"
+                data-caption="Caption describing the screenshot"
+                class="screenshot-item"
+              >
+                <img src="pictures/trouwsite/example.png" alt="Description" />
+                <div class="screenshot-caption" data-en="..." data-nl="...">
+                  ...
+                </div>
+              </a>
+            </div>
+          -->
+        </div>
+      </section>
+
+      <!-- Learnings -->
+      <section class="project-learnings-section" id="learnings">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="Challenges & Learnings"
+            data-nl="Uitdagingen & Leerpunten"
+          >
+            Challenges &amp; Learnings
+          </h2>
+          <div class="learnings-grid">
+            <div class="learnings-column">
+              <h3>
+                <i class="fas fa-bolt"></i>
+                <span
+                  data-en="Challenges I faced"
+                  data-nl="Uitdagingen die ik tegenkwam"
+                  >Challenges I faced</span
+                >
+              </h3>
+              <ul class="learnings-list">
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Building a moderation queue so guest uploads only go public after an admin approves them, without slowing down uploads on the day itself."
+                    data-nl="Een moderatiewachtrij bouwen zodat gastenuploads pas openbaar worden na goedkeuring door een beheerder, zonder het uploaden op de dag zelf te vertragen."
+                    >Building a moderation queue so guest uploads only go
+                    public after an admin approves them, without slowing down
+                    uploads on the day itself.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Designing an admin panel flexible enough to change dates, times, locations, and links without ever touching code again."
+                    data-nl="Een beheerpaneel ontwerpen dat flexibel genoeg is om datums, tijden, locaties en links te wijzigen zonder ooit weer code aan te raken."
+                    >Designing an admin panel flexible enough to change dates,
+                    times, locations, and links without ever touching code
+                    again.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Handling photo uploads and storage reliably from many guests' phones at once, on the day it mattered most."
+                    data-nl="Foto-uploads en opslag betrouwbaar afhandelen vanaf de telefoons van veel gasten tegelijk, op de dag dat het er echt toe deed."
+                    >Handling photo uploads and storage reliably from many
+                    guests' phones at once, on the day it mattered most.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Working with a real, fixed deadline, a wedding date does not move, so there was no room to slip the schedule."
+                    data-nl="Werken met een echte, vaste deadline, een trouwdatum verschuift niet, dus er was geen ruimte om de planning te verschuiven."
+                    >Working with a real, fixed deadline, a wedding date does
+                    not move, so there was no room to slip the
+                    schedule.</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="learnings-column">
+              <h3>
+                <i class="fas fa-lightbulb"></i>
+                <span data-en="What I learned" data-nl="Wat ik heb geleerd"
+                  >What I learned</span
+                >
+              </h3>
+              <ul class="learnings-list">
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Building a full REST backend with Java and Spring Boot from scratch, including endpoints for uploads, approvals, and site settings."
+                    data-nl="Het bouwen van een volledige REST-backend met Java en Spring Boot vanaf nul, inclusief endpoints voor uploads, goedkeuringen en site-instellingen."
+                    >Building a full REST backend with Java and Spring Boot
+                    from scratch, including endpoints for uploads, approvals,
+                    and site settings.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Designing content moderation flows, deciding what guests can do directly versus what needs admin review first."
+                    data-nl="Het ontwerpen van contentmoderatie-flows, bepalen wat gasten direct kunnen doen versus wat eerst beoordeling door een beheerder nodig heeft."
+                    >Designing content moderation flows, deciding what guests
+                    can do directly versus what needs admin review
+                    first.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Keeping a frontend intentionally simple, plain HTML, CSS, and JavaScript were enough, and easier to hand off than a full framework."
+                    data-nl="Een frontend bewust simpel houden, pure HTML, CSS en JavaScript waren voldoende, en makkelijker over te dragen dan een volledig framework."
+                    >Keeping a frontend intentionally simple, plain HTML, CSS,
+                    and JavaScript were enough, and easier to hand off than a
+                    full framework.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Building software for someone I care about, and seeing exactly how it gets used on the day, is a different kind of rewarding than a school project."
+                    data-nl="Software bouwen voor iemand om wie ik geef, en precies zien hoe het op de dag zelf wordt gebruikt, is een ander soort voldoening dan een schoolproject."
+                    >Building software for someone I care about, and seeing
+                    exactly how it gets used on the day, is a different kind
+                    of rewarding than a school project.</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="project-cta-section">
+        <h2
+          data-en="Curious about the project?"
+          data-nl="Nieuwsgierig naar het project?"
+        >
+          Curious about the project?
+        </h2>
+        <p
+          data-en="Built as a personal gift for a family wedding. Feel free to reach out if you'd like to know more about how it works."
+          data-nl="Gebouwd als persoonlijk cadeau voor een bruiloft in de familie. Neem gerust contact op als je meer wilt weten over hoe het werkt."
+        >
+          Built as a personal gift for a family wedding. Feel free to reach
+          out if you'd like to know more about how it works.
+        </p>
+        <div class="cta-actions">
+          <a
+            href="https://evert-en-jenny.nl"
+            target="_blank"
+            class="btn btn-primary"
+          >
+            <i class="fas fa-arrow-up-right-from-square"></i>
+            <span data-en="Visit the site" data-nl="Bezoek de site"
+              >Visit the site</span
+            >
+          </a>
+          <a href="index.html#projects" class="btn btn-secondary">
+            <i class="fas fa-arrow-left"></i>
+            <span data-en="All Projects" data-nl="Alle Projecten"
+              >All Projects</span
+            >
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="js/projectPage.js"></script>
+  </body>
+</html>

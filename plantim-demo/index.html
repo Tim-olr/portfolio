@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>PlanTim Demo</title>
+<link rel="icon" href="icon.svg" type="image/svg+xml" />
+<link rel="icon" href="icon-192.png" sizes="192x192" type="image/png" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<meta name="theme-color" content="#c4314b" />
+<link rel="stylesheet" href="style.css" />
+<style>
+  .demo-pill{ display:inline-flex; align-items:center; gap:6px; padding:3px 10px; border-radius:999px;
+    font-size:12px; font-weight:600; background:rgba(255,255,255,.18); color:inherit; text-decoration:none;
+    border:1px solid rgba(255,255,255,.35); white-space:nowrap; }
+  .demo-pill:hover{ background:rgba(255,255,255,.28); }
+</style>
+</head>
+<body class="locked">
+<div class="bg-photo"></div>
+<div class="bg-tint"></div>
+<canvas id="snow"></canvas>
+
+<div class="lock-screen" id="lockScreen">
+  <div class="lock-card">
+    <div class="brand-mark lg" data-ic="calendar"></div>
+    <h1>PlanTim</h1>
+    <p class="lock-sub" id="lockMsg">Loading the demo…</p>
+    <form id="lockForm" autocomplete="off" hidden>
+      <input type="password" id="pw1" class="field" placeholder="Password" autocomplete="off" />
+      <input type="password" id="pw2" class="field" placeholder="Confirm password" autocomplete="off" hidden />
+      <label class="show-pw"><input type="checkbox" id="showPw" /> Show password</label>
+      <div class="lock-error" id="lockError" hidden></div>
+      <button type="submit" class="btn-primary wide" id="lockSubmit">Unlock</button>
+      <div class="lock-links">
+        <button type="button" class="link-btn" id="genPwBtn" hidden>Suggest a strong password</button>
+        <button type="button" class="link-btn" id="forgotBtn" hidden>Forgot password?</button>
+      </div>
+    </form>
+    <form id="resetForm" autocomplete="off" hidden>
+      <input type="text" id="rsCode" class="field mono" placeholder="Recovery key" autocomplete="off" spellcheck="false" />
+      <input type="password" id="rsPw1" class="field" placeholder="New password" autocomplete="new-password" />
+      <input type="password" id="rsPw2" class="field" placeholder="Confirm new password" autocomplete="new-password" />
+      <div class="lock-error" id="rsError" hidden></div>
+      <button type="submit" class="btn-primary wide" id="rsSubmit">Reset password</button>
+      <div class="lock-links"><button type="button" class="link-btn" id="rsBack">Back to sign in</button></div>
+    </form>
+    <p class="lock-note" id="lockNote2"></p>
+  </div>
+</div>
+
+<main class="shell" id="shell" hidden>
+  <header class="appbar" id="titlebar">
+    <div class="brand"><span class="brand-mark" data-ic="calendar"></span><span>PlanTim</span>
+      <a class="demo-pill" href="../plantim.html" title="Nothing is saved in the demo">Demo · back to portfolio</a></div>
+    <button class="search-trigger" id="searchBtn" type="button" title="Search (Ctrl+K)">
+      <span data-ic="search"></span><span class="st-text">Search</span><kbd>Ctrl K</kbd>
+    </button>
+    <div class="appbar-actions">
+      <button class="sync-badge" id="syncBadge" type="button" hidden><i></i>Sync</button>
+      <button class="bar-btn" id="undoBtn" type="button" title="Undo (Ctrl+Z)" data-ic="undo"></button>
+      <button class="bar-btn" id="redoBtn" type="button" title="Redo (Ctrl+Y)" data-ic="redo"></button>
+      <button class="bar-btn alert-off" id="notifyBtn" type="button" title="Turn on desktop notifications" data-ic="bell" hidden></button>
+      <button class="bar-btn" id="gadgetBtn" type="button" title="Today panel" data-ic="panel"></button>
+      <button class="bar-btn" id="menuBtn" type="button" title="More" data-ic="more"></button>
+      <button class="bar-btn" id="lockBtn" type="button" title="Lock" data-ic="lock" hidden></button>
+    </div>
+  </header>
+
+  <div class="shell-body">
+    <aside class="side">
+      <button class="btn-primary new-event" id="newEventBtn" type="button"><span data-ic="plus"></span>New event</button>
+
+      <div class="mini-cal" id="miniCal"></div>
+
+      <section class="side-panel">
+        <div class="side-head"><span>Apps</span>
+          <button class="mini-btn" data-app-new type="button" title="Add an app" data-ic="plus"></button>
+        </div>
+        <div class="ap-side" id="sideApps"></div>
+      </section>
+
+      <section class="side-panel">
+        <div class="side-head"><span>Labels</span>
+          <button class="mini-btn" id="addLabelBtn" type="button" title="New label" data-ic="plus"></button>
+        </div>
+        <div class="labels" id="labelList"></div>
+      </section>
+
+      <section class="side-panel tasks-panel">
+        <div class="side-head"><span>Tasks</span><span class="side-hint">Drag onto the calendar</span></div>
+        <form class="task-add" id="taskAddForm">
+          <input type="text" id="taskAddInput" class="field" placeholder="Add a task" />
+          <button class="mini-btn" type="submit" title="Add task" data-ic="plus"></button>
+        </form>
+        <div class="tasks" id="taskList"></div>
+      </section>
+
+      <section class="side-panel tasks-panel cards-panel">
+        <div class="side-head"><span>Board</span>
+          <select class="side-select" id="sideBoard" title="Which board"></select>
+        </div>
+        <div class="tasks" id="sideCards"></div>
+      </section>
+
+      <section class="side-panel upcoming-panel">
+        <div class="side-head"><span>Upcoming</span></div>
+        <div class="upcoming" id="upcomingList"></div>
+      </section>
+    </aside>
+
+    <section class="main" id="mainPanel">
+      <div class="toolbar">
+        <button class="btn-secondary" id="todayBtn" type="button">Today</button>
+        <div class="nav-arrows">
+          <button class="icon-btn" id="prevBtn" type="button" title="Previous" data-ic="chevL"></button>
+          <button class="icon-btn" id="nextBtn" type="button" title="Next" data-ic="chevR"></button>
+        </div>
+        <div class="period-label" id="periodLabel"></div>
+        <div class="toolbar-spacer"></div>
+        <div class="seg" id="viewSeg">
+          <button type="button" data-view="day">Day</button>
+          <button type="button" data-view="3day">3 days</button>
+          <button type="button" data-view="workweek">Work week</button>
+          <button type="button" data-view="week" class="active">Week</button>
+          <button type="button" data-view="month">Month</button>
+          <button type="button" data-view="agenda">Agenda</button>
+          <button type="button" data-view="boards">Boards</button>
+          <button type="button" data-view="notes">Notes</button>
+          <button type="button" data-view="apps">Apps</button>
+        </div>
+      </div>
+
+      <div class="quickbar">
+        <span class="qb-ico" data-ic="sparkle"></span>
+        <input type="text" id="quickAdd" class="qb-input"
+          placeholder="Quick add: Lunch with Sam tomorrow 1pm #work, Fix bug fri >todo, Standup 9am *meeting" />
+        <span class="qb-preview" id="qbPreview"></span>
+      </div>
+
+      <section class="calendar" id="calendar"></section>
+    </section>
+  </div>
+</main>
+
+<div class="modal-backdrop" id="modalBackdrop" hidden>
+  <div class="modal" id="modal" role="dialog" aria-modal="true">
+    <div class="modal-head">
+      <span id="modalTitle">Event</span>
+      <button class="icon-btn ghost" id="modalClose" type="button" title="Close" data-ic="x"></button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="confirmBackdrop" hidden>
+  <div class="confirm-box">
+    <p id="confirmMsg"></p>
+    <div class="confirm-actions" id="confirmActions"></div>
+  </div>
+</div>
+
+<div class="popover" id="menuPopover" hidden>
+  <button type="button" data-act="settings">Settings</button>
+  <button type="button" data-act="presets">Presets</button>
+  <button type="button" data-act="gadget">Today panel</button>
+  <hr />
+  <button type="button" data-act="ics">Import calendar (.ics)</button>
+  <button type="button" data-act="export">Export backup</button>
+  <button type="button" data-act="import">Restore backup</button>
+</div>
+
+<div class="toast-stack" id="toastStack"></div>
+<input type="file" id="importFile" accept="application/json" hidden />
+<input type="file" id="icsFile" accept=".ics,text/calendar" hidden />
+
+<script src="demo.js"></script>
+<script src="recurrence.js"></script>
+<script src="nlp.js"></script>
+<script src="ics.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

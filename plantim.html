@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlanTim | Tim Olree</title>
+    <link rel="stylesheet" href="css/CSS_Scrum.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <button
+      class="mobile-menu-toggle"
+      id="mobileMenuToggle"
+      aria-label="Toggle menu"
+    >
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="navbar" id="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Portfolio</a></li>
+        <li><a href="#overview" class="nav-link">Overview</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#tech" class="nav-link">Tech Stack</a></li>
+        <li><a href="#gallery" class="nav-link">Screenshots</a></li>
+        <li><a href="#learnings" class="nav-link">Learnings</a></li>
+        <li>
+          <button
+            class="language-toggle"
+            id="languageToggle"
+            aria-label="Toggle language"
+          >
+            <i class="fas fa-globe"></i>
+            <span class="lang-text">EN</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="project-page-main">
+      <section class="project-hero-section">
+        <div class="project-hero-inner container">
+          <a href="index.html#projects" class="back-link">
+            <i class="fas fa-arrow-left"></i>
+            <span data-en="Back to Portfolio" data-nl="Terug naar Portfolio"
+              >Back to Portfolio</span
+            >
+          </a>
+          <span
+            class="project-type-label"
+            data-en="Personal Project · Solo"
+            data-nl="Persoonlijk Project · Solo"
+            >Personal Project · Solo</span
+          >
+          <h1>PlanTim</h1>
+          <p
+            class="project-tagline"
+            data-en="My own planner: a calendar, Trello-style boards, Obsidian-style notes and a to-do list in one app, end-to-end encrypted and synced across all my devices."
+            data-nl="Mijn eigen planner: een agenda, Trello-achtige borden, Obsidian-achtige notities en een takenlijst in één app, end-to-end versleuteld en gesynchroniseerd op al mijn apparaten."
+          >
+            My own planner: a calendar, Trello-style boards, Obsidian-style
+            notes and a to-do list in one app, end-to-end encrypted and synced
+            across all my devices.
+          </p>
+          <div class="project-hero-tags">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Web Crypto</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">PWA</span>
+          </div>
+          <div class="project-hero-actions">
+            <a
+              href="plantim-demo/index.html"
+              target="_blank"
+              class="btn btn-white"
+            >
+              <i class="fas fa-play"></i>
+              <span data-en="Try the demo" data-nl="Probeer de demo"
+                >Try the demo</span
+              >
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="project-info-bar">
+        <div class="project-info-grid">
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-calendar"></i></div>
+            <div>
+              <span class="info-card-label" data-en="Period" data-nl="Periode"
+                >Period</span
+              >
+              <span class="info-card-value">2026</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-user"></i></div>
+            <div>
+              <span
+                class="info-card-label"
+                data-en="Team size"
+                data-nl="Teamgrootte"
+                >Team size</span
+              >
+              <span class="info-card-value">Solo</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-layer-group"></i></div>
+            <div>
+              <span class="info-card-label" data-en="Type" data-nl="Type"
+                >Type</span
+              >
+              <span
+                class="info-card-value"
+                data-en="Installable Web App"
+                data-nl="Installeerbare Webapp"
+                >Installable Web App</span
+              >
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-shield-halved"></i></div>
+            <div>
+              <span
+                class="info-card-label"
+                data-en="Security"
+                data-nl="Beveiliging"
+                >Security</span
+              >
+              <span class="info-card-value">Zero-knowledge</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-cube"></i></div>
+            <div>
+              <span
+                class="info-card-label"
+                data-en="Dependencies"
+                data-nl="Afhankelijkheden"
+                >Dependencies</span
+              >
+              <span
+                class="info-card-value"
+                data-en="None, no build step"
+                data-nl="Geen, geen build-stap"
+                >None, no build step</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="project-overview-section" id="overview">
+        <div class="container">
+          <div class="overview-grid">
+            <div class="overview-text">
+              <h2 data-en="About this project" data-nl="Over dit project">
+                About this project
+              </h2>
+              <p
+                data-en="PlanTim started because I wanted one place for my agenda, my to-dos and my notes, without handing all of it to a big platform. So I built it myself: a planner with a clean, flat layout in the spirit of the new Outlook and Trello, over a themed photo background."
+                data-nl="PlanTim is ontstaan omdat ik één plek wilde voor mijn agenda, mijn taken en mijn notities, zonder alles aan een groot platform te geven. Dus bouwde ik het zelf: een planner met een strakke, platte layout in de stijl van de nieuwe Outlook en Trello, over een achtergrondfoto met thema."
+              >
+                PlanTim started because I wanted one place for my agenda, my
+                to-dos and my notes, without handing all of it to a big
+                platform. So I built it myself: a planner with a clean, flat
+                layout in the spirit of the new Outlook and Trello, over a
+                themed photo background.
+              </p>
+              <p
+                data-en="The front end is plain HTML, CSS and vanilla JavaScript: no framework, no build step and no dependencies. A tiny optional back end (PHP or Node.js) adds cross-device sync. Everything is encrypted in the browser before it is sent, so the server only ever stores data it cannot read."
+                data-nl="De front-end is pure HTML, CSS en vanilla JavaScript: geen framework, geen build-stap en geen afhankelijkheden. Een kleine optionele back-end (PHP of Node.js) zorgt voor synchronisatie tussen apparaten. Alles wordt in de browser versleuteld voordat het wordt verstuurd, zodat de server alleen data opslaat die hij niet kan lezen."
+              >
+                The front end is plain HTML, CSS and vanilla JavaScript: no
+                framework, no build step and no dependencies. A tiny optional
+                back end (PHP or Node.js) adds cross-device sync. Everything is
+                encrypted in the browser before it is sent, so the server only
+                ever stores data it cannot read.
+              </p>
+              <p
+                data-en="It is installable as an app on desktop and phone, works offline, and sends reminders through push notifications. I use it every day."
+                data-nl="Het is als app te installeren op desktop en telefoon, werkt offline en stuurt herinneringen via pushmeldingen. Ik gebruik het elke dag."
+              >
+                It is installable as an app on desktop and phone, works offline,
+                and sends reminders through push notifications. I use it every
+                day.
+              </p>
+              <p
+                data-en="Want to try it? The demo runs entirely in your browser with sample data. Nothing is saved: refresh the page and it starts over."
+                data-nl="Wil je het proberen? De demo draait volledig in je browser met voorbeelddata. Er wordt niets opgeslagen: ververs de pagina en hij begint opnieuw."
+              >
+                Want to try it? The demo runs entirely in your browser with
+                sample data. Nothing is saved: refresh the page and it starts
+                over.
+              </p>
+            </div>
+            <div>
+              <div class="overview-highlights">
+                <h3 data-en="Key highlights" data-nl="Belangrijkste punten">
+                  Key highlights
+                </h3>
+                <ul class="highlight-list">
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Zero-knowledge encryption with AES-GCM and PBKDF2"
+                      data-nl="Zero-knowledge versleuteling met AES-GCM en PBKDF2"
+                      >Zero-knowledge encryption with AES-GCM and PBKDF2</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Natural-language quick add: “Lunch with Sam tomorrow 1pm #social”"
+                      data-nl="Snel toevoegen in gewone taal: “Lunch with Sam tomorrow 1pm #social”"
+                      >Natural-language quick add: “Lunch with Sam tomorrow 1pm
+                      #social”</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Drag to move, resize or duplicate events"
+                      data-nl="Slepen om afspraken te verplaatsen, te verlengen of te dupliceren"
+                      >Drag to move, resize or duplicate events</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Boards and calendar linked both ways"
+                      data-nl="Borden en agenda in beide richtingen gekoppeld"
+                      >Boards and calendar linked both ways</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Cross-device sync, offline support and push reminders"
+                      data-nl="Synchronisatie tussen apparaten, offline gebruik en push-herinneringen"
+                      >Cross-device sync, offline support and push
+                      reminders</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Zero dependencies, plain vanilla JavaScript"
+                      data-nl="Geen afhankelijkheden, puur vanilla JavaScript"
+                      >Zero dependencies, plain vanilla JavaScript</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-features-section" id="features">
+        <div class="container">
+          <h2 class="section-title" data-en="Features" data-nl="Functies">
+            Features
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="Everything the application can do"
+            data-nl="Alles wat de applicatie kan doen"
+          >
+            Everything the application can do
+          </p>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-calendar-week"></i></div>
+              <h3 data-en="Calendar Views" data-nl="Agendaweergaven">
+                Calendar Views
+              </h3>
+              <p
+                data-en="Day, 3-day, week, work week, month and agenda views with a mini calendar and an upcoming list. Repeating events, reminders, checklists and coloured labels, all with keyboard shortcuts."
+                data-nl="Dag-, 3-dagen-, week-, werkweek-, maand- en agendaweergave met een minikalender en een lijst met komende afspraken. Herhalende afspraken, herinneringen, checklists en gekleurde labels, allemaal met sneltoetsen."
+              >
+                Day, 3-day, week, work week, month and agenda views with a mini
+                calendar and an upcoming list. Repeating events, reminders,
+                checklists and coloured labels, all with keyboard shortcuts.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+              <h3 data-en="Natural-language Quick Add" data-nl="Snel Toevoegen">
+                Natural-language Quick Add
+              </h3>
+              <p
+                data-en="Type a sentence and PlanTim works out the date, time, duration, label, reminder and repeat rule, with a live preview. It can also drop a card straight onto a board."
+                data-nl="Typ een zin en PlanTim haalt er de datum, tijd, duur, het label, de herinnering en de herhaling uit, met een live voorbeeld. Het kan ook direct een kaart op een bord zetten."
+              >
+                Type a sentence and PlanTim works out the date, time, duration,
+                label, reminder and repeat rule, with a live preview. It can also
+                drop a card straight onto a board.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-table-columns"></i></div>
+              <h3 data-en="Boards" data-nl="Borden">Boards</h3>
+              <p
+                data-en="Trello-style boards with lists and cards, due dates, repeating routines and filters. Drag a card onto the calendar to plan it; moving it to Done marks the event as done too."
+                data-nl="Trello-achtige borden met lijsten en kaarten, deadlines, terugkerende routines en filters. Sleep een kaart naar de agenda om hem in te plannen; naar Done verplaatsen markeert de afspraak ook als klaar."
+              >
+                Trello-style boards with lists and cards, due dates, repeating
+                routines and filters. Drag a card onto the calendar to plan it;
+                moving it to Done marks the event as done too.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-note-sticky"></i></div>
+              <h3 data-en="Notes" data-nl="Notities">Notes</h3>
+              <p
+                data-en="Obsidian-style markdown notes in a folder tree, with [[links]] between notes, backlinks, to-do checkboxes and an edit and read mode."
+                data-nl="Obsidian-achtige markdown-notities in een mappenstructuur, met [[links]] tussen notities, backlinks, to-do vakjes en een bewerk- en leesmodus."
+              >
+                Obsidian-style markdown notes in a folder tree, with [[links]]
+                between notes, backlinks, to-do checkboxes and an edit and read
+                mode.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-lock"></i></div>
+              <h3 data-en="Encrypted Sync" data-nl="Versleutelde Synchronisatie">
+                Encrypted Sync
+              </h3>
+              <p
+                data-en="My password never leaves my device. It is turned into an encryption key and a separate login key, so the server only holds ciphertext. A recovery key lets me reset a forgotten password without losing any data."
+                data-nl="Mijn wachtwoord verlaat nooit mijn apparaat. Het wordt omgezet in een encryptiesleutel en een aparte inlogsleutel, zodat de server alleen versleutelde data heeft. Met een herstelsleutel kan ik een vergeten wachtwoord resetten zonder data te verliezen."
+              >
+                My password never leaves my device. It is turned into an
+                encryption key and a separate login key, so the server only holds
+                ciphertext. A recovery key lets me reset a forgotten password
+                without losing any data.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-mobile-screen"></i></div>
+              <h3 data-en="Installable App" data-nl="Installeerbare App">
+                Installable App
+              </h3>
+              <p
+                data-en="A progressive web app with a service worker: I have it installed on my phone and desktop, it works offline, sends me push reminders and a morning digest, and can import .ics calendars."
+                data-nl="Een progressive web app met een service worker: ik heb hem geïnstalleerd op mijn telefoon en desktop, hij werkt offline, stuurt mij push-herinneringen en een ochtendoverzicht, en kan .ics-agenda's importeren."
+              >
+                A progressive web app with a service worker: I have it installed
+                on my phone and desktop, it works offline, sends me push
+                reminders and a morning digest, and can import .ics calendars.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-tech-section" id="tech">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="Tech Stack"
+            data-nl="Technologieën"
+          >
+            Tech Stack
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="The technologies powering PlanTim"
+            data-nl="De technologieën achter PlanTim"
+          >
+            The technologies powering PlanTim
+          </p>
+          <div class="tech-stack-grid">
+            <div class="tech-stack-card">
+              <h3>Vanilla JavaScript</h3>
+              <span class="tech-role">Front end</span>
+              <p
+                data-en="The whole app: rendering, drag and drop, the natural-language parser and recurrence rules, without any framework."
+                data-nl="De hele app: weergave, slepen en neerzetten, de parser voor gewone taal en herhalingsregels, zonder framework."
+              >
+                The whole app: rendering, drag and drop, the natural-language
+                parser and recurrence rules, without any framework.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>HTML &amp; CSS</h3>
+              <span class="tech-role" data-en="Layout &amp; themes" data-nl="Layout &amp; thema's"
+                >Layout &amp; themes</span
+              >
+              <p
+                data-en="A flat, responsive layout with photo themes, light and dark mode and a custom theme editor."
+                data-nl="Een platte, responsive layout met fotothema's, lichte en donkere modus en een eigen thema-editor."
+              >
+                A flat, responsive layout with photo themes, light and dark mode
+                and a custom theme editor.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>Web Crypto API</h3>
+              <span class="tech-role" data-en="Encryption" data-nl="Versleuteling"
+                >Encryption</span
+              >
+              <p
+                data-en="PBKDF2-SHA256 key derivation and AES-GCM encryption, all in the browser."
+                data-nl="PBKDF2-SHA256 sleutelafleiding en AES-GCM versleuteling, allemaal in de browser."
+              >
+                PBKDF2-SHA256 key derivation and AES-GCM encryption, all in the
+                browser.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>PHP / Node.js</h3>
+              <span class="tech-role" data-en="Sync server" data-nl="Sync-server"
+                >Sync server</span
+              >
+              <p
+                data-en="A small back end that stores the encrypted blob, handles sessions and sends Web Push notifications. Runs on any PHP host or as a Node.js server."
+                data-nl="Een kleine back-end die de versleutelde data opslaat, sessies afhandelt en Web Push-meldingen verstuurt. Draait op elke PHP-host of als Node.js-server."
+              >
+                A small back end that stores the encrypted blob, handles sessions
+                and sends Web Push notifications. Runs on any PHP host or as a
+                Node.js server.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>Service Worker</h3>
+              <span class="tech-role">PWA</span>
+              <p
+                data-en="Offline caching, installability, scheduled reminders and push notifications."
+                data-nl="Offline caching, installeerbaarheid, geplande herinneringen en pushmeldingen."
+              >
+                Offline caching, installability, scheduled reminders and push
+                notifications.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>Git / GitHub</h3>
+              <span
+                class="tech-role"
+                data-en="Version Control"
+                data-nl="Versiebeheer"
+                >Version Control</span
+              >
+              <p
+                data-en="Version control for the app and the sync server."
+                data-nl="Versiebeheer voor de app en de sync-server."
+              >
+                Version control for the app and the sync server.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-gallery-section" id="gallery">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="Screenshots"
+            data-nl="Schermafbeeldingen"
+          >
+            Screenshots
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="Click any image to view full size"
+            data-nl="Klik op een afbeelding voor volledig formaat"
+          >
+            Click any image to view full size
+          </p>
+          <div class="gallery-grid">
+            <a
+              href="pictures/plantim/week.png"
+              data-fancybox="plantim-gallery"
+              data-caption="Week view with labels, repeating events and the sidebar"
+              class="screenshot-item"
+            >
+              <img src="pictures/plantim/week.png" alt="PlanTim week view" />
+              <div
+                class="screenshot-caption"
+                data-en="Week view"
+                data-nl="Weekweergave"
+              >
+                Week view
+              </div>
+            </a>
+
+            <a
+              href="pictures/plantim/month.png"
+              data-fancybox="plantim-gallery"
+              data-caption="Month view with repeating events"
+              class="screenshot-item"
+            >
+              <img src="pictures/plantim/month.png" alt="PlanTim month view" />
+              <div
+                class="screenshot-caption"
+                data-en="Month view"
+                data-nl="Maandweergave"
+              >
+                Month view
+              </div>
+            </a>
+
+            <a
+              href="pictures/plantim/boards.png"
+              data-fancybox="plantim-gallery"
+              data-caption="Trello-style board with due dates and linked calendar events"
+              class="screenshot-item"
+            >
+              <img src="pictures/plantim/boards.png" alt="PlanTim boards" />
+              <div
+                class="screenshot-caption"
+                data-en="Boards"
+                data-nl="Borden"
+              >
+                Boards
+              </div>
+            </a>
+
+            <a
+              href="pictures/plantim/notes.png"
+              data-fancybox="plantim-gallery"
+              data-caption="Markdown notes with folders, to-dos and links between notes"
+              class="screenshot-item"
+            >
+              <img src="pictures/plantim/notes.png" alt="PlanTim notes" />
+              <div
+                class="screenshot-caption"
+                data-en="Notes"
+                data-nl="Notities"
+              >
+                Notes
+              </div>
+            </a>
+
+            <a
+              href="pictures/plantim/agenda.png"
+              data-fancybox="plantim-gallery"
+              data-caption="Agenda view listing everything that is coming up"
+              class="screenshot-item"
+            >
+              <img src="pictures/plantim/agenda.png" alt="PlanTim agenda view" />
+              <div
+                class="screenshot-caption"
+                data-en="Agenda view"
+                data-nl="Agendaweergave"
+              >
+                Agenda view
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-learnings-section" id="learnings">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="Challenges & Learnings"
+            data-nl="Uitdagingen & Leerpunten"
+          >
+            Challenges &amp; Learnings
+          </h2>
+          <div class="learnings-grid">
+            <div class="learnings-column">
+              <h3>
+                <i class="fas fa-bolt"></i>
+                <span
+                  data-en="Challenges I faced"
+                  data-nl="Uitdagingen die ik tegenkwam"
+                  >Challenges I faced</span
+                >
+              </h3>
+              <ul class="learnings-list">
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Designing encryption where the server never sees the password or the data, while still allowing a safe password reset."
+                    data-nl="Versleuteling ontwerpen waarbij de server nooit het wachtwoord of de data ziet, en toch een veilige wachtwoordreset mogelijk maken."
+                    >Designing encryption where the server never sees the
+                    password or the data, while still allowing a safe password
+                    reset.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Repeating events: expanding rules, skipping single occurrences and detaching one instance when it is dragged."
+                    data-nl="Herhalende afspraken: regels uitrollen, losse keren overslaan en één keer loskoppelen als die wordt versleept."
+                    >Repeating events: expanding rules, skipping single
+                    occurrences and detaching one instance when it is
+                    dragged.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Parsing natural language in any word order without a library."
+                    data-nl="Gewone taal in elke woordvolgorde verwerken zonder library."
+                    >Parsing natural language in any word order without a
+                    library.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Keeping devices in sync, including edits made while offline."
+                    data-nl="Apparaten synchroon houden, ook met wijzigingen die offline zijn gedaan."
+                    >Keeping devices in sync, including edits made while
+                    offline.</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="learnings-column">
+              <h3>
+                <i class="fas fa-lightbulb"></i>
+                <span data-en="What I learned" data-nl="Wat ik heb geleerd"
+                  >What I learned</span
+                >
+              </h3>
+              <ul class="learnings-list">
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Applied cryptography with the Web Crypto API: key derivation, authenticated encryption and key wrapping."
+                    data-nl="Toegepaste cryptografie met de Web Crypto API: sleutelafleiding, geauthenticeerde versleuteling en sleutels inpakken."
+                    >Applied cryptography with the Web Crypto API: key
+                    derivation, authenticated encryption and key
+                    wrapping.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="How far you can get with plain JavaScript, and how to keep a large codebase readable without a framework."
+                    data-nl="Hoe ver je komt met pure JavaScript, en hoe je een grote codebase leesbaar houdt zonder framework."
+                    >How far you can get with plain JavaScript, and how to keep
+                    a large codebase readable without a framework.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Service workers, Web Push and what it takes to make a web app feel like a native app."
+                    data-nl="Service workers, Web Push en wat er nodig is om een webapp als een echte app te laten voelen."
+                    >Service workers, Web Push and what it takes to make a web
+                    app feel like a native app.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Building something I use every day, which makes every rough edge obvious."
+                    data-nl="Iets bouwen dat ik elke dag gebruik, waardoor elk ruw randje meteen opvalt."
+                    >Building something I use every day, which makes every
+                    rough edge obvious.</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-cta-section">
+        <h2 data-en="Want to try it?" data-nl="Wil je het proberen?">
+          Want to try it?
+        </h2>
+        <p
+          data-en="Open the demo and click around. It runs in your browser and nothing is saved."
+          data-nl="Open de demo en klik rond. Hij draait in je browser en er wordt niets opgeslagen."
+        >
+          Open the demo and click around. It runs in your browser and nothing is
+          saved.
+        </p>
+        <div class="cta-actions">
+          <a
+            href="plantim-demo/index.html"
+            target="_blank"
+            class="btn btn-primary"
+          >
+            <i class="fas fa-play"></i>
+            <span data-en="Try the demo" data-nl="Probeer de demo"
+              >Try the demo</span
+            >
+          </a>
+          <a href="index.html#projects" class="btn btn-secondary">
+            <i class="fas fa-arrow-left"></i>
+            <span data-en="All Projects" data-nl="Alle Projecten"
+              >All Projects</span
+            >
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="js/projectPage.js"></script>
+  </body>
+</html>

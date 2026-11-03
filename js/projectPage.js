@@ -1,4 +1,3 @@
-// ===== MOBILE MENU TOGGLE =====
 const mobileMenuToggle = document.getElementById('mobileMenuToggle');
 const navbar = document.getElementById('navbar');
 
@@ -14,7 +13,6 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-// ===== NAVBAR BACKGROUND ON SCROLL =====
 window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
         navbar.style.background = 'rgba(255, 255, 255, 0.98)';
@@ -25,7 +23,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// ===== FANCYBOX =====
 Fancybox.bind('[data-fancybox]', {
     Toolbar: {
         display: { left: [], middle: [], right: ['close'] },
@@ -33,7 +30,6 @@ Fancybox.bind('[data-fancybox]', {
     Image: { zoom: true },
 });
 
-// ===== SCROLL ANIMATIONS =====
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -50,7 +46,6 @@ document.querySelectorAll('.feature-card, .tech-stack-card, .screenshot-item, .i
     observer.observe(el);
 });
 
-// ===== LANGUAGE TOGGLE =====
 const languageToggle = document.getElementById('languageToggle');
 let currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
 

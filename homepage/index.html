@@ -67,7 +67,6 @@
       "Pullrequest, denied!"
     ];
     
-    // Get day of year to ensure same quote for entire day
     function getDayOfYear() {
       const now = new Date();
       const start = new Date(now.getFullYear(), 0, 0);
@@ -76,12 +75,10 @@
       return Math.floor(diff / oneDay);
     }
     
-    // Set quote based on day
     const dayOfYear = getDayOfYear();
     const quoteIndex = dayOfYear % quotes.length;
     document.getElementById('dailyQuote').textContent = quotes[quoteIndex];
     
-    // QR Code functionality
     const btn = document.querySelector("#qrButton");
     const qrImage = document.querySelector("#qrImage");
     const qrInput = document.getElementById("qr");
@@ -92,7 +89,6 @@
       }
     });
 
-    // Simple vector class
     class Vec2 {
       constructor(x = 0, y = 0) {
         this.x = x;
@@ -122,7 +118,6 @@
       }
     }
 
-    // Elastic Cursor Class
     class ElasticCursor {
       constructor(el) {
         this.node = el;
@@ -236,7 +231,6 @@
       }
     }
 
-    // Initialize cursor
     const bubbleCursor = new ElasticCursor(document.querySelector(".bubble"));
     
     window.addEventListener("mousemove", (e) => {

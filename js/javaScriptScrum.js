@@ -1,4 +1,3 @@
-// ===== MOBILE MENU TOGGLE =====
 const mobileMenuToggle = document.getElementById('mobileMenuToggle');
 const navbar = document.getElementById('navbar');
 
@@ -7,11 +6,9 @@ mobileMenuToggle.addEventListener('click', () => {
     mobileMenuToggle.classList.toggle('active');
 });
 
-// ===== SMOOTH SCROLLING & ACTIVE NAVIGATION =====
 const navLinks = document.querySelectorAll('.nav-link');
 const sections = document.querySelectorAll('section');
 
-// Update active navigation link on scroll
 window.addEventListener('scroll', () => {
     let current = '';
     
@@ -31,7 +28,6 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Close mobile menu when clicking a link
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         navbar.classList.remove('active');
@@ -39,24 +35,20 @@ navLinks.forEach(link => {
     });
 });
 
-// ===== EXPERIENCE CARDS TOGGLE =====
 const experienceCards = document.querySelectorAll('.experience-card');
 
 experienceCards.forEach(card => {
     card.addEventListener('click', () => {
-        // Close all other cards
         experienceCards.forEach(otherCard => {
             if (otherCard !== card) {
                 otherCard.classList.remove('active');
             }
         });
         
-        // Toggle current card
         card.classList.toggle('active');
     });
 });
 
-// ===== INTEREST CARDS TOGGLE =====
 const interestCards = document.querySelectorAll('.interest-card');
 
 interestCards.forEach(card => {
@@ -72,7 +64,6 @@ interestCards.forEach(card => {
 });
 
 
-// ===== FANCYBOX INITIALIZATION =====
 Fancybox.bind("[data-fancybox]", {
     Toolbar: {
         display: {
@@ -86,7 +77,6 @@ Fancybox.bind("[data-fancybox]", {
     },
 });
 
-// ===== SCROLL ANIMATIONS =====
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -100px 0px'
@@ -101,7 +91,6 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe elements for animation
 const animateElements = document.querySelectorAll('.project-card, .timeline-item, .experience-card, .interest-card');
 animateElements.forEach(el => {
     el.style.opacity = '0';
@@ -110,7 +99,6 @@ animateElements.forEach(el => {
     observer.observe(el);
 });
 
-// ===== NAVBAR BACKGROUND ON SCROLL =====
 window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
         navbar.style.background = 'rgba(255, 255, 255, 0.98)';
@@ -121,13 +109,11 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// ===== SCROLL TO TOP ON PAGE LOAD =====
 window.addEventListener('load', () => {
     window.scrollTo(0, 0);
     updateAge();
 });
 
-// ===== DYNAMIC AGE CALCULATION =====
 function calculateAge() {
     const birthDate = new Date('2008-05-30');
     const today = new Date();
@@ -135,7 +121,6 @@ function calculateAge() {
     let age = today.getFullYear() - birthDate.getFullYear();
     const monthDiff = today.getMonth() - birthDate.getMonth();
     
-    // If birthday hasn't occurred this year yet, subtract 1
     if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
         age--;
     }
@@ -143,7 +128,6 @@ function calculateAge() {
     return age;
 }
 
-// Update age in hero description
 function updateAge() {
     const heroDescription = document.querySelector('.hero-description');
     const age = calculateAge();
@@ -158,31 +142,24 @@ function updateAge() {
     }
 }
 
-// ===== LANGUAGE TOGGLE FUNCTIONALITY =====
 const languageToggle = document.getElementById('languageToggle');
-let currentLanguage = 'en'; // Default language
+let currentLanguage = 'en';
 
 languageToggle.addEventListener('click', () => {
-    // Toggle between English and Dutch
     currentLanguage = currentLanguage === 'en' ? 'nl' : 'en';
     
-    // Update button text
     const langText = languageToggle.querySelector('.lang-text');
     langText.textContent = currentLanguage === 'en' ? 'EN' : 'NL';
     
-    // Store language preference
     localStorage.setItem('preferredLanguage', currentLanguage);
     document.documentElement.setAttribute('data-lang', currentLanguage);
     
-    // Update all translatable elements
     updateLanguage(currentLanguage);
     
-    // Update age with correct language
     updateAge();
 });
 
 function updateLanguage(lang) {
-    // Get all elements with data-en and data-nl attributes
     const translatableElements = document.querySelectorAll('[data-en][data-nl]');
     
     translatableElements.forEach(element => {
@@ -193,7 +170,6 @@ function updateLanguage(lang) {
     });
 }
 
-// Load saved language preference on page load
 window.addEventListener('DOMContentLoaded', () => {
     const savedLanguage = localStorage.getItem('preferredLanguage');
     if (savedLanguage) {
@@ -205,7 +181,6 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// ===== CONTACT FORM HANDLING =====
 const form = document.getElementById('form');
 const submitBtn = form.querySelector('button[type="submit"]');
 

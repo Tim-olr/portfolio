@@ -301,7 +301,6 @@
       will-change: transform;
     }
 
-/* Mobile devices */
 @media (max-width: 480px) {
   body {
     font-size: 25px;
@@ -362,7 +361,6 @@
   }
 }
 
-/* Tablets */
 @media (min-width: 481px) and (max-width: 768px) {
   body {
     font-size: 26px;
@@ -409,7 +407,6 @@
   }
 }
 
-/* Small laptops */
 @media (min-width: 769px) and (max-width: 1024px) {
   .welcomeH2 {
     font-size: 30px;
@@ -420,7 +417,6 @@
   }
 }
 
-/* Large screens */
 @media (min-width: 1025px) {
   .welcomeH2 {
     font-size: 32.5px;
@@ -432,7 +428,6 @@
   }
 }
 
-/* Very small devices */
 @media (max-width: 320px) {
   body {
     font-size: 22px;

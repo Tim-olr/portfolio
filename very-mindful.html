@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Very Mindful | Tim Olree</title>
+    <link rel="stylesheet" href="css/CSS_Scrum.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <button
+      class="mobile-menu-toggle"
+      id="mobileMenuToggle"
+      aria-label="Toggle menu"
+    >
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="navbar" id="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Portfolio</a></li>
+        <li><a href="#overview" class="nav-link">Overview</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#tech" class="nav-link">Tech Stack</a></li>
+        <li><a href="#gallery" class="nav-link">Screenshots</a></li>
+        <li><a href="#learnings" class="nav-link">Learnings</a></li>
+        <li>
+          <button
+            class="language-toggle"
+            id="languageToggle"
+            aria-label="Toggle language"
+          >
+            <i class="fas fa-globe"></i>
+            <span class="lang-text">EN</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="project-page-main">
+      <section class="project-hero-section">
+        <div class="project-hero-inner container">
+          <a href="index.html#projects" class="back-link">
+            <i class="fas fa-arrow-left"></i>
+            <span data-en="Back to Portfolio" data-nl="Terug naar Portfolio"
+              >Back to Portfolio</span
+            >
+          </a>
+          <span
+            class="project-type-label"
+            data-en="Personal Project · Solo"
+            data-nl="Persoonlijk Project · Solo"
+            >Personal Project · Solo</span
+          >
+          <h1>Very Mindful</h1>
+          <p
+            class="project-tagline"
+            data-en="A single player third person extraction shooter in Godot: fast movement and shooting, a spirit fighting at your side, and a city above the clouds to return to between runs."
+            data-nl="Een singleplayer third person extraction shooter in Godot: snelle beweging en schieten, een spirit die naast je vecht en een stad boven de wolken om tussen runs naar terug te keren."
+          >
+            A single player third person extraction shooter in Godot: fast
+            movement and shooting, a spirit fighting at your side, and a city
+            above the clouds to return to between runs.
+          </p>
+          <div class="project-hero-tags">
+            <span class="tech-tag">Godot 4</span>
+            <span class="tech-tag">GD Script</span>
+            <span class="tech-tag">GLSL Shaders</span>
+            <span class="tech-tag">Procedural Generation</span>
+            <span class="tech-tag">3D</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="project-info-bar">
+        <div class="project-info-grid">
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-calendar"></i></div>
+            <div>
+              <span class="info-card-label" data-en="Period" data-nl="Periode"
+                >Period</span
+              >
+              <span class="info-card-value">2026</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-user"></i></div>
+            <div>
+              <span
+                class="info-card-label"
+                data-en="Team size"
+                data-nl="Teamgrootte"
+                >Team size</span
+              >
+              <span class="info-card-value">Solo</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-gamepad"></i></div>
+            <div>
+              <span class="info-card-label" data-en="Genre" data-nl="Genre"
+                >Genre</span
+              >
+              <span class="info-card-value">Extraction Shooter</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-users"></i></div>
+            <div>
+              <span
+                class="info-card-label"
+                data-en="Characters"
+                data-nl="Personages"
+                >Characters</span
+              >
+              <span class="info-card-value">23</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-ghost"></i></div>
+            <div>
+              <span class="info-card-label" data-en="Spirits" data-nl="Spirits"
+                >Spirits</span
+              >
+              <span class="info-card-value">100</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="project-overview-section" id="overview">
+        <div class="container">
+          <div class="overview-grid">
+            <div class="overview-text">
+              <h2 data-en="About this project" data-nl="Over dit project">
+                About this project
+              </h2>
+              <p
+                data-en="Very Mindful is the biggest game I have built so far. You pick a character and a spirit in the Spirit Realm, a white city on an island above the clouds, and drop into one large procedural world. There you fight, mine the ground into blocks, build with them, loot chests and take on the Sovereign that guards each biome."
+                data-nl="Very Mindful is de grootste game die ik tot nu toe heb gebouwd. Je kiest een personage en een spirit in het Spirit Realm, een witte stad op een eiland boven de wolken, en gaat een grote procedurele wereld in. Daar vecht je, mijn je de grond in blokken, bouw je ermee, open je kisten en neem je het op tegen de Sovereign die elk bioom bewaakt."
+              >
+                Very Mindful is the biggest game I have built so far. You pick a
+                character and a spirit in the Spirit Realm, a white city on an
+                island above the clouds, and drop into one large procedural
+                world. There you fight, mine the ground into blocks, build
+                with them, loot chests and take on the Sovereign that guards
+                each biome.
+              </p>
+              <p
+                data-en="To keep what you found you have to extract: hold an uplink beacon through waves of enemies. Die and everything you carried is lost. Money and materials you bring home buy permanent upgrades, new characters and alternate abilities."
+                data-nl="Om te houden wat je hebt gevonden moet je ontsnappen: houd een uplink baken vast terwijl golven vijanden aanvallen. Ga je dood, dan ben je alles kwijt wat je bij je had. Met het geld en de materialen die je mee naar huis neemt koop je permanente upgrades, nieuwe personages en alternatieve vaardigheden."
+              >
+                To keep what you found you have to extract: hold an uplink
+                beacon through waves of enemies. Die and everything you carried
+                is lost. Money and materials you bring home buy permanent
+                upgrades, new characters and alternate abilities.
+              </p>
+              <p
+                data-en="I made the characters, spirits, enemies, Sovereigns and buildings myself in Blender and brought them into Godot, where they are animated and given their abilities."
+                data-nl="De personages, spirits, vijanden, Sovereigns en gebouwen heb ik zelf gemaakt in Blender en daarna in Godot gezet, waar ze worden geanimeerd en hun vaardigheden krijgen."
+              >
+                I made the characters, spirits, enemies, Sovereigns and
+                buildings
+                myself in Blender and brought them into Godot, where they are
+                animated and given their abilities.
+              </p>
+            </div>
+            <div>
+              <div class="overview-highlights">
+                <h3 data-en="Key highlights" data-nl="Belangrijkste punten">
+                  Key highlights
+                </h3>
+                <ul class="highlight-list">
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="23 playable characters, each with a signature weapon and unlockable abilities"
+                      data-nl="23 speelbare personages, elk met een eigen wapen en vrij te spelen vaardigheden"
+                      >23 playable characters, each with a signature weapon and
+                      unlockable abilities</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="100 spirits with their own attack, passive, active and animations"
+                      data-nl="100 spirits met een eigen aanval, passieve vaardigheid, actieve vaardigheid en animaties"
+                      >100 spirits with their own attack, passive, active and
+                      animations</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="A 4 km procedural world with seven biomes, caves and structures"
+                      data-nl="Een procedurele wereld van 4 km met zeven biomen, grotten en gebouwen"
+                      >A 4 km procedural world with seven biomes, caves and
+                      structures</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Mine the ground into blocks and place them to build"
+                      data-nl="Mijn de grond in blokken en plaats ze om te bouwen"
+                      >Mine the ground into blocks and place them to build</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Sovereigns with multi phase boss fights and mini bosses on deeper levels"
+                      data-nl="Sovereigns met bossgevechten in meerdere fases en minibosses op diepere levels"
+                      >Sovereigns with multi phase boss fights and mini bosses on
+                      deeper levels</span
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i
+                    ><span
+                      data-en="Every character, spirit and Sovereign modelled in Blender"
+                      data-nl="Elk personage, elke spirit en elke Sovereign gemodelleerd in Blender"
+                      >Every character, spirit and Sovereign modelled in Blender</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-features-section" id="features">
+        <div class="container">
+          <h2 class="section-title" data-en="Features" data-nl="Functies">
+            Features
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="What you can do in the game"
+            data-nl="Wat je allemaal kunt in de game"
+          >
+            What you can do in the game
+          </p>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-crosshairs"></i></div>
+              <h3 data-en="Characters" data-nl="Personages">Characters</h3>
+              <p
+                data-en="Every character has a primary attack, an alt fire, a utility and a movement ability, plus a passive. Alternate abilities and locked characters are bought with money and materials."
+                data-nl="Elk personage heeft een primaire aanval, een alternatieve aanval, een utility en een bewegingsvaardigheid, plus een passieve vaardigheid. Alternatieve vaardigheden en vergrendelde personages koop je met geld en materialen."
+              >
+                Every character has a primary attack, an alt fire, a utility and
+                a movement ability, plus a passive. Alternate abilities and
+                locked characters are bought with money and materials.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-ghost"></i></div>
+              <h3 data-en="Spirits" data-nl="Spirits">Spirits</h3>
+              <p
+                data-en="A spirit fights next to you with its own attack, passive and active. Each one is unlocked by an achievement and has a role: Attack, Support, Evader or All Round."
+                data-nl="Een spirit vecht naast je met een eigen aanval, passieve en actieve vaardigheid. Elke spirit speel je vrij met een achievement en heeft een rol: Attack, Support, Evader of All Round."
+              >
+                A spirit fights next to you with its own attack, passive and
+                active. Each one is unlocked by an achievement and has a role:
+                Attack, Support, Evader or All Round.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-mountain-sun"></i></div>
+              <h3 data-en="Procedural World" data-nl="Procedurele Wereld">
+                Procedural World
+              </h3>
+              <p
+                data-en="Seven biomes with cliffs, ravines, caves with ore veins, buildings with loot, buried stashes and totems. The world streams in chunks around the player with a day and night cycle."
+                data-nl="Zeven biomen met kliffen, ravijnen, grotten met ertsaders, gebouwen met buit, begraven schatten en totems. De wereld laadt in chunks rond de speler, met een dag en nacht cyclus."
+              >
+                Seven biomes with cliffs, ravines, caves with ore veins,
+                buildings with loot, buried stashes and totems. The world streams
+                in chunks around the player with a day and night cycle.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-cubes"></i></div>
+              <h3 data-en="Breaking and Building" data-nl="Breken en Bouwen">
+                Breaking and Building
+              </h3>
+              <p
+                data-en="Mine the ground into blocks with its own mining action, and break trees, rocks and crates with your attacks for materials. Place blocks anywhere in a run to build cover, bridges or walls, or build in your own rooms that you buy in the Room Hall."
+                data-nl="Met een aparte mijnactie mijn je de grond in blokken, en met je aanvallen breek je bomen, rotsen en kratten voor materialen. Plaats blokken overal in een run om dekking, bruggen of muren te bouwen, of bouw in je eigen kamers die je koopt in de Room Hall."
+              >
+                Mine the ground into blocks with its own mining action, and
+                break trees, rocks and crates with your attacks for
+                materials. Place blocks anywhere in a run to build cover,
+                bridges or walls, or build in your own rooms that you buy in
+                the Room Hall.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-dragon"></i></div>
+              <h3 data-en="Sovereigns and Bosses" data-nl="Sovereigns en Bosses">
+                Sovereigns and Bosses
+              </h3>
+              <p
+                data-en="Each biome has a Sovereign waiting at its Seat. Defeat it for its Core and bring all seven home. Deeper levels have their own mini bosses with signature skills."
+                data-nl="Elk bioom heeft een Sovereign die wacht op zijn Seat. Versla hem voor zijn Core en breng ze alle zeven naar huis. Diepere levels hebben eigen minibosses met unieke vaardigheden."
+              >
+                Each biome has a Sovereign waiting at its Seat. Defeat it for
+                its Core and
+                bring all seven home. Deeper levels have their own mini bosses
+                with signature skills.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-tower-broadcast"></i></div>
+              <h3 data-en="Extraction" data-nl="Ontsnappen">Extraction</h3>
+              <p
+                data-en="Hold an uplink beacon through three phases and two enemy surges to bank your loot. The second surge brings a champion."
+                data-nl="Houd een uplink baken vast door drie fases en twee golven vijanden om je buit veilig te stellen. De tweede golf brengt een kampioen mee."
+              >
+                Hold an uplink beacon through three phases and two enemy surges
+                to bank your loot. The second surge brings a champion.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-layer-group"></i></div>
+              <h3 data-en="Run Modifiers" data-nl="Run Modifiers">
+                Run Modifiers
+              </h3>
+              <p
+                data-en="Artifacts, cards, bonds, world events and eight tiers of difficulty change every run. Patrons give contract chains with permanent rewards."
+                data-nl="Artifacts, kaarten, bonds, wereldevenementen en acht moeilijkheidsniveaus maken elke run anders. Patrons geven reeksen opdrachten met permanente beloningen."
+              >
+                Artifacts, cards, bonds, world events and eight tiers of
+                difficulty change every run. Patrons give contract chains with
+                permanent rewards.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-tech-section" id="tech">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="Tech Stack"
+            data-nl="Technologieën"
+          >
+            Tech Stack
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="The technologies powering Very Mindful"
+            data-nl="De technologieën achter Very Mindful"
+          >
+            The technologies powering Very Mindful
+          </p>
+          <div class="tech-stack-grid">
+            <div class="tech-stack-card">
+              <h3>Godot 4</h3>
+              <span class="tech-role" data-en="Game engine" data-nl="Game engine"
+                >Game engine</span
+              >
+              <p
+                data-en="Rendering, physics, scenes and UI. Every menu is its own scene with signals connected in the editor."
+                data-nl="Rendering, physics, scenes en UI. Elk menu is een eigen scene met signals die in de editor gekoppeld zijn."
+              >
+                Rendering, physics, scenes and UI. Every menu is its own scene
+                with signals connected in the editor.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>GD Script</h3>
+              <span class="tech-role" data-en="Gameplay" data-nl="Gameplay"
+                >Gameplay</span
+              >
+              <p
+                data-en="All game logic: characters, spirits, enemies, Sovereigns, the director that spawns enemies and every run system."
+                data-nl="Alle spellogica: personages, spirits, vijanden, Sovereigns, de director die vijanden spawnt en elk run systeem."
+              >
+                All game logic: characters, spirits, enemies, Sovereigns, the director
+                that spawns enemies and every run system.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>Blender</h3>
+              <span class="tech-role" data-en="Models" data-nl="Modellen"
+                >Models</span
+              >
+              <p
+                data-en="All characters, spirits, enemies, Sovereigns and buildings are modelled and painted in Blender."
+                data-nl="Alle personages, spirits, vijanden, Sovereigns en gebouwen zijn gemodelleerd en ingekleurd in Blender."
+              >
+                All characters, spirits, enemies, Sovereigns and buildings
+                are
+                modelled and painted in Blender.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>GLSL Shaders</h3>
+              <span class="tech-role" data-en="Rendering" data-nl="Rendering"
+                >Rendering</span
+              >
+              <p
+                data-en="A shared clay shader with vertex animation for walking creatures, procedural leaves, rocks and an outline pass."
+                data-nl="Een gedeelde clay shader met vertex animatie voor lopende wezens, procedurele bladeren, rotsen en een outline pass."
+              >
+                A shared clay shader with vertex animation for walking
+                creatures, procedural leaves, rocks and an outline pass.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>Worker Threads</h3>
+              <span class="tech-role" data-en="Performance" data-nl="Performance"
+                >Performance</span
+              >
+              <p
+                data-en="Terrain chunks are built on background threads with four levels of detail, and pooled projectiles keep combat fast."
+                data-nl="Terrein chunks worden op achtergrondthreads gebouwd met vier detailniveaus, en hergebruikte projectielen houden gevechten snel."
+              >
+                Terrain chunks are built on background threads with four levels
+                of detail, and pooled projectiles keep combat fast.
+              </p>
+            </div>
+
+            <div class="tech-stack-card">
+              <h3>Git / GitHub</h3>
+              <span
+                class="tech-role"
+                data-en="Version Control"
+                data-nl="Versiebeheer"
+                >Version Control</span
+              >
+              <p
+                data-en="Version control for the game and its tools."
+                data-nl="Versiebeheer voor de game en de tools."
+              >
+                Version control for the game and its tools.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-gallery-section" id="gallery">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="Screenshots"
+            data-nl="Schermafbeeldingen"
+          >
+            Screenshots
+          </h2>
+          <p
+            class="section-subtitle"
+            data-en="Click any image to view full size"
+            data-nl="Klik op een afbeelding voor volledig formaat"
+          >
+            Click any image to view full size
+          </p>
+          <div class="gallery-grid gallery-grid-wide">
+            <a
+              href="pictures/very-mindful/main_menu.png"
+              data-fancybox="very-mindful-gallery"
+              data-caption="The main menu over the Spirit Realm, the city above the clouds"
+              class="screenshot-item"
+            >
+              <img src="pictures/very-mindful/main_menu.png" alt="Main menu" />
+              <div class="screenshot-caption" data-en="Main menu" data-nl="Hoofdmenu">
+                Main menu
+              </div>
+            </a>
+
+            <a
+              href="pictures/very-mindful/gameplay.png"
+              data-fancybox="very-mindful-gallery"
+              data-caption="A run in the meadow: the Drifter shooting with the spirit SPREAD LIKE FIRE at his side"
+              class="screenshot-item"
+            >
+              <img src="pictures/very-mindful/gameplay.png" alt="Gameplay" />
+              <div class="screenshot-caption" data-en="Gameplay" data-nl="Gameplay">
+                Gameplay
+              </div>
+            </a>
+
+            <a
+              href="pictures/very-mindful/character_menu.png"
+              data-fancybox="very-mindful-gallery"
+              data-caption="The character menu with all 23 characters, their stats, passive, mastery and loadout"
+              class="screenshot-item"
+            >
+              <img src="pictures/very-mindful/character_menu.png" alt="Character menu" />
+              <div class="screenshot-caption" data-en="Character menu" data-nl="Personagemenu">
+                Character menu
+              </div>
+            </a>
+
+            <a
+              href="pictures/very-mindful/spirit_menu.png"
+              data-fancybox="very-mindful-gallery"
+              data-caption="The Spirit Shrine with all 100 spirits, filters per role and a search bar"
+              class="screenshot-item"
+            >
+              <img src="pictures/very-mindful/spirit_menu.png" alt="Spirit menu" />
+              <div class="screenshot-caption" data-en="Spirit menu" data-nl="Spiritmenu">
+                Spirit menu
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-learnings-section" id="learnings">
+        <div class="container">
+          <h2
+            class="section-title"
+            data-en="Challenges & Learnings"
+            data-nl="Uitdagingen & Leerpunten"
+          >
+            Challenges &amp; Learnings
+          </h2>
+          <div class="learnings-grid">
+            <div class="learnings-column">
+              <h3>
+                <i class="fas fa-bolt"></i>
+                <span
+                  data-en="Challenges I faced"
+                  data-nl="Uitdagingen die ik tegenkwam"
+                  >Challenges I faced</span
+                >
+              </h3>
+              <ul class="learnings-list">
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Streaming a 4 km world without stutters: chunk meshes on worker threads, levels of detail and collision only near the player."
+                    data-nl="Een wereld van 4 km laden zonder haperingen: chunk meshes op worker threads, detailniveaus en collision alleen dicht bij de speler."
+                    >Streaming a 4 km world without stutters: chunk meshes on
+                    worker threads, levels of detail and collision only near
+                    the player.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Making models built from code look like a real game instead of toys."
+                    data-nl="Modellen die uit code zijn opgebouwd laten lijken op een echte game in plaats van speelgoed."
+                    >Making models built from code look like a real game
+                    instead of toys.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Keeping 100 spirits, 23 characters and dozens of artifacts working together without breaking each other."
+                    data-nl="100 spirits, 23 personages en tientallen artifacts laten samenwerken zonder dat ze elkaar breken."
+                    >Keeping 100 spirits, 23 characters and dozens of artifacts
+                    working together without breaking each other.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Balancing runs so that dying hurts but extracting always feels earned."
+                    data-nl="Runs zo balanceren dat doodgaan pijn doet maar ontsnappen altijd verdiend voelt."
+                    >Balancing runs so that dying hurts but extracting always
+                    feels earned.</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="learnings-column">
+              <h3>
+                <i class="fas fa-lightbulb"></i>
+                <span data-en="What I learned" data-nl="Wat ik heb geleerd"
+                  >What I learned</span
+                >
+              </h3>
+              <ul class="learnings-list">
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Procedural generation: noise based terrain, biome regions, caves and structure placement."
+                    data-nl="Procedurele generatie: terrein op basis van noise, biome regio's, grotten en het plaatsen van gebouwen."
+                    >Procedural generation: noise based terrain, biome regions,
+                    caves and structure placement.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Writing shaders and procedural animation with springs instead of keyframes."
+                    data-nl="Shaders schrijven en procedurele animatie met springs in plaats van keyframes."
+                    >Writing shaders and procedural animation with springs
+                    instead of keyframes.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Modelling in Blender and getting the models into Godot."
+                    data-nl="Modelleren in Blender en de modellen in Godot krijgen."
+                    >Modelling in Blender and getting the models into
+                    Godot.</span
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-circle"></i
+                  ><span
+                    data-en="Structuring a large codebase with many small, clearly named methods so it stays readable."
+                    data-nl="Een grote codebase opbouwen met veel kleine, duidelijk benoemde methodes zodat hij leesbaar blijft."
+                    >Structuring a large codebase with many small, clearly named
+                    methods so it stays readable.</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-cta-section">
+        <h2 data-en="Want to see more?" data-nl="Meer zien?">
+          Want to see more?
+        </h2>
+        <p
+          data-en="Have a look at my other projects or get in touch."
+          data-nl="Bekijk mijn andere projecten of neem contact op."
+        >
+          Have a look at my other projects or get in touch.
+        </p>
+        <div class="cta-actions">
+          <a href="index.html#projects" class="btn btn-primary">
+            <i class="fas fa-arrow-left"></i>
+            <span data-en="All Projects" data-nl="Alle Projecten"
+              >All Projects</span
+            >
+          </a>
+          <a href="index.html#contact" class="btn btn-secondary">
+            <i class="fas fa-envelope"></i>
+            <span data-en="Contact" data-nl="Contact">Contact</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="js/projectPage.js"></script>
+  </body>
+</html>
